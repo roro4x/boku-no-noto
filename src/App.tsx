@@ -1,6 +1,9 @@
-import { useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
+import { LinksDirectory } from './components/LinksDirectory'
 import { NihongoCatalog } from './components/NihongoCatalog'
+import { PromptLibrary } from './components/PromptLibrary'
 import { TextArchive } from './components/TextArchive'
+import { nextAvailableTrackIndex, nextTrackIndex, playlist } from './data/playlist'
 import { categories, type StudyCategory } from './data/study'
 import { isSiteLocale, siteCopy, type SiteLocale } from './i18n'
 
@@ -8,11 +11,15 @@ type Route =
   | { page: 'home' }
   | { page: 'nihongo'; category: StudyCategory; itemId?: string }
   | { page: 'texts'; slug?: string }
+  | { page: 'prompts'; promptId?: string }
+  | { page: 'links' }
 
 const parseRoute = (): Route => {
   const path = (window.location.hash || '#/').slice(1).split('?')[0]
   const parts = path.split('/').filter(Boolean)
   if (parts[0] === 'texts') return { page: 'texts', slug: parts[1] }
+  if (parts[0] === 'prompts') return { page: 'prompts', promptId: parts[1] }
+  if (parts[0] === 'links') return { page: 'links' }
   if (parts[0] !== 'nihongo') return { page: 'home' }
   const category = categories.some((item) => item.id === parts[1])
     ? (parts[1] as StudyCategory)
@@ -50,6 +57,10 @@ function App() {
   useEffect(() => {
     document.title = route.page === 'texts'
       ? '日本語の文章 · 僕のノート'
+      : route.page === 'prompts'
+        ? 'プロンプト集 · 僕のノート'
+        : route.page === 'links'
+          ? 'おすすめリンク · 僕のノート'
       : route.page === 'nihongo'
         ? '日本語 · N5 · 僕のノート'
         : '僕のノート · Boku no Nōto'
@@ -131,6 +142,22 @@ function App() {
                     <span className="nav-marker" aria-hidden="true" /> {copy.textsNav}
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="#/prompts"
+                    aria-current={route.page === 'prompts' ? 'page' : undefined}
+                  >
+                    <span className="nav-marker" aria-hidden="true" /> {copy.promptsNav}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#/links"
+                    aria-current={route.page === 'links' ? 'page' : undefined}
+                  >
+                    <span className="nav-marker" aria-hidden="true" /> {copy.linksNav}
+                  </a>
+                </li>
               </ul>
           </nav>
 
@@ -145,6 +172,10 @@ function App() {
               <NihongoCatalog category={route.category} itemId={route.itemId} locale={locale} />
             )}
             {route.page === 'texts' && <TextArchive slug={route.slug} locale={locale} />}
+            {route.page === 'prompts' && (
+              <PromptLibrary promptId={route.promptId} locale={locale} />
+            )}
+            {route.page === 'links' && <LinksDirectory locale={locale} />}
           </main>
 
           <aside className="sidebar" aria-label={copy.sidebar}>
@@ -250,36 +281,122 @@ function MusicPlayer({ locale }: { locale: SiteLocale }) {
   const [duration, setDuration] = useState(0)
   const [volume, setVolume] = useState(35)
   const [hasError, setHasError] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
+  const [currentTrackIndex, setCurrentTrackIndex] = useState(0)
+  const wantsPlaybackRef = useRef(false)
+  const failedTracksRef = useRef(new Set<number>())
+  const currentTrack = playlist[currentTrackIndex]
+  const isEmpty = playlist.length === 0
 
   useEffect(() => {
     if (audioRef.current) audioRef.current.volume = volume / 100
   }, [volume])
 
-  const play = async () => {
-    if (!audioRef.current) return
-    try {
-      if (hasError) audioRef.current.load()
-      await audioRef.current.play()
-      setIsPlaying(true)
-      setHasError(false)
-    } catch {
+  useEffect(() => () => {
+    wantsPlaybackRef.current = false
+    audioRef.current?.pause()
+  }, [])
+
+  const handleTrackFailure = useCallback(() => {
+    setIsPlaying(false)
+    setIsLoading(false)
+
+    if (!wantsPlaybackRef.current) {
       setHasError(true)
+      return
+    }
+
+    const failedTracks = new Set(failedTracksRef.current)
+    failedTracks.add(currentTrackIndex)
+    failedTracksRef.current = failedTracks
+    const nextIndex = nextAvailableTrackIndex(
+      currentTrackIndex,
+      playlist.length,
+      failedTracks,
+    )
+
+    if (nextIndex === null) {
+      wantsPlaybackRef.current = false
+      setHasError(true)
+      return
+    }
+
+    setHasError(false)
+    setCurrentTrackIndex(nextIndex)
+  }, [currentTrackIndex])
+
+  useEffect(() => {
+    const audio = audioRef.current
+    if (!audio || !currentTrack || !wantsPlaybackRef.current) return
+
+    let cancelled = false
+    setCurrentTime(0)
+    setDuration(0)
+    setIsLoading(true)
+    audio.load()
+
+    void audio.play()
+      .then(() => {
+        if (cancelled) return
+        setHasError(false)
+        setIsLoading(false)
+      })
+      .catch(() => {
+        if (!cancelled) handleTrackFailure()
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [currentTrack, handleTrackFailure])
+
+  const togglePlayback = async () => {
+    const audio = audioRef.current
+    if (!audio || !currentTrack) return
+
+    if (isPlaying) {
+      wantsPlaybackRef.current = false
+      audio.pause()
+      return
+    }
+
+    wantsPlaybackRef.current = true
+    failedTracksRef.current.clear()
+    setHasError(false)
+    setIsLoading(true)
+
+    try {
+      if (hasError) audio.load()
+      await audio.play()
+      setIsLoading(false)
+    } catch {
+      handleTrackFailure()
     }
   }
 
-  const stop = () => {
-    if (!audioRef.current) return
-    audioRef.current.pause()
-    audioRef.current.currentTime = 0
+  const playNextTrack = (audio: HTMLAudioElement) => {
+    const nextIndex = nextTrackIndex(currentTrackIndex, playlist.length)
+    if (nextIndex === null) return
+
+    failedTracksRef.current.clear()
     setCurrentTime(0)
-    setIsPlaying(false)
+    if (nextIndex === currentTrackIndex) {
+      audio.currentTime = 0
+      setIsLoading(true)
+      void audio.play()
+        .then(() => setIsLoading(false))
+        .catch(handleTrackFailure)
+      return
+    }
+
+    setCurrentTrackIndex(nextIndex)
   }
 
   return (
     <section className="side-box player-box" aria-labelledby="player-title">
       <h2 id="player-title" lang="ja">おんがく</h2>
       <div className="player-display">
-        <span title="Mirostar — Lofi Beats">LOFI</span>
+        <span title={currentTrack?.title}>{currentTrack?.display ?? 'NO TAPE'}</span>
         <span>{formatPlayerTime(currentTime)} / {formatPlayerTime(duration)}</span>
       </div>
       <div className="player-tape" aria-hidden="true">
@@ -287,10 +404,21 @@ function MusicPlayer({ locale }: { locale: SiteLocale }) {
         <span />
       </div>
       <div className="player-controls" aria-describedby="player-note">
-        <button type="button" onClick={play} disabled={isPlaying}>
-          {hasError ? copy.retryAudio : copy.play}
+        <button
+          className="player-toggle"
+          type="button"
+          onClick={togglePlayback}
+          disabled={isEmpty || isLoading}
+          aria-label={isPlaying ? copy.pauseLabel : hasError ? copy.retryAudio : copy.playLabel}
+        >
+          <span
+            className={`player-control-icon ${isPlaying ? 'player-control-icon--pause' : 'player-control-icon--play'}`}
+            aria-hidden="true"
+          >
+            {isPlaying && <><i /><i /></>}
+          </span>
+          {hasError ? copy.retryAudio : isPlaying ? copy.pause : copy.play}
         </button>
-        <button type="button" onClick={stop} disabled={!isPlaying && currentTime === 0}>{copy.stop}</button>
         <label>
           <span>{copy.volume}</span>
           <input
@@ -304,23 +432,31 @@ function MusicPlayer({ locale }: { locale: SiteLocale }) {
         </label>
       </div>
       <p id="player-note" role="status" aria-live="polite">
-        {hasError ? copy.audioError : copy.audioReady}
+        {isEmpty
+          ? copy.audioEmpty
+          : hasError
+            ? copy.audioError
+            : isLoading
+              ? copy.audioLoading
+              : copy.audioReady(currentTrack.title)}
       </p>
-      <audio
-        ref={audioRef}
-        preload="metadata"
-        src={`${import.meta.env.BASE_URL}audio/mirostar-lofi-beats-531504.mp3`}
-        onLoadedMetadata={(event) => setDuration(event.currentTarget.duration)}
-        onTimeUpdate={(event) => setCurrentTime(event.currentTarget.currentTime)}
-        onPlay={() => setIsPlaying(true)}
-        onPause={() => setIsPlaying(false)}
-        onEnded={(event) => {
-          event.currentTarget.currentTime = 0
-          setIsPlaying(false)
-          setCurrentTime(0)
-        }}
-        onError={() => setHasError(true)}
-      />
+      {currentTrack && (
+        <audio
+          ref={audioRef}
+          preload="metadata"
+          src={`${import.meta.env.BASE_URL}${currentTrack.file}`}
+          onLoadedMetadata={(event) => setDuration(event.currentTarget.duration)}
+          onTimeUpdate={(event) => setCurrentTime(event.currentTarget.currentTime)}
+          onPlay={() => {
+            setIsPlaying(true)
+            setIsLoading(false)
+            setHasError(false)
+          }}
+          onPause={() => setIsPlaying(false)}
+          onEnded={(event) => playNextTrack(event.currentTarget)}
+          onError={handleTrackFailure}
+        />
+      )}
     </section>
   )
 }
