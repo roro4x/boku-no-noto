@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "datasetVersion": "2026-09-openjlpt-1",
+  "language": "ru",
+  "level": "N5",
+  "categories": {
+    "grammar": 20,
+    "vocabulary": 662,
+    "kanji": 79
+  },
+  "sourceIds": [
+    "openjlpt",
+    "jmdict-rus",
+    "kanjidic2",
+    "jlpt-official"
+  ]
+}

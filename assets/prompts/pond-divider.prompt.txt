@@ -1,0 +1,11 @@
+Use case: stylized-concept
+Asset type: transparent decorative pixel-art website divider for a personal Japanese homepage
+Primary request: create a horizontal pond-and-lily-pad decoration that belongs beside the frog mascot on 僕のノート
+Scene/backdrop: isolated decorative strip on a genuinely transparent background
+Subject: three small lily pads, two simple water ripples, one tiny frog footprint motif; no character face
+Style/medium: authentic hand-pixeled late-1990s to early-2000s Japanese personal homepage asset, crisp stepped edges, sparse restrained dithering, designed to remain clear around 260×48 CSS pixels
+Composition/framing: wide low horizontal strip, balanced negative transparent space, no crop
+Color palette: deep tea green #4F6B52, moss #6D8A63, frog green #7EA66A, pale mint #D6E7D2, muted pond blue #DDE8E8, dark outline #2E4534
+Materials/textures: flat pixel clusters only
+Constraints: genuinely transparent alpha background; no text; no logo; no watermark; no glow; no gradients; no smooth vector curves; no extra animals
+Avoid: 3D, photorealism, modern flat vector iconography, glossy rendering, white background

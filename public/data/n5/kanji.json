@@ -1,0 +1,2840 @@
+[
+  {
+    "id": "kanji:u65e5",
+    "character": "日",
+    "meaningsRu": [
+      "день",
+      "солнце"
+    ],
+    "readings": {
+      "on": [
+        "ニチ",
+        "ジツ"
+      ],
+      "kun": [
+        "ひ",
+        "-び",
+        "-か"
+      ]
+    },
+    "examples": [
+      {
+        "term": "一昨日",
+        "reading": "おととい",
+        "meaningRu": "позапрошлый день"
+      },
+      {
+        "term": "一日",
+        "reading": "いちにち",
+        "meaningRu": "[один] день; в день"
+      },
+      {
+        "term": "火曜日",
+        "reading": "かようび",
+        "meaningRu": "вторник"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 1
+  },
+  {
+    "id": "kanji:u4e00",
+    "character": "一",
+    "meaningsRu": [
+      "один"
+    ],
+    "readings": {
+      "on": [
+        "イチ",
+        "イツ"
+      ],
+      "kun": [
+        "ひと-",
+        "ひと.つ"
+      ]
+    },
+    "examples": [
+      {
+        "term": "もう一度",
+        "reading": "もういちど",
+        "meaningRu": "ещё раз"
+      },
+      {
+        "term": "一",
+        "reading": "いち",
+        "meaningRu": "один"
+      },
+      {
+        "term": "一つ",
+        "reading": "ひとつ",
+        "meaningRu": "один [единственный]"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 2
+  },
+  {
+    "id": "kanji:u56fd",
+    "character": "国",
+    "meaningsRu": [
+      "страна"
+    ],
+    "readings": {
+      "on": [
+        "コク"
+      ],
+      "kun": [
+        "くに"
+      ]
+    },
+    "examples": [
+      {
+        "term": "外国",
+        "reading": "がいこく",
+        "meaningRu": "иностранное государство; зарубежные страны, заграница"
+      },
+      {
+        "term": "外国人",
+        "reading": "がいこくじん",
+        "meaningRu": "иностранец, иностранка"
+      },
+      {
+        "term": "国",
+        "reading": "くに",
+        "meaningRu": "страна, государство"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 3
+  },
+  {
+    "id": "kanji:u4eba",
+    "character": "人",
+    "meaningsRu": [
+      "человек"
+    ],
+    "readings": {
+      "on": [
+        "ジン",
+        "ニン"
+      ],
+      "kun": [
+        "ひと",
+        "-り",
+        "-と"
+      ]
+    },
+    "examples": [
+      {
+        "term": "一人",
+        "reading": "ひとり",
+        "meaningRu": "[один] человек; один из …"
+      },
+      {
+        "term": "外国人",
+        "reading": "がいこくじん",
+        "meaningRu": "иностранец, иностранка"
+      },
+      {
+        "term": "人",
+        "reading": "ひと",
+        "meaningRu": "человек, люди"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 4
+  },
+  {
+    "id": "kanji:u5e74",
+    "character": "年",
+    "meaningsRu": [
+      "год"
+    ],
+    "readings": {
+      "on": [
+        "ネン"
+      ],
+      "kun": [
+        "とし"
+      ]
+    },
+    "examples": [
+      {
+        "term": "さ来年",
+        "reading": "さらいねん",
+        "meaningRu": "через два года"
+      },
+      {
+        "term": "一昨年",
+        "reading": "おととし",
+        "meaningRu": "позапрошлый год"
+      },
+      {
+        "term": "去年",
+        "reading": "きょねん",
+        "meaningRu": "прошлый год"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 5
+  },
+  {
+    "id": "kanji:u5927",
+    "character": "大",
+    "meaningsRu": [
+      "большой"
+    ],
+    "readings": {
+      "on": [
+        "ダイ",
+        "タイ"
+      ],
+      "kun": [
+        "おお-",
+        "おお.きい",
+        "-おお.いに"
+      ]
+    },
+    "examples": [
+      {
+        "term": "大きい",
+        "reading": "おおきい",
+        "meaningRu": "большой, крупный"
+      },
+      {
+        "term": "大きな",
+        "reading": "おおきな",
+        "meaningRu": "(см.) おおきい"
+      },
+      {
+        "term": "大学",
+        "reading": "だいがく",
+        "meaningRu": "вуз, институт (учебный)"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 6
+  },
+  {
+    "id": "kanji:u5341",
+    "character": "十",
+    "meaningsRu": [
+      "десять"
+    ],
+    "readings": {
+      "on": [
+        "ジュウ",
+        "ジッ",
+        "ジュッ"
+      ],
+      "kun": [
+        "とお",
+        "と",
+        "そ"
+      ]
+    },
+    "examples": [
+      {
+        "term": "十",
+        "reading": "じゅう とお",
+        "meaningRu": "десять"
+      },
+      {
+        "term": "十日",
+        "reading": "とおか",
+        "meaningRu": "десятое [число]"
+      },
+      {
+        "term": "二十歳",
+        "reading": "はたち",
+        "meaningRu": "двадцатилетний возраст; двадцать лет [от роду]"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 7
+  },
+  {
+    "id": "kanji:u4e8c",
+    "character": "二",
+    "meaningsRu": [
+      "два"
+    ],
+    "readings": {
+      "on": [
+        "ニ",
+        "ジ"
+      ],
+      "kun": [
+        "ふた",
+        "ふた.つ",
+        "ふたたび"
+      ]
+    },
+    "examples": [
+      {
+        "term": "二",
+        "reading": "に",
+        "meaningRu": "(в устных числовых обозначениях) два, (напр.) 二千"
+      },
+      {
+        "term": "二つ",
+        "reading": "ふたつ",
+        "meaningRu": "два"
+      },
+      {
+        "term": "二十歳",
+        "reading": "はたち",
+        "meaningRu": "двадцатилетний возраст; двадцать лет [от роду]"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 8
+  },
+  {
+    "id": "kanji:u672c",
+    "character": "本",
+    "meaningsRu": [
+      "книга",
+      "основа"
+    ],
+    "readings": {
+      "on": [
+        "ホン"
+      ],
+      "kun": [
+        "もと"
+      ]
+    },
+    "examples": [
+      {
+        "term": "本",
+        "reading": "ほん",
+        "meaningRu": "(счётный суф. для предметов цилиндрической формы, напр. для карандашей, пальцев; труб)"
+      },
+      {
+        "term": "本棚",
+        "reading": "ほんだな",
+        "meaningRu": "книжный шкаф, книжная полка, стеллаж"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 9
+  },
+  {
+    "id": "kanji:u4e2d",
+    "character": "中",
+    "meaningsRu": [
+      "середина",
+      "внутри"
+    ],
+    "readings": {
+      "on": [
+        "チュウ"
+      ],
+      "kun": [
+        "なか",
+        "うち",
+        "あた.る"
+      ]
+    },
+    "examples": [
+      {
+        "term": "中",
+        "reading": "なか",
+        "meaningRu": "в, внутри"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 10
+  },
+  {
+    "id": "kanji:u9577",
+    "character": "長",
+    "meaningsRu": [
+      "длинный",
+      "старший"
+    ],
+    "readings": {
+      "on": [
+        "チョウ"
+      ],
+      "kun": [
+        "なが.い",
+        "おさ"
+      ]
+    },
+    "examples": [
+      {
+        "term": "長い",
+        "reading": "ながい",
+        "meaningRu": "длинный"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 11
+  },
+  {
+    "id": "kanji:u51fa",
+    "character": "出",
+    "meaningsRu": [
+      "выходить",
+      "вынимать"
+    ],
+    "readings": {
+      "on": [
+        "シュツ",
+        "スイ"
+      ],
+      "kun": [
+        "で.る",
+        "-で",
+        "だ.す",
+        "-だ.す",
+        "い.でる",
+        "い.だす"
+      ]
+    },
+    "examples": [
+      {
+        "term": "出かける",
+        "reading": "でかける",
+        "meaningRu": "выходить"
+      },
+      {
+        "term": "出す",
+        "reading": "だす",
+        "meaningRu": "выставлять; высовывать; вынимать; вытаскивать"
+      },
+      {
+        "term": "出る",
+        "reading": "でる",
+        "meaningRu": "выходить (откуда-л., куда-л.)"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 12
+  },
+  {
+    "id": "kanji:u4e09",
+    "character": "三",
+    "meaningsRu": [
+      "три"
+    ],
+    "readings": {
+      "on": [
+        "サン",
+        "ゾウ"
+      ],
+      "kun": [
+        "み",
+        "み.つ",
+        "みっ.つ"
+      ]
+    },
+    "examples": [
+      {
+        "term": "三",
+        "reading": "さん",
+        "meaningRu": "(гл. обр. на ценных бумагах) три"
+      },
+      {
+        "term": "三つ",
+        "reading": "みっつ",
+        "meaningRu": "три"
+      },
+      {
+        "term": "三日",
+        "reading": "みっか",
+        "meaningRu": "третье [число]"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 13
+  },
+  {
+    "id": "kanji:u6642",
+    "character": "時",
+    "meaningsRu": [
+      "время",
+      "час"
+    ],
+    "readings": {
+      "on": [
+        "ジ"
+      ],
+      "kun": [
+        "とき",
+        "-どき"
+      ]
+    },
+    "examples": [
+      {
+        "term": "時々",
+        "reading": "ときどき",
+        "meaningRu": "иногда"
+      },
+      {
+        "term": "時間",
+        "reading": "じかん",
+        "meaningRu": "час"
+      },
+      {
+        "term": "時計",
+        "reading": "とけい",
+        "meaningRu": "часы"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 14
+  },
+  {
+    "id": "kanji:u884c",
+    "character": "行",
+    "meaningsRu": [
+      "идти",
+      "проводить"
+    ],
+    "readings": {
+      "on": [
+        "コウ",
+        "ギョウ",
+        "アン"
+      ],
+      "kun": [
+        "い.く",
+        "ゆ.く",
+        "-ゆ.き",
+        "-ゆき",
+        "-い.き",
+        "-いき",
+        "おこな.う",
+        "おこ.なう"
+      ]
+    },
+    "examples": [
+      {
+        "term": "銀行",
+        "reading": "ぎんこう",
+        "meaningRu": "банк"
+      },
+      {
+        "term": "行く",
+        "reading": "いく",
+        "meaningRu": "(см.) ゆく【行く】"
+      },
+      {
+        "term": "飛行機",
+        "reading": "ひこうき",
+        "meaningRu": "самолёт"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 15
+  },
+  {
+    "id": "kanji:u898b",
+    "character": "見",
+    "meaningsRu": [
+      "смотреть",
+      "видеть"
+    ],
+    "readings": {
+      "on": [
+        "ケン"
+      ],
+      "kun": [
+        "み.る",
+        "み.える",
+        "み.せる"
+      ]
+    },
+    "examples": [
+      {
+        "term": "見せる",
+        "reading": "みせる",
+        "meaningRu": "показывать, давать смотреть"
+      },
+      {
+        "term": "見る 観る",
+        "reading": "みる",
+        "meaningRu": "смотреть"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 16
+  },
+  {
+    "id": "kanji:u6708",
+    "character": "月",
+    "meaningsRu": [
+      "месяц",
+      "луна"
+    ],
+    "readings": {
+      "on": [
+        "ゲツ",
+        "ガツ"
+      ],
+      "kun": [
+        "つき"
+      ]
+    },
+    "examples": [
+      {
+        "term": "一月",
+        "reading": "ひとつき",
+        "meaningRu": "январь"
+      },
+      {
+        "term": "月曜日",
+        "reading": "げつようび",
+        "meaningRu": "понедельник"
+      },
+      {
+        "term": "今月",
+        "reading": "こんげつ",
+        "meaningRu": "этот (текущий) месяц"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 17
+  },
+  {
+    "id": "kanji:u5f8c",
+    "character": "後",
+    "meaningsRu": [
+      "после",
+      "позади"
+    ],
+    "readings": {
+      "on": [
+        "ゴ",
+        "コウ"
+      ],
+      "kun": [
+        "のち",
+        "うし.ろ",
+        "うしろ",
+        "あと",
+        "おく.れる"
+      ]
+    },
+    "examples": [
+      {
+        "term": "午後",
+        "reading": "ごご",
+        "meaningRu": "после полудня"
+      },
+      {
+        "term": "後",
+        "reading": "あと",
+        "meaningRu": "позади"
+      },
+      {
+        "term": "後ろ",
+        "reading": "うしろ",
+        "meaningRu": ": {～に} сзади, позади"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 18
+  },
+  {
+    "id": "kanji:u524d",
+    "character": "前",
+    "meaningsRu": [
+      "перед",
+      "до"
+    ],
+    "readings": {
+      "on": [
+        "ゼン"
+      ],
+      "kun": [
+        "まえ",
+        "-まえ"
+      ]
+    },
+    "examples": [
+      {
+        "term": "午前",
+        "reading": "ごぜん",
+        "meaningRu": "до полудня"
+      },
+      {
+        "term": "前",
+        "reading": "まえ",
+        "meaningRu": "(после числ.) порция"
+      },
+      {
+        "term": "名前",
+        "reading": "なまえ",
+        "meaningRu": "имя"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 19
+  },
+  {
+    "id": "kanji:u751f",
+    "character": "生",
+    "meaningsRu": [
+      "жизнь",
+      "рождаться"
+    ],
+    "readings": {
+      "on": [
+        "セイ",
+        "ショウ"
+      ],
+      "kun": [
+        "い.きる",
+        "い.かす",
+        "い.ける",
+        "う.まれる",
+        "うま.れる",
+        "う.まれ",
+        "うまれ",
+        "う.む",
+        "お.う",
+        "は.える",
+        "は.やす",
+        "き",
+        "なま",
+        "なま-",
+        "な.る",
+        "な.す",
+        "む.す",
+        "-う"
+      ]
+    },
+    "examples": [
+      {
+        "term": "学生",
+        "reading": "がくせい",
+        "meaningRu": "учащийся, студент; слушатель (курсов и т. п.)"
+      },
+      {
+        "term": "生まれる",
+        "reading": "うまれる",
+        "meaningRu": "рождаться"
+      },
+      {
+        "term": "生徒",
+        "reading": "せいと",
+        "meaningRu": "ученик; школьник"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 20
+  },
+  {
+    "id": "kanji:u4e94",
+    "character": "五",
+    "meaningsRu": [
+      "пять"
+    ],
+    "readings": {
+      "on": [
+        "ゴ"
+      ],
+      "kun": [
+        "いつ",
+        "いつ.つ"
+      ]
+    },
+    "examples": [
+      {
+        "term": "五",
+        "reading": "ご",
+        "meaningRu": "пять"
+      },
+      {
+        "term": "五つ",
+        "reading": "いつつ",
+        "meaningRu": "пять"
+      },
+      {
+        "term": "五日",
+        "reading": "いつか",
+        "meaningRu": "пятое [число]"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 21
+  },
+  {
+    "id": "kanji:u9593",
+    "character": "間",
+    "meaningsRu": [
+      "промежуток",
+      "между"
+    ],
+    "readings": {
+      "on": [
+        "カン",
+        "ケン"
+      ],
+      "kun": [
+        "あいだ",
+        "ま",
+        "あい"
+      ]
+    },
+    "examples": [
+      {
+        "term": "時間",
+        "reading": "じかん",
+        "meaningRu": "час"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 22
+  },
+  {
+    "id": "kanji:u4e0a",
+    "character": "上",
+    "meaningsRu": [
+      "верх",
+      "над"
+    ],
+    "readings": {
+      "on": [
+        "ジョウ",
+        "ショウ",
+        "シャン"
+      ],
+      "kun": [
+        "うえ",
+        "-うえ",
+        "うわ-",
+        "かみ",
+        "あ.げる",
+        "-あ.げる",
+        "あ.がる",
+        "-あ.がる",
+        "あ.がり",
+        "-あ.がり",
+        "のぼ.る",
+        "のぼ.り",
+        "のぼ.せる",
+        "のぼ.す",
+        "たてまつ.る"
+      ]
+    },
+    "examples": [
+      {
+        "term": "上",
+        "reading": "うえ",
+        "meaningRu": "1"
+      },
+      {
+        "term": "上げる",
+        "reading": "あげる",
+        "meaningRu": "(как 2-й элемент сложн. гл.:)"
+      },
+      {
+        "term": "上手",
+        "reading": "じょうず",
+        "meaningRu": ": {～な} умелый, искусный"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 23
+  },
+  {
+    "id": "kanji:u6771",
+    "character": "東",
+    "meaningsRu": [
+      "восток"
+    ],
+    "readings": {
+      "on": [
+        "トウ"
+      ],
+      "kun": [
+        "ひがし"
+      ]
+    },
+    "examples": [
+      {
+        "term": "東",
+        "reading": "ひがし",
+        "meaningRu": "Xигаси"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 24
+  },
+  {
+    "id": "kanji:u56db",
+    "character": "四",
+    "meaningsRu": [
+      "четыре"
+    ],
+    "readings": {
+      "on": [
+        "シ"
+      ],
+      "kun": [
+        "よ",
+        "よ.つ",
+        "よっ.つ",
+        "よん"
+      ]
+    },
+    "examples": [
+      {
+        "term": "四",
+        "reading": "し / よん",
+        "meaningRu": "четыре"
+      },
+      {
+        "term": "四つ",
+        "reading": "よっつ",
+        "meaningRu": "четыре"
+      },
+      {
+        "term": "四日",
+        "reading": "よっか",
+        "meaningRu": "четвёртое [число]"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 25
+  },
+  {
+    "id": "kanji:u4eca",
+    "character": "今",
+    "meaningsRu": [
+      "сейчас"
+    ],
+    "readings": {
+      "on": [
+        "コン",
+        "キン"
+      ],
+      "kun": [
+        "いま"
+      ]
+    },
+    "examples": [
+      {
+        "term": "今",
+        "reading": "いま",
+        "meaningRu": "теперь, сейчас"
+      },
+      {
+        "term": "今月",
+        "reading": "こんげつ",
+        "meaningRu": "этот (текущий) месяц"
+      },
+      {
+        "term": "今週",
+        "reading": "こんしゅう",
+        "meaningRu": "эта неделя"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 26
+  },
+  {
+    "id": "kanji:u91d1",
+    "character": "金",
+    "meaningsRu": [
+      "золото",
+      "деньги"
+    ],
+    "readings": {
+      "on": [
+        "キン",
+        "コン",
+        "ゴン"
+      ],
+      "kun": [
+        "かね",
+        "かな-",
+        "-がね"
+      ]
+    },
+    "examples": [
+      {
+        "term": "お金",
+        "reading": "おかね",
+        "meaningRu": "(разг. см.) かね【金】2"
+      },
+      {
+        "term": "金曜日",
+        "reading": "きんようび",
+        "meaningRu": "пятница"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 27
+  },
+  {
+    "id": "kanji:u4e5d",
+    "character": "九",
+    "meaningsRu": [
+      "девять"
+    ],
+    "readings": {
+      "on": [
+        "キュウ",
+        "ク"
+      ],
+      "kun": [
+        "ここの",
+        "ここの.つ"
+      ]
+    },
+    "examples": [
+      {
+        "term": "九",
+        "reading": "きゅう / く",
+        "meaningRu": "девять"
+      },
+      {
+        "term": "九つ",
+        "reading": "ここのつ",
+        "meaningRu": "девять"
+      },
+      {
+        "term": "九日",
+        "reading": "ここのか",
+        "meaningRu": "девятое число"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 28
+  },
+  {
+    "id": "kanji:u5165",
+    "character": "入",
+    "meaningsRu": [
+      "входить",
+      "вставлять"
+    ],
+    "readings": {
+      "on": [
+        "ニュウ",
+        "ジュ"
+      ],
+      "kun": [
+        "い.る",
+        "-い.る",
+        "-い.り",
+        "い.れる",
+        "-い.れ",
+        "はい.る"
+      ]
+    },
+    "examples": [
+      {
+        "term": "入る",
+        "reading": "はいる",
+        "meaningRu": "входить; влезать, забираться; попадать (куда-л. о ком-л.)"
+      },
+      {
+        "term": "入れる",
+        "reading": "いれる",
+        "meaningRu": "класть (во что-л.), вкладывать, вставлять, вводить; вносить; вливать; впускать; помещать"
+      },
+      {
+        "term": "入口",
+        "reading": "いりぐち",
+        "meaningRu": "вход"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 29
+  },
+  {
+    "id": "kanji:u5b66",
+    "character": "学",
+    "meaningsRu": [
+      "учёба",
+      "изучать"
+    ],
+    "readings": {
+      "on": [
+        "ガク"
+      ],
+      "kun": [
+        "まな.ぶ"
+      ]
+    },
+    "examples": [
+      {
+        "term": "学校",
+        "reading": "がっこう",
+        "meaningRu": "школа, училище; учебное заведение"
+      },
+      {
+        "term": "学生",
+        "reading": "がくせい",
+        "meaningRu": "учащийся, студент; слушатель (курсов и т. п.)"
+      },
+      {
+        "term": "大学",
+        "reading": "だいがく",
+        "meaningRu": "вуз, институт (учебный)"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 30
+  },
+  {
+    "id": "kanji:u9ad8",
+    "character": "高",
+    "meaningsRu": [
+      "высокий",
+      "дорогой"
+    ],
+    "readings": {
+      "on": [
+        "コウ"
+      ],
+      "kun": [
+        "たか.い",
+        "たか",
+        "-だか",
+        "たか.まる",
+        "たか.める"
+      ]
+    },
+    "examples": [
+      {
+        "term": "高い",
+        "reading": "たかい",
+        "meaningRu": "высокий"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 31
+  },
+  {
+    "id": "kanji:u5186",
+    "character": "円",
+    "meaningsRu": [
+      "круг",
+      "иена"
+    ],
+    "readings": {
+      "on": [
+        "エン"
+      ],
+      "kun": [
+        "まる.い",
+        "まる",
+        "まど",
+        "まど.か",
+        "まろ.やか"
+      ]
+    },
+    "examples": [
+      {
+        "term": "丸い/円い",
+        "reading": "まるい",
+        "meaningRu": "круглый"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 32
+  },
+  {
+    "id": "kanji:u5b50",
+    "character": "子",
+    "meaningsRu": [
+      "ребёнок"
+    ],
+    "readings": {
+      "on": [
+        "シ",
+        "ス",
+        "ツ"
+      ],
+      "kun": [
+        "こ",
+        "-こ",
+        "ね"
+      ]
+    },
+    "examples": [
+      {
+        "term": "お菓子",
+        "reading": "おかし",
+        "meaningRu": "сладости"
+      },
+      {
+        "term": "子供",
+        "reading": "こども",
+        "meaningRu": "ребёнок, дитя; сын; дочь; дети"
+      },
+      {
+        "term": "女の子",
+        "reading": "おんなのこ",
+        "meaningRu": "девочка"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 33
+  },
+  {
+    "id": "kanji:u5916",
+    "character": "外",
+    "meaningsRu": [
+      "снаружи",
+      "вне"
+    ],
+    "readings": {
+      "on": [
+        "ガイ",
+        "ゲ"
+      ],
+      "kun": [
+        "そと",
+        "ほか",
+        "はず.す",
+        "はず.れる",
+        "と-"
+      ]
+    },
+    "examples": [
+      {
+        "term": "外",
+        "reading": "そと",
+        "meaningRu": "снаружи; во вне"
+      },
+      {
+        "term": "外国",
+        "reading": "がいこく",
+        "meaningRu": "иностранное государство; зарубежные страны, заграница"
+      },
+      {
+        "term": "外国人",
+        "reading": "がいこくじん",
+        "meaningRu": "иностранец, иностранка"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 34
+  },
+  {
+    "id": "kanji:u516b",
+    "character": "八",
+    "meaningsRu": [
+      "восемь"
+    ],
+    "readings": {
+      "on": [
+        "ハチ",
+        "ハツ"
+      ],
+      "kun": [
+        "や",
+        "や.つ",
+        "やっ.つ",
+        "よう"
+      ]
+    },
+    "examples": [
+      {
+        "term": "八",
+        "reading": "はち",
+        "meaningRu": "восемь"
+      },
+      {
+        "term": "八つ",
+        "reading": "やっつ",
+        "meaningRu": "восемь"
+      },
+      {
+        "term": "八日",
+        "reading": "ようか",
+        "meaningRu": "восьмое [число]"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 35
+  },
+  {
+    "id": "kanji:u516d",
+    "character": "六",
+    "meaningsRu": [
+      "шесть"
+    ],
+    "readings": {
+      "on": [
+        "ロク",
+        "リク"
+      ],
+      "kun": [
+        "む",
+        "む.つ",
+        "むっ.つ",
+        "むい"
+      ]
+    },
+    "examples": [
+      {
+        "term": "六",
+        "reading": "ろく",
+        "meaningRu": "шесть"
+      },
+      {
+        "term": "六つ",
+        "reading": "むっつ",
+        "meaningRu": "шесть"
+      },
+      {
+        "term": "六日",
+        "reading": "むいか",
+        "meaningRu": "шестое [число]"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 36
+  },
+  {
+    "id": "kanji:u4e0b",
+    "character": "下",
+    "meaningsRu": [
+      "низ",
+      "под"
+    ],
+    "readings": {
+      "on": [
+        "カ",
+        "ゲ"
+      ],
+      "kun": [
+        "した",
+        "しも",
+        "もと",
+        "さ.げる",
+        "さ.がる",
+        "くだ.る",
+        "くだ.り",
+        "くだ.す",
+        "-くだ.す",
+        "くだ.さる",
+        "お.ろす",
+        "お.りる"
+      ]
+    },
+    "examples": [
+      {
+        "term": "下",
+        "reading": "した",
+        "meaningRu": ": {～に} внизу"
+      },
+      {
+        "term": "下手",
+        "reading": "へた",
+        "meaningRu": ": {～な} неумелый, неискусный, неловкий; незнающий; неспособный; плохой, слабый"
+      },
+      {
+        "term": "靴下",
+        "reading": "くつした",
+        "meaningRu": "носки; чулки"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 37
+  },
+  {
+    "id": "kanji:u6765",
+    "character": "来",
+    "meaningsRu": [
+      "приходить",
+      "следующий"
+    ],
+    "readings": {
+      "on": [
+        "ライ",
+        "タイ"
+      ],
+      "kun": [
+        "く.る",
+        "きた.る",
+        "きた.す",
+        "き.たす",
+        "き.たる",
+        "き",
+        "こ"
+      ]
+    },
+    "examples": [
+      {
+        "term": "さ来年",
+        "reading": "さらいねん",
+        "meaningRu": "через два года"
+      },
+      {
+        "term": "来る",
+        "reading": "くる",
+        "meaningRu": "приходить, прибывать; приезжать; приходить в гости"
+      },
+      {
+        "term": "来月",
+        "reading": "らいげつ",
+        "meaningRu": "следующий (будущий) месяц"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 38
+  },
+  {
+    "id": "kanji:u6c17",
+    "character": "気",
+    "meaningsRu": [
+      "дух",
+      "настроение"
+    ],
+    "readings": {
+      "on": [
+        "キ",
+        "ケ"
+      ],
+      "kun": [
+        "いき",
+        "き"
+      ]
+    },
+    "examples": [
+      {
+        "term": "元気",
+        "reading": "げんき",
+        "meaningRu": "бодрость, живость, энергия, темперамент, хорошее настроение"
+      },
+      {
+        "term": "天気",
+        "reading": "てんき",
+        "meaningRu": "погода"
+      },
+      {
+        "term": "電気",
+        "reading": "でんき",
+        "meaningRu": "электричество"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 39
+  },
+  {
+    "id": "kanji:u5c0f",
+    "character": "小",
+    "meaningsRu": [
+      "маленький"
+    ],
+    "readings": {
+      "on": [
+        "ショウ"
+      ],
+      "kun": [
+        "ちい.さい",
+        "こ-",
+        "お-",
+        "さ-"
+      ]
+    },
+    "examples": [
+      {
+        "term": "小さい",
+        "reading": "ちいさい",
+        "meaningRu": "(см.) ちいさい"
+      },
+      {
+        "term": "小さな",
+        "reading": "ちいさな",
+        "meaningRu": "(см.) ちいさい"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 40
+  },
+  {
+    "id": "kanji:u4e03",
+    "character": "七",
+    "meaningsRu": [
+      "семь"
+    ],
+    "readings": {
+      "on": [
+        "シチ"
+      ],
+      "kun": [
+        "なな",
+        "なな.つ",
+        "なの"
+      ]
+    },
+    "examples": [
+      {
+        "term": "七",
+        "reading": "しち / なな",
+        "meaningRu": "семь"
+      },
+      {
+        "term": "七つ",
+        "reading": "ななつ",
+        "meaningRu": "семь"
+      },
+      {
+        "term": "七日",
+        "reading": "なのか",
+        "meaningRu": "(см.) なぬか"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 41
+  },
+  {
+    "id": "kanji:u5c71",
+    "character": "山",
+    "meaningsRu": [
+      "гора"
+    ],
+    "readings": {
+      "on": [
+        "サン",
+        "セン"
+      ],
+      "kun": [
+        "やま"
+      ]
+    },
+    "examples": [
+      {
+        "term": "山",
+        "reading": "やま",
+        "meaningRu": "спекуляция; риск"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 42
+  },
+  {
+    "id": "kanji:u8a71",
+    "character": "話",
+    "meaningsRu": [
+      "разговор",
+      "говорить"
+    ],
+    "readings": {
+      "on": [
+        "ワ"
+      ],
+      "kun": [
+        "はな.す",
+        "はなし"
+      ]
+    },
+    "examples": [
+      {
+        "term": "電話",
+        "reading": "でんわ",
+        "meaningRu": "телефон; (перен.) разговор по телефону"
+      },
+      {
+        "term": "話",
+        "reading": "はなし",
+        "meaningRu": "сказка; эстрадный рассказ"
+      },
+      {
+        "term": "話す",
+        "reading": "はなす",
+        "meaningRu": "говорить; разговаривать, беседовать (с кем-л.)"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 43
+  },
+  {
+    "id": "kanji:u5973",
+    "character": "女",
+    "meaningsRu": [
+      "женщина"
+    ],
+    "readings": {
+      "on": [
+        "ジョ",
+        "ニョ",
+        "ニョウ"
+      ],
+      "kun": [
+        "おんな",
+        "め"
+      ]
+    },
+    "examples": [
+      {
+        "term": "女",
+        "reading": "おんな",
+        "meaningRu": "женщина"
+      },
+      {
+        "term": "女の子",
+        "reading": "おんなのこ",
+        "meaningRu": "девочка"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 44
+  },
+  {
+    "id": "kanji:u5317",
+    "character": "北",
+    "meaningsRu": [
+      "север"
+    ],
+    "readings": {
+      "on": [
+        "ホク"
+      ],
+      "kun": [
+        "きた"
+      ]
+    },
+    "examples": [
+      {
+        "term": "北",
+        "reading": "きた",
+        "meaningRu": "север"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 45
+  },
+  {
+    "id": "kanji:u5348",
+    "character": "午",
+    "meaningsRu": [
+      "полдень"
+    ],
+    "readings": {
+      "on": [
+        "ゴ"
+      ],
+      "kun": [
+        "うま"
+      ]
+    },
+    "examples": [
+      {
+        "term": "午後",
+        "reading": "ごご",
+        "meaningRu": "после полудня"
+      },
+      {
+        "term": "午前",
+        "reading": "ごぜん",
+        "meaningRu": "до полудня"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 46
+  },
+  {
+    "id": "kanji:u767e",
+    "character": "百",
+    "meaningsRu": [
+      "сто"
+    ],
+    "readings": {
+      "on": [
+        "ヒャク",
+        "ビャク"
+      ],
+      "kun": [
+        "もも"
+      ]
+    },
+    "examples": [
+      {
+        "term": "八百屋",
+        "reading": "やおや",
+        "meaningRu": "овощная лавка, зеленная"
+      },
+      {
+        "term": "百",
+        "reading": "ひゃく",
+        "meaningRu": "сто; сотня"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 47
+  },
+  {
+    "id": "kanji:u66f8",
+    "character": "書",
+    "meaningsRu": [
+      "писать"
+    ],
+    "readings": {
+      "on": [
+        "ショ"
+      ],
+      "kun": [
+        "か.く",
+        "-が.き",
+        "-がき"
+      ]
+    },
+    "examples": [
+      {
+        "term": "辞書",
+        "reading": "じしょ",
+        "meaningRu": "фонетический словарь"
+      },
+      {
+        "term": "書く",
+        "reading": "かく",
+        "meaningRu": "писать"
+      },
+      {
+        "term": "図書館",
+        "reading": "としょかん",
+        "meaningRu": "библиотека ((общественная, в отдельном здании); (ср.) としょしつ)"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 48
+  },
+  {
+    "id": "kanji:u5148",
+    "character": "先",
+    "meaningsRu": [
+      "впереди",
+      "прежде"
+    ],
+    "readings": {
+      "on": [
+        "セン"
+      ],
+      "kun": [
+        "さき",
+        "ま.ず"
+      ]
+    },
+    "examples": [
+      {
+        "term": "先",
+        "reading": "さき",
+        "meaningRu": "первенство"
+      },
+      {
+        "term": "先月",
+        "reading": "せんげつ",
+        "meaningRu": "прошлый месяц"
+      },
+      {
+        "term": "先週",
+        "reading": "せんしゅう",
+        "meaningRu": "прошлая неделя"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 49
+  },
+  {
+    "id": "kanji:u540d",
+    "character": "名",
+    "meaningsRu": [
+      "имя"
+    ],
+    "readings": {
+      "on": [
+        "メイ",
+        "ミョウ"
+      ],
+      "kun": [
+        "な",
+        "-な"
+      ]
+    },
+    "examples": [
+      {
+        "term": "名前",
+        "reading": "なまえ",
+        "meaningRu": "имя"
+      },
+      {
+        "term": "有名",
+        "reading": "ゆうめい",
+        "meaningRu": ": {～な} знаменитый, известный"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 50
+  },
+  {
+    "id": "kanji:u5ddd",
+    "character": "川",
+    "meaningsRu": [
+      "река"
+    ],
+    "readings": {
+      "on": [
+        "セン"
+      ],
+      "kun": [
+        "かわ"
+      ]
+    },
+    "examples": [
+      {
+        "term": "川/河",
+        "reading": "かわ",
+        "meaningRu": "река"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 51
+  },
+  {
+    "id": "kanji:u5343",
+    "character": "千",
+    "meaningsRu": [
+      "тысяча"
+    ],
+    "readings": {
+      "on": [
+        "セン"
+      ],
+      "kun": [
+        "ち"
+      ]
+    },
+    "examples": [
+      {
+        "term": "千",
+        "reading": "せん",
+        "meaningRu": "(уст.) тысяча"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 52
+  },
+  {
+    "id": "kanji:u6c34",
+    "character": "水",
+    "meaningsRu": [
+      "вода"
+    ],
+    "readings": {
+      "on": [
+        "スイ"
+      ],
+      "kun": [
+        "みず",
+        "みず-"
+      ]
+    },
+    "examples": [
+      {
+        "term": "水",
+        "reading": "みず",
+        "meaningRu": "вода; холодная вода"
+      },
+      {
+        "term": "水曜日",
+        "reading": "すいようび",
+        "meaningRu": "среда"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 53
+  },
+  {
+    "id": "kanji:u534a",
+    "character": "半",
+    "meaningsRu": [
+      "половина"
+    ],
+    "readings": {
+      "on": [
+        "ハン"
+      ],
+      "kun": [
+        "なか.ば"
+      ]
+    },
+    "examples": [
+      {
+        "term": "半",
+        "reading": "はん",
+        "meaningRu": "(связ.) нечётное число"
+      },
+      {
+        "term": "半分",
+        "reading": "はんぶん",
+        "meaningRu": "половина"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 54
+  },
+  {
+    "id": "kanji:u7537",
+    "character": "男",
+    "meaningsRu": [
+      "мужчина"
+    ],
+    "readings": {
+      "on": [
+        "ダン",
+        "ナン"
+      ],
+      "kun": [
+        "おとこ",
+        "お"
+      ]
+    },
+    "examples": [
+      {
+        "term": "男",
+        "reading": "おとこ",
+        "meaningRu": "мужчина; мужской пол"
+      },
+      {
+        "term": "男の子",
+        "reading": "おとこのこ",
+        "meaningRu": "мальчик"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 55
+  },
+  {
+    "id": "kanji:u897f",
+    "character": "西",
+    "meaningsRu": [
+      "запад"
+    ],
+    "readings": {
+      "on": [
+        "セイ",
+        "サイ",
+        "ス"
+      ],
+      "kun": [
+        "にし"
+      ]
+    },
+    "examples": [
+      {
+        "term": "西",
+        "reading": "にし",
+        "meaningRu": "Ниси"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 56
+  },
+  {
+    "id": "kanji:u96fb",
+    "character": "電",
+    "meaningsRu": [
+      "электричество"
+    ],
+    "readings": {
+      "on": [
+        "デン"
+      ],
+      "kun": []
+    },
+    "examples": [
+      {
+        "term": "電気",
+        "reading": "でんき",
+        "meaningRu": "электричество"
+      },
+      {
+        "term": "電車",
+        "reading": "でんしゃ",
+        "meaningRu": "трамвай"
+      },
+      {
+        "term": "電話",
+        "reading": "でんわ",
+        "meaningRu": "телефон; (перен.) разговор по телефону"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 57
+  },
+  {
+    "id": "kanji:u6821",
+    "character": "校",
+    "meaningsRu": [
+      "школа"
+    ],
+    "readings": {
+      "on": [
+        "コウ",
+        "キョウ"
+      ],
+      "kun": []
+    },
+    "examples": [
+      {
+        "term": "学校",
+        "reading": "がっこう",
+        "meaningRu": "школа, училище; учебное заведение"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 58
+  },
+  {
+    "id": "kanji:u8a9e",
+    "character": "語",
+    "meaningsRu": [
+      "язык",
+      "слово"
+    ],
+    "readings": {
+      "on": [
+        "ゴ"
+      ],
+      "kun": [
+        "かた.る",
+        "かた.らう"
+      ]
+    },
+    "examples": [
+      {
+        "term": "英語",
+        "reading": "えいご",
+        "meaningRu": "английский язык"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 59
+  },
+  {
+    "id": "kanji:u571f",
+    "character": "土",
+    "meaningsRu": [
+      "земля",
+      "почва"
+    ],
+    "readings": {
+      "on": [
+        "ド",
+        "ト"
+      ],
+      "kun": [
+        "つち"
+      ]
+    },
+    "examples": [
+      {
+        "term": "土曜日",
+        "reading": "どようび",
+        "meaningRu": "суббота"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 60
+  },
+  {
+    "id": "kanji:u6728",
+    "character": "木",
+    "meaningsRu": [
+      "дерево"
+    ],
+    "readings": {
+      "on": [
+        "ボク",
+        "モク"
+      ],
+      "kun": [
+        "き",
+        "こ-"
+      ]
+    },
+    "examples": [
+      {
+        "term": "木",
+        "reading": "き",
+        "meaningRu": "дерево"
+      },
+      {
+        "term": "木曜日",
+        "reading": "もくようび",
+        "meaningRu": "четверг"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 61
+  },
+  {
+    "id": "kanji:u805e",
+    "character": "聞",
+    "meaningsRu": [
+      "слышать",
+      "спрашивать"
+    ],
+    "readings": {
+      "on": [
+        "ブン",
+        "モン"
+      ],
+      "kun": [
+        "き.く",
+        "き.こえる"
+      ]
+    },
+    "examples": [
+      {
+        "term": "新聞",
+        "reading": "しんぶん",
+        "meaningRu": "газета"
+      },
+      {
+        "term": "聞く",
+        "reading": "きく",
+        "meaningRu": "слушать"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 62
+  },
+  {
+    "id": "kanji:u98df",
+    "character": "食",
+    "meaningsRu": [
+      "есть",
+      "пища"
+    ],
+    "readings": {
+      "on": [
+        "ショク",
+        "ジキ"
+      ],
+      "kun": [
+        "く.う",
+        "く.らう",
+        "た.べる",
+        "は.む"
+      ]
+    },
+    "examples": [
+      {
+        "term": "食べる",
+        "reading": "たべる",
+        "meaningRu": "есть"
+      },
+      {
+        "term": "食べ物",
+        "reading": "たべもの",
+        "meaningRu": "еда, пища, кушанье, съестное; снедь; продукты; продовольствие"
+      },
+      {
+        "term": "食堂",
+        "reading": "しょくどう",
+        "meaningRu": "столовая; буфет (на ж.-д. станции, в театре и т. п.)"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 63
+  },
+  {
+    "id": "kanji:u8eca",
+    "character": "車",
+    "meaningsRu": [
+      "машина",
+      "повозка"
+    ],
+    "readings": {
+      "on": [
+        "シャ"
+      ],
+      "kun": [
+        "くるま"
+      ]
+    },
+    "examples": [
+      {
+        "term": "自転車",
+        "reading": "じてんしゃ",
+        "meaningRu": "велосипед, самокат"
+      },
+      {
+        "term": "自動車",
+        "reading": "じどうしゃ",
+        "meaningRu": "автомобиль, [авто]машина"
+      },
+      {
+        "term": "車",
+        "reading": "くるま",
+        "meaningRu": "повозка; экипаж; [ручная] тележка; [ломовая] телега; воз; фургон; [авто]машина; такси; вагон"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 64
+  },
+  {
+    "id": "kanji:u4f55",
+    "character": "何",
+    "meaningsRu": [
+      "что"
+    ],
+    "readings": {
+      "on": [
+        "カ"
+      ],
+      "kun": [
+        "なに",
+        "なん",
+        "なに-",
+        "なん-"
+      ]
+    },
+    "examples": [
+      {
+        "term": "何",
+        "reading": "なん/なに",
+        "meaningRu": "что; что?"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 65
+  },
+  {
+    "id": "kanji:u5357",
+    "character": "南",
+    "meaningsRu": [
+      "юг"
+    ],
+    "readings": {
+      "on": [
+        "ナン",
+        "ナ"
+      ],
+      "kun": [
+        "みなみ"
+      ]
+    },
+    "examples": [
+      {
+        "term": "南",
+        "reading": "みなみ",
+        "meaningRu": "Минами"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 66
+  },
+  {
+    "id": "kanji:u4e07",
+    "character": "万",
+    "meaningsRu": [
+      "десять тысяч"
+    ],
+    "readings": {
+      "on": [
+        "マン",
+        "バン"
+      ],
+      "kun": [
+        "よろず"
+      ]
+    },
+    "examples": [
+      {
+        "term": "万",
+        "reading": "まん",
+        "meaningRu": "десять тысяч"
+      },
+      {
+        "term": "万年筆",
+        "reading": "まんねんひつ",
+        "meaningRu": "авторучка, вечное перо"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 67
+  },
+  {
+    "id": "kanji:u6bce",
+    "character": "毎",
+    "meaningsRu": [
+      "каждый"
+    ],
+    "readings": {
+      "on": [
+        "マイ"
+      ],
+      "kun": [
+        "ごと",
+        "-ごと.に"
+      ]
+    },
+    "examples": [
+      {
+        "term": "毎月",
+        "reading": "まいげつ/まいつき",
+        "meaningRu": "каждый месяц"
+      },
+      {
+        "term": "毎週",
+        "reading": "まいしゅう",
+        "meaningRu": "каждая неделя; каждую неделю, еженедельно; неделя за неделей; из недели в неделю"
+      },
+      {
+        "term": "毎朝",
+        "reading": "まいあさ",
+        "meaningRu": "каждое утро"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 68
+  },
+  {
+    "id": "kanji:u767d",
+    "character": "白",
+    "meaningsRu": [
+      "белый"
+    ],
+    "readings": {
+      "on": [
+        "ハク",
+        "ビャク"
+      ],
+      "kun": [
+        "しろ",
+        "しら-",
+        "しろ.い"
+      ]
+    },
+    "examples": [
+      {
+        "term": "白",
+        "reading": "しろ",
+        "meaningRu": "белое; белые (напр. о команде)"
+      },
+      {
+        "term": "白い",
+        "reading": "しろい",
+        "meaningRu": "белый"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 69
+  },
+  {
+    "id": "kanji:u5929",
+    "character": "天",
+    "meaningsRu": [
+      "небо"
+    ],
+    "readings": {
+      "on": [
+        "テン"
+      ],
+      "kun": [
+        "あまつ",
+        "あめ",
+        "あま-"
+      ]
+    },
+    "examples": [
+      {
+        "term": "天気",
+        "reading": "てんき",
+        "meaningRu": "погода"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 70
+  },
+  {
+    "id": "kanji:u6bcd",
+    "character": "母",
+    "meaningsRu": [
+      "мать"
+    ],
+    "readings": {
+      "on": [
+        "ボ"
+      ],
+      "kun": [
+        "はは",
+        "も"
+      ]
+    },
+    "examples": [
+      {
+        "term": "お母さん",
+        "reading": "おかあさん",
+        "meaningRu": "мама, мамочка"
+      },
+      {
+        "term": "伯母さん/叔母さん",
+        "reading": "おばさん",
+        "meaningRu": "тётя"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 71
+  },
+  {
+    "id": "kanji:u706b",
+    "character": "火",
+    "meaningsRu": [
+      "огонь"
+    ],
+    "readings": {
+      "on": [
+        "カ"
+      ],
+      "kun": [
+        "ひ",
+        "-び",
+        "ほ-"
+      ]
+    },
+    "examples": [
+      {
+        "term": "火曜日",
+        "reading": "かようび",
+        "meaningRu": "вторник"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 72
+  },
+  {
+    "id": "kanji:u53f3",
+    "character": "右",
+    "meaningsRu": [
+      "право"
+    ],
+    "readings": {
+      "on": [
+        "ウ",
+        "ユウ"
+      ],
+      "kun": [
+        "みぎ"
+      ]
+    },
+    "examples": [
+      {
+        "term": "右",
+        "reading": "みぎ",
+        "meaningRu": ": {～に} направо, справа"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 73
+  },
+  {
+    "id": "kanji:u8aad",
+    "character": "読",
+    "meaningsRu": [
+      "читать"
+    ],
+    "readings": {
+      "on": [
+        "ドク",
+        "トク",
+        "トウ"
+      ],
+      "kun": [
+        "よ.む",
+        "-よ.み"
+      ]
+    },
+    "examples": [
+      {
+        "term": "読む",
+        "reading": "よむ",
+        "meaningRu": "читать"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 74
+  },
+  {
+    "id": "kanji:u53cb",
+    "character": "友",
+    "meaningsRu": [
+      "друг"
+    ],
+    "readings": {
+      "on": [
+        "ユウ"
+      ],
+      "kun": [
+        "とも"
+      ]
+    },
+    "examples": [
+      {
+        "term": "友達",
+        "reading": "ともだち",
+        "meaningRu": "приятель, товарищ"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 75
+  },
+  {
+    "id": "kanji:u5de6",
+    "character": "左",
+    "meaningsRu": [
+      "лево"
+    ],
+    "readings": {
+      "on": [
+        "サ",
+        "シャ"
+      ],
+      "kun": [
+        "ひだり"
+      ]
+    },
+    "examples": [
+      {
+        "term": "左",
+        "reading": "ひだり",
+        "meaningRu": ": {～の} левый; находящийся слева"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 76
+  },
+  {
+    "id": "kanji:u4f11",
+    "character": "休",
+    "meaningsRu": [
+      "отдыхать"
+    ],
+    "readings": {
+      "on": [
+        "キュウ"
+      ],
+      "kun": [
+        "やす.む",
+        "やす.まる",
+        "やす.める"
+      ]
+    },
+    "examples": [
+      {
+        "term": "夏休み",
+        "reading": "なつやすみ",
+        "meaningRu": "летние каникулы"
+      },
+      {
+        "term": "休み",
+        "reading": "やすみ",
+        "meaningRu": "отдых; перерыв (в работе, занятиях); каникулы"
+      },
+      {
+        "term": "休む",
+        "reading": "やすむ",
+        "meaningRu": "(неперех.)"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 77
+  },
+  {
+    "id": "kanji:u7236",
+    "character": "父",
+    "meaningsRu": [
+      "отец"
+    ],
+    "readings": {
+      "on": [
+        "フ"
+      ],
+      "kun": [
+        "ちち"
+      ]
+    },
+    "examples": [
+      {
+        "term": "お父さん",
+        "reading": "おとうさん",
+        "meaningRu": "отец, папа"
+      },
+      {
+        "term": "伯父/叔父",
+        "reading": "おじいさん",
+        "meaningRu": "(кн. см.) おじ"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 78
+  },
+  {
+    "id": "kanji:u96e8",
+    "character": "雨",
+    "meaningsRu": [
+      "дождь"
+    ],
+    "readings": {
+      "on": [
+        "ウ"
+      ],
+      "kun": [
+        "あめ",
+        "あま-",
+        "-さめ"
+      ]
+    },
+    "examples": [
+      {
+        "term": "雨",
+        "reading": "あめ",
+        "meaningRu": "дождь; (обр.) град (пуль, ударов и т. п.)"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt",
+      "kanjidic2"
+    ],
+    "order": 79
+  }
+]

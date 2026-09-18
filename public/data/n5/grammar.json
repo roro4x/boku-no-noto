@@ -1,0 +1,384 @@
+[
+  {
+    "id": "grammar:n5-001",
+    "pattern": "〜が",
+    "meaningRu": "но; однако",
+    "explanationRu": "Соединяет две части высказывания и вводит противопоставление.",
+    "examples": [
+      {
+        "textJa": "この本は高いですが、面白いです。",
+        "translationRu": "Эта книга дорогая, но интересная."
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt"
+    ],
+    "order": 1,
+    "tags": [
+      "conjunction"
+    ]
+  },
+  {
+    "id": "grammar:n5-002",
+    "pattern": "〜がいます / 〜があります",
+    "meaningRu": "есть; находится",
+    "explanationRu": "います употребляется с живыми существами, あります — с предметами и явлениями.",
+    "examples": [
+      {
+        "textJa": "公園に猫がいます。",
+        "translationRu": "В парке есть кошка."
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt"
+    ],
+    "order": 2,
+    "tags": [
+      "existence"
+    ]
+  },
+  {
+    "id": "grammar:n5-003",
+    "pattern": "〜から",
+    "meaningRu": "потому что; так как",
+    "explanationRu": "Ставит причину перед результатом или объяснением.",
+    "examples": [
+      {
+        "textJa": "雨が降っているから、出かけません。",
+        "translationRu": "Я не выхожу, потому что идёт дождь."
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt"
+    ],
+    "order": 3,
+    "tags": [
+      "reason"
+    ]
+  },
+  {
+    "id": "grammar:n5-004",
+    "pattern": "〜が好きです / 〜が嫌いです",
+    "meaningRu": "любить / не любить",
+    "explanationRu": "好き и 嫌い описывают предпочтение; объект отмечается частицей が.",
+    "examples": [
+      {
+        "textJa": "私は猫が好きです。",
+        "translationRu": "Я люблю кошек."
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt"
+    ],
+    "order": 4,
+    "tags": [
+      "preference"
+    ]
+  },
+  {
+    "id": "grammar:n5-005",
+    "pattern": "〜たい",
+    "meaningRu": "хотеть сделать",
+    "explanationRu": "Присоединяется к основе глагола и выражает желание говорящего.",
+    "examples": [
+      {
+        "textJa": "日本に行きたいです。",
+        "translationRu": "Я хочу поехать в Японию."
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt"
+    ],
+    "order": 5,
+    "tags": [
+      "desire"
+    ]
+  },
+  {
+    "id": "grammar:n5-006",
+    "pattern": "〜たことがあります",
+    "meaningRu": "когда-либо делал",
+    "explanationRu": "Описывает прошлый опыт с формой глагола на た.",
+    "examples": [
+      {
+        "textJa": "日本に行ったことがあります。",
+        "translationRu": "Я уже бывал в Японии."
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt"
+    ],
+    "order": 6,
+    "tags": [
+      "experience"
+    ]
+  },
+  {
+    "id": "grammar:n5-007",
+    "pattern": "〜で",
+    "meaningRu": "место действия / средство",
+    "explanationRu": "Частица で отмечает место действия или средство, которым оно выполняется.",
+    "examples": [
+      {
+        "textJa": "学校で勉強します。",
+        "translationRu": "Я занимаюсь в школе."
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt"
+    ],
+    "order": 7,
+    "tags": [
+      "particle"
+    ]
+  },
+  {
+    "id": "grammar:n5-008",
+    "pattern": "〜ている",
+    "meaningRu": "делает сейчас / состояние",
+    "explanationRu": "Форма на ている передаёт продолжающееся действие или возникшее состояние.",
+    "examples": [
+      {
+        "textJa": "今、ご飯を食べています。",
+        "translationRu": "Сейчас я ем."
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt"
+    ],
+    "order": 8,
+    "tags": [
+      "progressive"
+    ]
+  },
+  {
+    "id": "grammar:n5-009",
+    "pattern": "〜てください",
+    "meaningRu": "пожалуйста, сделайте",
+    "explanationRu": "Вежливая просьба с формой глагола на て.",
+    "examples": [
+      {
+        "textJa": "窓を開けてください。",
+        "translationRu": "Пожалуйста, откройте окно."
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt"
+    ],
+    "order": 9,
+    "tags": [
+      "request"
+    ]
+  },
+  {
+    "id": "grammar:n5-010",
+    "pattern": "〜でした",
+    "meaningRu": "был / была / было",
+    "explanationRu": "Вежливая прошедшая форма связки です.",
+    "examples": [
+      {
+        "textJa": "昨日は日曜日でした。",
+        "translationRu": "Вчера было воскресенье."
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt"
+    ],
+    "order": 10,
+    "tags": [
+      "past",
+      "polite"
+    ]
+  },
+  {
+    "id": "grammar:n5-011",
+    "pattern": "〜ではありません",
+    "meaningRu": "не является",
+    "explanationRu": "Вежливое отрицание для существительных и な-прилагательных.",
+    "examples": [
+      {
+        "textJa": "私は学生ではありません。",
+        "translationRu": "Я не студент."
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt"
+    ],
+    "order": 11,
+    "tags": [
+      "negative",
+      "polite"
+    ]
+  },
+  {
+    "id": "grammar:n5-012",
+    "pattern": "〜てはいけません",
+    "meaningRu": "нельзя делать",
+    "explanationRu": "Выражает запрет с формой глагола на て.",
+    "examples": [
+      {
+        "textJa": "ここで写真を撮ってはいけません。",
+        "translationRu": "Здесь нельзя фотографировать."
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt"
+    ],
+    "order": 12,
+    "tags": [
+      "prohibition"
+    ]
+  },
+  {
+    "id": "grammar:n5-013",
+    "pattern": "〜てもいいです",
+    "meaningRu": "можно делать",
+    "explanationRu": "Выражает разрешение с формой глагола на て.",
+    "examples": [
+      {
+        "textJa": "写真を撮ってもいいですか。",
+        "translationRu": "Можно сфотографировать?"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt"
+    ],
+    "order": 13,
+    "tags": [
+      "permission"
+    ]
+  },
+  {
+    "id": "grammar:n5-014",
+    "pattern": "〜と",
+    "meaningRu": "и; вместе с",
+    "explanationRu": "Соединяет существительные или отмечает совместное действие.",
+    "examples": [
+      {
+        "textJa": "友達と映画を見ます。",
+        "translationRu": "Я смотрю фильм с другом."
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt"
+    ],
+    "order": 14,
+    "tags": [
+      "conjunction"
+    ]
+  },
+  {
+    "id": "grammar:n5-015",
+    "pattern": "〜なくてもいいです",
+    "meaningRu": "можно не делать",
+    "explanationRu": "Показывает, что действие не обязательно.",
+    "examples": [
+      {
+        "textJa": "明日は早く来なくてもいいです。",
+        "translationRu": "Завтра можно не приходить рано."
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt"
+    ],
+    "order": 15,
+    "tags": [
+      "permission"
+    ]
+  },
+  {
+    "id": "grammar:n5-016",
+    "pattern": "〜なければなりません / 〜なくてはいけません",
+    "meaningRu": "нужно; необходимо",
+    "explanationRu": "Выражает обязанность или необходимость.",
+    "examples": [
+      {
+        "textJa": "明日までにレポートを出さなければなりません。",
+        "translationRu": "Нужно сдать доклад до завтра."
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt"
+    ],
+    "order": 16,
+    "tags": [
+      "obligation"
+    ]
+  },
+  {
+    "id": "grammar:n5-017",
+    "pattern": "〜に",
+    "meaningRu": "время / направление / адресат",
+    "explanationRu": "Частица に отмечает время, направление движения или адресата.",
+    "examples": [
+      {
+        "textJa": "7時に起きます。",
+        "translationRu": "Я встаю в семь часов."
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt"
+    ],
+    "order": 17,
+    "tags": [
+      "particle"
+    ]
+  },
+  {
+    "id": "grammar:n5-018",
+    "pattern": "〜ましょう",
+    "meaningRu": "давайте сделаем",
+    "explanationRu": "Вежливое приглашение выполнить действие вместе.",
+    "examples": [
+      {
+        "textJa": "一緒に行きましょう。",
+        "translationRu": "Давайте пойдём вместе."
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt"
+    ],
+    "order": 18,
+    "tags": [
+      "invitation"
+    ]
+  },
+  {
+    "id": "grammar:n5-019",
+    "pattern": "〜ませんか",
+    "meaningRu": "не хотите ли?",
+    "explanationRu": "Вежливое приглашение или предложение.",
+    "examples": [
+      {
+        "textJa": "一緒に食べませんか。",
+        "translationRu": "Не хотите поесть вместе?"
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt"
+    ],
+    "order": 19,
+    "tags": [
+      "invitation"
+    ]
+  },
+  {
+    "id": "grammar:n5-020",
+    "pattern": "〜を",
+    "meaningRu": "прямое дополнение",
+    "explanationRu": "Частица を отмечает объект действия.",
+    "examples": [
+      {
+        "textJa": "本を読みます。",
+        "translationRu": "Я читаю книгу."
+      }
+    ],
+    "sourceRefs": [
+      "openjlpt"
+    ],
+    "order": 20,
+    "tags": [
+      "particle"
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+Use case: stylized-concept
+Asset type: transparent pixel-art website mascot for a personal Japanese homepage
+Primary request: create a small thoughtful frog mascot sitting and holding an open notebook, suitable for the header of 僕のノート
+Scene/backdrop: no scene, isolated character on a genuinely transparent background
+Subject: one friendly rounded frog, full body visible, calm curious expression, looking slightly down at the notebook
+Style/medium: authentic hand-pixeled late-1990s to early-2000s Japanese personal homepage sprite, crisp stepped 1–2 pixel outlines, restrained dithering, readable at 96px, not modern vector art
+Composition/framing: centered compact silhouette with clear transparent margin, no crop
+Color palette: moss green #7EA66A body, deep tea green #4F6B52 shadows, pale mint #D6E7D2 highlights, dark outline #2E4534, tiny dusty pink #D9B7C3 cheek accent, cream notebook
+Materials/textures: flat pixel clusters, minimal dithering
+Constraints: genuinely transparent alpha background; no text; no logo; no watermark; no glow; no smooth anti-aliased vector edges; no extra characters; preserve strong silhouette at small sizes
+Avoid: 3D, anime character proportions, photorealism, gradients, glossy rendering, white background

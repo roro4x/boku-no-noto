@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "accessedAt": "2026-09-18",
+  "sources": [
+    {
+      "id": "openjlpt",
+      "title": "OpenJLPT",
+      "url": "https://github.com/evanclan/OpenJLPT",
+      "license": "CC BY-SA 4.0",
+      "usage": "Community N5 classification, grammar structure, vocabulary and kanji selection."
+    },
+    {
+      "id": "jmdict-rus",
+      "title": "JMdict Russian via jmdict-simplified",
+      "url": "https://github.com/scriptin/jmdict-simplified",
+      "version": "3.6.2",
+      "dictionaryDate": "2026-09-14",
+      "license": "EDRDG licence / CC BY-SA 4.0 distribution terms",
+      "usage": "Russian vocabulary glosses and part-of-speech metadata."
+    },
+    {
+      "id": "kanjidic2",
+      "title": "KANJIDIC2 via jmdict-simplified",
+      "url": "https://www.edrdg.org/kanjidic/kanjd2index_legacy.html",
+      "version": "3.6.2",
+      "dictionaryDate": "2026-09-14",
+      "license": "EDRDG licence / CC BY-SA 4.0 distribution terms",
+      "usage": "Japanese readings for the selected kanji."
+    },
+    {
+      "id": "jlpt-official",
+      "title": "Official JLPT FAQ",
+      "url": "https://www.jlpt.jp/e/faq/",
+      "license": "Reference only; no test questions reproduced.",
+      "usage": "Confirms that the JLPT does not publish an official vocabulary, kanji and grammar list."
+    }
+  ],
+  "editorialNotes": [
+    "Russian kanji glosses and grammar explanations are concise project editorial translations checked against the cited English source fields.",
+    "This is a community-aligned study dataset, not an official or exhaustive JLPT syllabus."
+  ]
+}
