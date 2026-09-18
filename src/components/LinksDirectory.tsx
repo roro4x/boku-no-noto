@@ -5,7 +5,7 @@ const linksCopy = {
   ru: {
     title: 'Ссылки',
     intro: 'Небольшой каталог мест, которые хочется сохранить.',
-    count: (value: number) => `${value} сайт`,
+    count: (value: number) => `${value} ${value % 10 === 1 && value % 100 !== 11 ? 'сайт' : value % 10 >= 2 && value % 10 <= 4 && (value % 100 < 12 || value % 100 > 14) ? 'сайта' : 'сайтов'}`,
     visit: (title: string) => `Открыть сайт ${title} в новой вкладке`,
   },
   ja: {
@@ -32,26 +32,21 @@ export function LinksDirectory({ locale }: { locale: SiteLocale }) {
       <ul className="links-list">
         {siteLinks.map((item) => (
           <li key={item.id}>
-            <div className="link-entry">
-              <a
-                className="link-banner"
-                href={item.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={copy.visit(item.title)}
-              >
-                <img
-                  src={`${import.meta.env.BASE_URL}${item.banner}`}
-                  width="88"
-                  height="31"
-                  alt={`${item.title} — 88 × 31`}
-                />
-              </a>
-              <a className="link-url" href={item.url} target="_blank" rel="noopener noreferrer">
-                {new URL(item.url).hostname}
-              </a>
-              {item.description && <p>{item.description}</p>}
-            </div>
+            <a
+              className="link-banner"
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={copy.visit(item.title)}
+              title={item.title}
+            >
+              <img
+                src={`${import.meta.env.BASE_URL}${item.banner}`}
+                width="88"
+                height="31"
+                alt=""
+              />
+            </a>
           </li>
         ))}
       </ul>
