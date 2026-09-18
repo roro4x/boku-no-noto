@@ -17,13 +17,13 @@ type PromptLibraryProps = {
 const promptCopy = {
   ru: {
     title: 'Библиотека промптов',
-    intro: 'Личная файловая коллекция промптов для просмотра и скачивания.',
     search: 'Поиск по библиотеке',
     placeholder: 'Название, описание или тег',
     found: (count: number) => `Найдено: ${count}`,
     empty: 'По этому запросу промптов нет.',
     showAll: 'Показать всю библиотеку',
     read: 'Читать',
+    readLabel: (title: string) => `Читать «${title}»`,
     download: 'Скачать .md',
     back: '← ко всем промптам',
     loading: 'Открываю исходный файл…',
@@ -34,13 +34,13 @@ const promptCopy = {
   },
   ja: {
     title: 'プロンプト集',
-    intro: '閲覧・ダウンロードできる個人用プロンプト集です。',
     search: 'プロンプトを検索',
     placeholder: 'タイトル・説明・タグ',
     found: (count: number) => `${count}件`,
     empty: 'この検索に一致するプロンプトはありません。',
     showAll: 'すべて表示',
     read: '読む',
+    readLabel: (title: string) => `「${title}」を読む`,
     download: '.mdを保存',
     back: '← プロンプト一覧へ',
     loading: '元のファイルを開いています…',
@@ -174,14 +174,20 @@ export function PromptLibrary({ promptId, locale }: PromptLibraryProps) {
             <li key={prompt.id}>
               <span className="file-icon" aria-hidden="true">MD</span>
               <div>
-                <h3 lang="ru"><a href={`#/prompts/${prompt.id}`}>{prompt.title}</a></h3>
+                <h3 lang="ru">{prompt.title}</h3>
                 <p lang="ru">{prompt.description}</p>
                 <p className="prompt-tags" aria-label={copy.tags}>
                   {prompt.tags.map((tag) => <span key={tag}>#{tag}</span>)}
                 </p>
               </div>
               <div className="prompt-list__actions">
-                <a href={`#/prompts/${prompt.id}`}>{copy.read}</a>
+                <a
+                  className="prompt-read-link"
+                  href={`#/prompts/${prompt.id}`}
+                  aria-label={copy.readLabel(prompt.title)}
+                >
+                  {copy.read}
+                </a>
                 <PromptDownloadLink item={prompt} label={copy.download} />
               </div>
             </li>
@@ -196,11 +202,7 @@ function LibraryHeading({ locale }: { locale: SiteLocale }) {
   const copy = promptCopy[locale]
   return (
     <header className="archive-heading">
-      <div>
-        <h2 id="prompt-library-title">{copy.title}</h2>
-        <p>{copy.intro}</p>
-      </div>
-      <span>{locale === 'ja' ? `${prompts.length}件` : `${prompts.length} файл`}</span>
+      <h2 id="prompt-library-title">{copy.title}</h2>
     </header>
   )
 }

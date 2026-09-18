@@ -1,11 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="88" height="31" viewBox="0 0 88 31" role="img" aria-labelledby="title desc" shape-rendering="crispEdges">
   <title id="title">Fast Tool</title>
-  <desc id="desc">Кремово-зелёный ретробаннер Fast Tool</desc>
+  <desc id="desc">Кремово-зелёный ретробаннер Fast Tool с пиксельной гайкой и молнией</desc>
   <rect width="88" height="31" fill="#fff9f0"/>
   <rect x="1" y="1" width="86" height="29" fill="none" stroke="#2e4534" stroke-width="2"/>
   <rect x="4" y="4" width="80" height="23" fill="#e3ead8" stroke="#6d8a63"/>
-  <path d="M8 22h11v3H8zm2-13h7v13h-7zm2-3h3v3h-3z" fill="#4f6b52"/>
-  <path d="M20 8h3v3h-3zm3 3h3v3h-3zm-3 6h3v3h-3zm3-3h3v3h-3z" fill="#3f6384"/>
+  <path d="M12 6h9l5 5v9l-5 5h-9l-5-5v-9z" fill="#fff9f0" stroke="#4f6b52" stroke-width="2"/>
+  <path d="M17 8h5l-3 6h4l-8 9 2-7h-4z" fill="#3f6384"/>
+  <path d="M7 13h3v2H7zm1 5h3v2H8z" fill="#8c6f5a"/>
   <text x="29" y="14" fill="#2e4534" font-family="Verdana, sans-serif" font-size="8" font-weight="700">FAST</text>
   <text x="29" y="23" fill="#3f6384" font-family="Courier New, monospace" font-size="8" font-weight="700">TOOL</text>
   <rect x="75" y="7" width="5" height="5" fill="#d9b7c3"/>

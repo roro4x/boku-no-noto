@@ -7,7 +7,10 @@ export const siteCopy = {
     sidebar: 'Боковая панель',
     mainNavigation: 'Основная навигация',
     homeNav: 'Главная',
-    textsNav: '読みもの · Тексты',
+    textsNav: 'Тексты на японском',
+    textsTitle: 'Тексты на японском',
+    notesNav: 'Заметки',
+    notesTitle: 'Заметки',
     promptsNav: 'Промпты',
     linksNav: 'Ссылки',
     aboutTitle: 'Этот сайт',
@@ -43,7 +46,10 @@ export const siteCopy = {
     sidebar: 'サイドバー',
     mainNavigation: 'メインメニュー',
     homeNav: 'ホーム',
-    textsNav: '読みもの · 文章',
+    textsNav: '日本語の文章',
+    textsTitle: '日本語の文章',
+    notesNav: 'ノート',
+    notesTitle: 'ノート',
     promptsNav: 'プロンプト集',
     linksNav: 'リンク集',
     aboutTitle: 'このサイト',
@@ -77,3 +83,6 @@ export type SiteLocale = keyof typeof siteCopy
 
 export const isSiteLocale = (value: string | null): value is SiteLocale =>
   value === 'ru' || value === 'ja'
+
+export const resolveSiteLocale = (value: string | null): SiteLocale =>
+  isSiteLocale(value) ? value : 'ja'

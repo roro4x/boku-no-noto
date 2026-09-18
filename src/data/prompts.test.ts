@@ -12,4 +12,9 @@ describe('prompt library search', () => {
     expect(filterPrompts(prompts, '   ')).toEqual(prompts)
     expect(filterPrompts(prompts, 'несуществующий')).toEqual([])
   })
+
+  it('finds the Minna no Nihongo reading prompt', () => {
+    expect(filterPrompts(prompts, 'みんなの日本語')).toHaveLength(1)
+    expect(filterPrompts(prompts, 'чтение')).toHaveLength(1)
+  })
 })

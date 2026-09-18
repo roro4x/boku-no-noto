@@ -1,23 +1,30 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { LinksDirectory } from './components/LinksDirectory'
 import { NihongoCatalog } from './components/NihongoCatalog'
+import { NotesArchive } from './components/NotesArchive'
 import { PromptLibrary } from './components/PromptLibrary'
 import { TextArchive } from './components/TextArchive'
 import { nextAvailableTrackIndex, nextTrackIndex, playlist } from './data/playlist'
 import { categories, type StudyCategory } from './data/study'
-import { isSiteLocale, siteCopy, type SiteLocale } from './i18n'
+import { resolveSiteLocale, siteCopy, type SiteLocale } from './i18n'
 
 type Route =
   | { page: 'home' }
   | { page: 'nihongo'; category: StudyCategory; itemId?: string }
-  | { page: 'texts'; slug?: string }
+  | { page: 'texts'; category: 'mine' | 'reading'; slug?: string }
+  | { page: 'notes'; slug?: string }
   | { page: 'prompts'; promptId?: string }
   | { page: 'links' }
 
 const parseRoute = (): Route => {
   const path = (window.location.hash || '#/').slice(1).split('?')[0]
   const parts = path.split('/').filter(Boolean)
-  if (parts[0] === 'texts') return { page: 'texts', slug: parts[1] }
+  if (parts[0] === 'texts') {
+    if (parts[1] === 'reading') return { page: 'texts', category: 'reading', slug: parts[2] }
+    if (parts[1] === 'mine') return { page: 'texts', category: 'mine', slug: parts[2] }
+    return { page: 'texts', category: 'mine', slug: parts[1] }
+  }
+  if (parts[0] === 'notes') return { page: 'notes', slug: parts[1] }
   if (parts[0] === 'prompts') return { page: 'prompts', promptId: parts[1] }
   if (parts[0] === 'links') return { page: 'links' }
   if (parts[0] !== 'nihongo') return { page: 'home' }
@@ -30,9 +37,9 @@ const parseRoute = (): Route => {
 const getInitialLocale = (): SiteLocale => {
   try {
     const savedLocale = window.localStorage.getItem('boku-no-noto-locale')
-    return isSiteLocale(savedLocale) ? savedLocale : 'ru'
+    return resolveSiteLocale(savedLocale)
   } catch {
-    return 'ru'
+    return 'ja'
   }
 }
 
@@ -56,15 +63,17 @@ function App() {
 
   useEffect(() => {
     document.title = route.page === 'texts'
-      ? '日本語の文章 · 僕のノート'
+      ? `${copy.textsTitle} · 僕のノート`
+      : route.page === 'notes'
+        ? `${copy.notesTitle} · 僕のノート`
       : route.page === 'prompts'
-        ? 'プロンプト集 · 僕のノート'
+        ? `${copy.promptsNav} · 僕のノート`
         : route.page === 'links'
-          ? 'おすすめリンク · 僕のノート'
+          ? `${copy.linksNav} · 僕のノート`
       : route.page === 'nihongo'
         ? '日本語 · N5 · 僕のノート'
         : '僕のノート · Boku no Nōto'
-  }, [route.page])
+  }, [copy.linksNav, copy.notesTitle, copy.promptsNav, copy.textsTitle, route.page])
 
   useEffect(() => {
     document.documentElement.lang = copy.htmlLang
@@ -144,6 +153,14 @@ function App() {
                 </li>
                 <li>
                   <a
+                    href="#/notes"
+                    aria-current={route.page === 'notes' ? 'page' : undefined}
+                  >
+                    <span className="nav-marker" aria-hidden="true" /> {copy.notesNav}
+                  </a>
+                </li>
+                <li>
+                  <a
                     href="#/prompts"
                     aria-current={route.page === 'prompts' ? 'page' : undefined}
                   >
@@ -171,7 +188,10 @@ function App() {
             {route.page === 'nihongo' && (
               <NihongoCatalog category={route.category} itemId={route.itemId} locale={locale} />
             )}
-            {route.page === 'texts' && <TextArchive slug={route.slug} locale={locale} />}
+            {route.page === 'texts' && (
+              <TextArchive category={route.category} slug={route.slug} locale={locale} />
+            )}
+            {route.page === 'notes' && <NotesArchive slug={route.slug} locale={locale} />}
             {route.page === 'prompts' && (
               <PromptLibrary promptId={route.promptId} locale={locale} />
             )}
@@ -265,7 +285,7 @@ function Home({ locale }: { locale: SiteLocale }) {
           <small>{copy.openN5}</small>
         </a>
         <a className="nihongo-sign nihongo-sign--paper" href="#/texts">
-          <span lang="ja">日本語の文章</span>
+          <span lang={locale}>{copy.textsTitle}</span>
           <small>{copy.openTexts}</small>
         </a>
       </div>

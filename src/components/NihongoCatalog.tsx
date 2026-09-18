@@ -25,7 +25,6 @@ const catalogCopy = {
     loading: 'Открываю учебную папку…',
     error: 'Учебные данные не открылись.',
     retry: 'Попробовать снова',
-    intro: 'Грамматика, слова и кандзи в одной учебной папке.',
     categories: 'Категории N5',
     back: '← к списку',
     search: (category: string) => `Поиск в категории «${category}»`,
@@ -47,7 +46,6 @@ const catalogCopy = {
     loading: '教材を開いています…',
     error: '教材データを読み込めませんでした。',
     retry: 'もう一度試す',
-    intro: '文法・語彙・漢字を一つの学習ノートにまとめています。',
     categories: 'N5のカテゴリー',
     back: '← 一覧へ',
     search: (category: string) => `「${category}」を検索`,
@@ -160,10 +158,7 @@ export function NihongoCatalog({ category, itemId, locale }: NihongoCatalogProps
   return (
     <section className="catalog-shell" aria-labelledby="catalog-title">
       <header className="catalog-heading">
-        <div>
-          <h2 id="catalog-title"><span lang="ja">日本語</span> · N5</h2>
-          <p>{copy.intro}</p>
-        </div>
+        <h2 id="catalog-title"><span lang="ja">日本語</span> · N5</h2>
       </header>
 
       <nav className="category-tabs" aria-label={copy.categories}>

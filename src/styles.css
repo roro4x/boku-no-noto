@@ -602,8 +602,7 @@ a:hover {
   background: var(--tea);
 }
 
-.catalog-heading h2,
-.catalog-heading p {
+.catalog-heading h2 {
   margin: 0;
 }
 
@@ -611,17 +610,15 @@ a:hover {
   font-size: 1.35rem;
 }
 
-.catalog-heading p {
-  max-width: 42ch;
-  color: #eef3e9;
-  font-size: 0.875rem;
-}
-
 .category-tabs {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.4rem;
   margin-bottom: 0.8rem;
+}
+
+.text-category-tabs {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .category-tabs a {
@@ -900,6 +897,7 @@ a:hover {
 }
 
 .text-archive,
+.notes-archive,
 .prompt-library,
 .links-directory {
   min-width: 0;
@@ -997,10 +995,11 @@ a:hover {
 .post-list li {
   display: grid;
   grid-template-columns: 8.5rem minmax(0, 1fr) auto;
-  align-items: start;
+  align-items: center;
   gap: 0.85rem;
   padding: 0.85rem 0.7rem;
   border-bottom: 1px dotted #a59a8f;
+  text-align: left;
 }
 
 .post-list time,
@@ -1014,11 +1013,7 @@ a:hover {
   margin: 0 0 0.15rem;
   font-size: 1.08rem;
   line-height: 1.45;
-}
-
-.post-list h3 a {
-  display: inline-flex;
-  align-items: center;
+  overflow-wrap: anywhere;
 }
 
 .post-list p {
@@ -1031,9 +1026,19 @@ a:hover {
 .post-read-link {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   min-height: 2.75rem;
-  padding-inline: 0.35rem;
+  padding: 0.4rem 0.75rem;
+  color: var(--ink-strong);
+  background: var(--page);
+  border: 2px outset #f7f4ef;
+  font-weight: 700;
   font-size: 0.8125rem;
+  text-decoration: none;
+}
+
+.post-read-link:hover {
+  background: var(--mint);
 }
 
 .archive-empty {
@@ -1231,11 +1236,6 @@ a:hover {
   line-height: 1.45;
 }
 
-.prompt-list h3 a {
-  display: inline-flex;
-  align-items: center;
-}
-
 .prompt-list p {
   max-width: 58ch;
   margin: 0;
@@ -1270,6 +1270,20 @@ a:hover {
   padding-inline: 0.35rem;
   white-space: nowrap;
   font-size: 0.8125rem;
+}
+
+.prompt-read-link {
+  justify-content: center;
+  padding: 0.4rem 0.75rem !important;
+  color: var(--ink-strong);
+  background: var(--page);
+  border: 2px outset #f7f4ef;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.prompt-read-link:hover {
+  background: var(--mint);
 }
 
 .prompt-download .file-icon {
@@ -1341,7 +1355,7 @@ a:hover {
 
 .links-list {
   display: grid;
-  grid-template-columns: repeat(3, 132px);
+  grid-template-columns: repeat(auto-fill, 132px);
   justify-content: start;
   gap: 1rem 1.25rem;
   padding: 1.25rem 0.75rem;
@@ -1533,6 +1547,7 @@ a:hover {
   }
 
   .text-archive,
+  .notes-archive,
   .prompt-library,
   .links-directory {
     padding: 0.75rem;
@@ -1544,15 +1559,6 @@ a:hover {
 
   .archive-tools button {
     grid-column: 1 / -1;
-  }
-
-  .post-list li {
-    grid-template-columns: 7.5rem minmax(0, 1fr);
-  }
-
-  .post-read-link {
-    grid-column: 2;
-    justify-self: start;
   }
 
   .guest-note {
@@ -1572,10 +1578,6 @@ a:hover {
 
   .nav-board ul {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .nav-board li:last-child {
-    grid-column: 1 / -1;
   }
 
   .mini-banners {
@@ -1605,15 +1607,12 @@ a:hover {
 
   .post-list li {
     grid-template-columns: minmax(0, 1fr);
+    justify-items: start;
     gap: 0.25rem;
   }
 
   .post-read-link {
-    grid-column: auto;
-  }
-
-  .post-list h3 a {
-    min-height: 2.75rem;
+    justify-self: start;
   }
 
   .markdown-post {
@@ -1640,7 +1639,7 @@ a:hover {
   }
 
   .links-list {
-    grid-template-columns: repeat(2, 124px);
+    grid-template-columns: repeat(auto-fill, 124px);
     gap: 0.85rem 0.75rem;
     padding: 1rem 0.5rem;
   }
