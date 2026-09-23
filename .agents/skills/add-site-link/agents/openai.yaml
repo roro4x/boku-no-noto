@@ -1,0 +1,4 @@
+interface:
+  display_name: "Добавить ссылку на сайт"
+  short_description: "Добавляет ссылку и локальный баннер"
+  default_prompt: "Используй $add-site-link, чтобы добавить эту ссылку в каталог сайта."

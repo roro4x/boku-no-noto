@@ -1,0 +1,4 @@
+interface:
+  display_name: "Добавить контент на сайт"
+  short_description: "Публикует тексты, заметки и промпты"
+  default_prompt: "Используй $add-site-content, чтобы добавить этот материал в нужный раздел сайта."

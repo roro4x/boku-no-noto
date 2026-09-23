@@ -133,5 +133,5 @@ React, TypeScript, Vite, CSS, GitHub Pages, GitHub Actions и JSON. Прилож
 
 - Набор и порядок дополнительных музыкальных файлов владельца.
 - Будущие тексты владельца в `content/texts`.
-- Будущие промпты в `public/prompts` и их метаданные.
+- Будущие промпты в `content/prompts` и их метаданные в `src/data/prompts.ts`.
 - Будущие записи каталога ссылок и локальные баннеры 88×31.

@@ -22,6 +22,14 @@ export const prompts: PromptEntry[] = [
     fileName: 'prompt-udobnaya-pdf-forma.md',
     tags: ['PDF', 'OCR', 'AcroForm', 'японский'],
   },
+  {
+    id: 'anki-minna-no-nihongo',
+    title: 'Универсальный промпт для создания Anki-колод Minna no Nihongo',
+    description: 'Промпт для создания единообразных Anki-колод с лексикой выбранного урока «みんなの日本語 初級 I / 初級 II».',
+    fileName: 'prompt-anki-minna-no-nihongo.md',
+    tags: ['Anki', 'みんなの日本語', 'лексика', 'карточки'],
+    addedAt: '2026-09-23',
+  },
 ]
 
 export const normalizePromptSearch = (value: string) =>
@@ -37,5 +45,14 @@ export const filterPrompts = (items: PromptEntry[], query: string) => {
   )
 }
 
-export const getPromptFileUrl = (fileName: string) =>
-  `${import.meta.env.BASE_URL}prompts/${encodeURIComponent(fileName)}`
+const promptFileUrls = import.meta.glob('/content/prompts/*.md', {
+  query: '?url',
+  import: 'default',
+  eager: true,
+}) as Record<string, string>
+
+export const getPromptFileUrl = (fileName: string) => {
+  const url = promptFileUrls[`/content/prompts/${fileName}`]
+  if (!url) throw new Error(`Не найден файл промпта: ${fileName}`)
+  return url
+}

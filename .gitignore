@@ -9,5 +9,11 @@ dist/
 !.env.example
 
 .codex/
-.agents/
+.agents/*
+!.agents/skills/
+.agents/skills/*
+!.agents/skills/add-site-content/
+!.agents/skills/add-site-content/**
+!.agents/skills/add-site-link/
+!.agents/skills/add-site-link/**
 .impeccable/

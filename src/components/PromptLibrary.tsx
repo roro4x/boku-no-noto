@@ -24,6 +24,11 @@ const promptCopy = {
     showAll: 'Показать всю библиотеку',
     read: 'Читать',
     readLabel: (title: string) => `Читать «${title}»`,
+    copy: 'Копировать текст',
+    copying: 'Копирую…',
+    copied: 'Скопировано',
+    copyError: 'Ошибка копирования',
+    copyLabel: (title: string) => `Скопировать текст промпта «${title}»`,
     download: 'Скачать .md',
     back: '← ко всем промптам',
     loading: 'Открываю исходный файл…',
@@ -41,6 +46,11 @@ const promptCopy = {
     showAll: 'すべて表示',
     read: '読む',
     readLabel: (title: string) => `「${title}」を読む`,
+    copy: 'テキストをコピー',
+    copying: 'コピー中…',
+    copied: 'コピーしました',
+    copyError: 'コピーできませんでした',
+    copyLabel: (title: string) => `「${title}」のテキストをコピー`,
     download: '.mdを保存',
     back: '← プロンプト一覧へ',
     loading: '元のファイルを開いています…',
@@ -51,12 +61,91 @@ const promptCopy = {
   },
 } as const
 
+type CopyState = 'idle' | 'copying' | 'success' | 'error'
+
+const fallbackCopyText = (text: string) => {
+  const textarea = document.createElement('textarea')
+  textarea.value = text
+  textarea.readOnly = true
+  textarea.style.position = 'fixed'
+  textarea.style.opacity = '0'
+  document.body.append(textarea)
+  textarea.select()
+
+  const copied = document.execCommand('copy')
+  textarea.remove()
+  if (!copied) throw new Error('Copy command was rejected')
+}
+
+const copyText = async (text: string) => {
+  if (navigator.clipboard?.writeText) {
+    try {
+      await navigator.clipboard.writeText(text)
+      return
+    } catch {
+      // Fall back for browsers that expose the API but deny clipboard access.
+    }
+  }
+
+  fallbackCopyText(text)
+}
+
 function PromptDownloadLink({ item, label }: { item: PromptEntry; label: string }) {
   return (
     <a className="prompt-download" href={getPromptFileUrl(item.fileName)} download={item.fileName}>
       <span className="file-icon" aria-hidden="true">MD</span>
       {label}
     </a>
+  )
+}
+
+function PromptCopyButton({
+  content,
+  locale,
+  title,
+}: {
+  content: string
+  locale: SiteLocale
+  title: string
+}) {
+  const copy = promptCopy[locale]
+  const [state, setState] = useState<CopyState>('idle')
+
+  useEffect(() => {
+    if (state !== 'success' && state !== 'error') return
+    const timeoutId = window.setTimeout(() => setState('idle'), 2500)
+    return () => window.clearTimeout(timeoutId)
+  }, [state])
+
+  const label = state === 'copying'
+    ? copy.copying
+    : state === 'success'
+      ? copy.copied
+      : state === 'error'
+        ? copy.copyError
+        : copy.copy
+
+  const handleCopy = async () => {
+    setState('copying')
+    try {
+      await copyText(content)
+      setState('success')
+    } catch {
+      setState('error')
+    }
+  }
+
+  return (
+    <button
+      type="button"
+      className="prompt-copy"
+      data-state={state}
+      disabled={!content || state === 'copying'}
+      aria-label={state === 'idle' ? copy.copyLabel(title) : label}
+      onClick={handleCopy}
+    >
+      <span aria-live="polite">{label}</span>
+    </button>
   )
 }
 
@@ -113,11 +202,14 @@ export function PromptLibrary({ promptId, locale }: PromptLibraryProps) {
         <article className="prompt-document">
           <a className="back-link" href="#/prompts">{copy.back}</a>
           <header className="prompt-document__heading">
+            <div className="prompt-document__actions">
+              <PromptCopyButton content={content} locale={locale} title={item.title} />
+              <PromptDownloadLink item={item} label={copy.download} />
+            </div>
             <div>
               <h2 id="prompt-title" lang="ru">{item.title}</h2>
               <p lang="ru">{item.description}</p>
             </div>
-            <PromptDownloadLink item={item} label={copy.download} />
           </header>
           <p className="prompt-tags" aria-label={copy.tags}>
             {item.tags.map((tag) => <span key={tag}>#{tag}</span>)}
