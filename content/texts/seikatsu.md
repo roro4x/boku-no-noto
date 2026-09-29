@@ -1,5 +1,5 @@
 ---
-title: Жизнь и быт.
+title: 生活
 date: 2026-09-18
 description: ""
 ---
