@@ -306,7 +306,12 @@ export function NihongoCatalog({ category, itemId, locale }: NihongoCatalogProps
                 <li key={item.id} className="study-row">
                   <ItemSummary item={item} locale={locale} />
                   <div className="study-row__actions">
-                    <a href={routeFor(category, item.id, query, lesson)}>{copy.details}</a>
+                    <a
+                      className="study-details-link"
+                      href={routeFor(category, item.id, query, lesson)}
+                    >
+                      {copy.details}
+                    </a>
                   </div>
                 </li>
               ))}

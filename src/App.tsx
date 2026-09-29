@@ -1,8 +1,10 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
+import { HomeGlance } from './components/HomeGlance'
 import { LinksDirectory } from './components/LinksDirectory'
 import { NihongoCatalog } from './components/NihongoCatalog'
 import { NotesArchive } from './components/NotesArchive'
 import { PromptLibrary } from './components/PromptLibrary'
+import { SiteClock } from './components/SiteClock'
 import { TextArchive } from './components/TextArchive'
 import { nextAvailableTrackIndex, nextTrackIndex, playlist } from './data/playlist'
 import { categories, type StudyCategory } from './data/study'
@@ -128,7 +130,7 @@ function App() {
 
         <div className="page-grid">
           <nav className="nav-board" aria-label={copy.mainNavigation}>
-              <h2 lang="ja">メニュー</h2>
+              <h2 lang={locale}>{copy.navigationTitle}</h2>
               <ul>
                 <li>
                   <a href="#/" aria-current={route.page === 'home' ? 'page' : undefined}>
@@ -200,12 +202,13 @@ function App() {
 
           <aside className="sidebar" aria-label={copy.sidebar}>
 
+            <SiteClock locale={locale} />
+
             <MusicPlayer locale={locale} />
 
             <section className="side-box site-info" aria-labelledby="about-title">
-              <h2 id="about-title">{copy.aboutTitle}</h2>
-              <fieldset className="language-switcher">
-                <legend>{copy.languageLegend}</legend>
+              <h2 id="about-title">{copy.languageTitle}</h2>
+              <fieldset className="language-switcher" aria-labelledby="about-title">
                 <div>
                   <button
                     type="button"
@@ -279,16 +282,7 @@ function Home({ locale }: { locale: SiteLocale }) {
         {locale === 'ru' && <><span lang="ja">いらっしゃいませ！</span>{' '}</>}
         {copy.welcomeBody}
       </p>
-      <div className="home-signs">
-        <a className="nihongo-sign" href="#/nihongo/grammar">
-          <span lang="ja">日本語のノート</span>
-          <small>{copy.openN5}</small>
-        </a>
-        <a className="nihongo-sign nihongo-sign--paper" href="#/texts">
-          <span lang={locale}>{copy.textsTitle}</span>
-          <small>{copy.openTexts}</small>
-        </a>
-      </div>
+      <HomeGlance locale={locale} />
     </section>
   )
 }
@@ -414,7 +408,7 @@ function MusicPlayer({ locale }: { locale: SiteLocale }) {
 
   return (
     <section className="side-box player-box" aria-labelledby="player-title">
-      <h2 id="player-title" lang="ja">おんがく</h2>
+      <h2 id="player-title" lang={locale}>{copy.musicTitle}</h2>
       <div className="player-display">
         <span title={currentTrack?.title}>{currentTrack?.display ?? 'NO TAPE'}</span>
         <span>{formatPlayerTime(currentTime)} / {formatPlayerTime(duration)}</span>
