@@ -190,7 +190,7 @@ export function PromptLibrary({ promptId, locale }: PromptLibraryProps) {
         <LibraryHeading locale={locale} />
         <div className="archive-empty">
           <p>{copy.notFound}</p>
-          <a href="#/prompts">{copy.showAll}</a>
+          <a className="utility-link" href="#/prompts">{copy.showAll}</a>
         </div>
       </section>
     )
@@ -200,7 +200,7 @@ export function PromptLibrary({ promptId, locale }: PromptLibraryProps) {
     return (
       <section className="prompt-library" aria-labelledby="prompt-title">
         <article className="prompt-document">
-          <a className="back-link" href="#/prompts">{copy.back}</a>
+          <a className="back-link utility-link" href="#/prompts">{copy.back}</a>
           <header className="prompt-document__heading">
             <div className="prompt-document__actions">
               <PromptCopyButton content={content} locale={locale} title={item.title} />

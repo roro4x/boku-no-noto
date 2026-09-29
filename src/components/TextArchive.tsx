@@ -118,7 +118,7 @@ export function TextArchive({ category, slug, locale }: TextArchiveProps) {
         </header>
         <div className="archive-empty">
           <p>{copy.notFound}</p>
-          <a href={routeFor(category, undefined, filters)}>{copy.returnToList}</a>
+          <a className="utility-link" href={routeFor(category, undefined, filters)}>{copy.returnToList}</a>
         </div>
       </section>
     )
@@ -128,7 +128,7 @@ export function TextArchive({ category, slug, locale }: TextArchiveProps) {
     return (
       <section className="text-archive" aria-labelledby="post-title">
         <article className="markdown-post">
-          <a className="back-link" href={routeFor(category, undefined, filters)}>
+          <a className="back-link utility-link" href={routeFor(category, undefined, filters)}>
             {category === 'reading' ? copy.backReading : copy.backMine}
           </a>
           <header className="post-heading">

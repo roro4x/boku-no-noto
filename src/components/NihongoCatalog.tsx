@@ -229,7 +229,7 @@ export function NihongoCatalog({ category, itemId, locale }: NihongoCatalogProps
 
       {detailItem ? (
         <article className="study-detail">
-          <a className="back-link" href={routeFor(category, undefined, query, lesson)}>{copy.back}</a>
+          <a className="back-link utility-link" href={routeFor(category, undefined, query, lesson)}>{copy.back}</a>
           <ItemDetail item={detailItem} locale={locale} />
         </article>
       ) : (

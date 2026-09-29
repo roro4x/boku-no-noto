@@ -44,7 +44,7 @@ export function NotesArchive({ slug, locale }: NotesArchiveProps) {
         </header>
         <div className="archive-empty">
           <p>{copy.notFound}</p>
-          <a href={routeFor()}>{copy.returnToList}</a>
+          <a className="utility-link" href={routeFor()}>{copy.returnToList}</a>
         </div>
       </section>
     )
@@ -54,7 +54,7 @@ export function NotesArchive({ slug, locale }: NotesArchiveProps) {
     return (
       <section className="notes-archive" aria-labelledby="note-title">
         <article className="markdown-post">
-          <a className="back-link" href={routeFor()}>{copy.back}</a>
+          <a className="back-link utility-link" href={routeFor()}>{copy.back}</a>
           <header className="post-heading">
             <time dateTime={note.date}>{formatPostDate(note.date, locale)}</time>
             <h2 id="note-title" lang="ru">{note.title}</h2>

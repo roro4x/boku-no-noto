@@ -245,7 +245,7 @@ function App() {
             <span lang="ja">僕のノート</span> · {copy.footerMade}
           </p>
           <p>
-            <a href="#/">{copy.footerHome}</a>
+            <a className="utility-link" href="#/">{copy.footerHome}</a>
           </p>
         </footer>
       </div>
