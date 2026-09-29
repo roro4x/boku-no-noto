@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "datasetVersion": "2026-09-openjlpt-1",
+  "datasetVersion": "2026-09-openjlpt-minna-1",
   "language": "ru",
   "level": "N5",
   "categories": {
@@ -12,6 +12,7 @@
     "openjlpt",
     "jmdict-rus",
     "kanjidic2",
+    "minna-lessons",
     "jlpt-official"
   ]
 }

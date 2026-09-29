@@ -11,9 +11,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 1
+    "order": 1,
+    "minnaLesson": 4,
+    "minnaOrder": 30
   },
   {
     "id": "vocab:bee501faf07b",
@@ -25,9 +28,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 2
+    "order": 2,
+    "minnaLesson": 3,
+    "minnaOrder": 3
   },
   {
     "id": "vocab:34e6f7d220ea",
@@ -39,9 +45,12 @@
     "partOfSpeech": "местоимение",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 3
+    "order": 3,
+    "minnaLesson": 3,
+    "minnaOrder": 6
   },
   {
     "id": "vocab:60dd63379ec2",
@@ -53,9 +62,12 @@
     "partOfSpeech": "местоимение",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 4
+    "order": 4,
+    "minnaLesson": 20,
+    "minnaOrder": 20
   },
   {
     "id": "vocab:afdf384f680f",
@@ -67,9 +79,12 @@
     "partOfSpeech": "местоимение",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 5
+    "order": 5,
+    "minnaLesson": 1,
+    "minnaOrder": 3
   },
   {
     "id": "vocab:ac4706068b85",
@@ -82,9 +97,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 6
+    "order": 6,
+    "minnaLesson": 2,
+    "minnaOrder": 6
   },
   {
     "id": "vocab:0cf05b3a0d25",
@@ -97,9 +115,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 7
+    "order": 7,
+    "minnaLesson": 22,
+    "minnaOrder": 20
   },
   {
     "id": "vocab:a5aceb642637",
@@ -112,9 +133,12 @@
     "partOfSpeech": "глагол",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 8
+    "order": 8,
+    "minnaLesson": 16,
+    "minnaOrder": 4
   },
   {
     "id": "vocab:eac90e8e9860",
@@ -131,7 +155,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 9
+    "order": 9,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:ac0878841855",
@@ -149,7 +175,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 10
+    "order": 10,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:d727a76b2207",
@@ -162,9 +190,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 11
+    "order": 11,
+    "minnaLesson": 2,
+    "minnaOrder": 3
   },
   {
     "id": "vocab:e372e95ec86b",
@@ -177,9 +208,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 12
+    "order": 12,
+    "minnaLesson": 8,
+    "minnaOrder": 16
   },
   {
     "id": "vocab:6d4596ae460d",
@@ -192,9 +226,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 13
+    "order": 13,
+    "minnaLesson": 1,
+    "minnaOrder": 30
   },
   {
     "id": "vocab:a3f296ad9a57",
@@ -208,7 +245,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 14
+    "order": 14,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:026ae57b503a",
@@ -221,9 +260,12 @@
     "partOfSpeech": "наречие",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 15
+    "order": 15,
+    "minnaLesson": 11,
+    "minnaOrder": 15
   },
   {
     "id": "vocab:4fc98c69389f",
@@ -235,9 +277,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 16
+    "order": 16,
+    "minnaLesson": 3,
+    "minnaOrder": 29
   },
   {
     "id": "vocab:d305fa14a80c",
@@ -250,9 +295,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 17
+    "order": 17,
+    "minnaLesson": 2,
+    "minnaOrder": 31
   },
   {
     "id": "vocab:cb96f363df42",
@@ -268,9 +316,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 18
+    "order": 18,
+    "minnaLesson": 10,
+    "minnaOrder": 42
   },
   {
     "id": "vocab:fac6fc083814",
@@ -283,9 +334,12 @@
     "partOfSpeech": "местоимение",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 19
+    "order": 19,
+    "minnaLesson": 5,
+    "minnaOrder": 48
   },
   {
     "id": "vocab:dea2a1df8b3d",
@@ -298,9 +352,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 20
+    "order": 20,
+    "minnaLesson": 6,
+    "minnaOrder": 49
   },
   {
     "id": "vocab:f74dd1ee9aa3",
@@ -314,9 +371,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 21
+    "order": 21,
+    "minnaLesson": 10,
+    "minnaOrder": 3
   },
   {
     "id": "vocab:8ac60a4060e6",
@@ -328,9 +388,12 @@
     "partOfSpeech": "междометие",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 22
+    "order": 22,
+    "minnaLesson": 6,
+    "minnaOrder": 52
   },
   {
     "id": "vocab:eb1695baf6a5",
@@ -342,9 +405,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 23
+    "order": 23,
+    "minnaLesson": 3,
+    "minnaOrder": 17
   },
   {
     "id": "vocab:7f02ae8fa1d7",
@@ -356,9 +422,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 24
+    "order": 24,
+    "minnaLesson": 8,
+    "minnaOrder": 29
   },
   {
     "id": "vocab:3707072a6b50",
@@ -370,9 +439,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 25
+    "order": 25,
+    "minnaLesson": 16,
+    "minnaOrder": 26
   },
   {
     "id": "vocab:12d9487797ce",
@@ -385,9 +457,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 26
+    "order": 26,
+    "minnaLesson": 24,
+    "minnaOrder": 10
   },
   {
     "id": "vocab:ae5d1778d193",
@@ -401,7 +476,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 27
+    "order": 27,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:2568873ebdc1",
@@ -414,9 +491,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 28
+    "order": 28,
+    "minnaLesson": 8,
+    "minnaOrder": 27
   },
   {
     "id": "vocab:669019c62536",
@@ -429,9 +509,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 29
+    "order": 29,
+    "minnaLesson": 24,
+    "minnaOrder": 13
   },
   {
     "id": "vocab:3e015d0a8b33",
@@ -443,9 +526,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 30
+    "order": 30,
+    "minnaLesson": 7,
+    "minnaOrder": 26
   },
   {
     "id": "vocab:c6f43a8cc314",
@@ -457,9 +543,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 31
+    "order": 31,
+    "minnaLesson": 11,
+    "minnaOrder": 37
   },
   {
     "id": "vocab:101d46a0611d",
@@ -474,7 +563,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 32
+    "order": 32,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:af378a4c866b",
@@ -486,9 +577,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 33
+    "order": 33,
+    "minnaLesson": 11,
+    "minnaOrder": 39
   },
   {
     "id": "vocab:75a36b034c94",
@@ -503,7 +597,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 34
+    "order": 34,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:f843b00173c0",
@@ -516,9 +612,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 35
+    "order": 35,
+    "minnaLesson": 6,
+    "minnaOrder": 32
   },
   {
     "id": "vocab:edca336b1faf",
@@ -531,9 +630,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 36
+    "order": 36,
+    "minnaLesson": 6,
+    "minnaOrder": 26
   },
   {
     "id": "vocab:89807c7c22d2",
@@ -546,9 +648,12 @@
     "partOfSpeech": "местоимение",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 37
+    "order": 37,
+    "minnaLesson": 7,
+    "minnaOrder": 32
   },
   {
     "id": "vocab:f34748500468",
@@ -563,7 +668,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 38
+    "order": 38,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:7a073616e516",
@@ -576,9 +683,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 39
+    "order": 39,
+    "minnaLesson": 24,
+    "minnaOrder": 17
   },
   {
     "id": "vocab:2007947770c4",
@@ -590,9 +700,12 @@
     "partOfSpeech": "местоимение",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 40
+    "order": 40,
+    "minnaLesson": 7,
+    "minnaOrder": 33
   },
   {
     "id": "vocab:687082e55c2f",
@@ -608,9 +721,12 @@
     "partOfSpeech": "глагол",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 41
+    "order": 41,
+    "minnaLesson": 11,
+    "minnaOrder": 2
   },
   {
     "id": "vocab:e2d6576c7671",
@@ -622,9 +738,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 42
+    "order": 42,
+    "minnaLesson": 2,
+    "minnaOrder": 19
   },
   {
     "id": "vocab:0ce2b98d3ba7",
@@ -640,9 +759,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 43
+    "order": 43,
+    "minnaLesson": 7,
+    "minnaOrder": 7
   },
   {
     "id": "vocab:613c41bd1dda",
@@ -659,7 +781,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 44
+    "order": 44,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:6e6a06687d47",
@@ -671,9 +795,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 45
+    "order": 45,
+    "minnaLesson": 2,
+    "minnaOrder": 22
   },
   {
     "id": "vocab:9d648d38adb5",
@@ -688,9 +815,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 46
+    "order": 46,
+    "minnaLesson": 2,
+    "minnaOrder": 27
   },
   {
     "id": "vocab:9decc44f4ee7",
@@ -704,7 +834,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 47
+    "order": 47,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:6382448bd3f5",
@@ -719,7 +851,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 48
+    "order": 48,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:bad3423a9329",
@@ -734,7 +868,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 49
+    "order": 49,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:4fb1c0d758c6",
@@ -748,7 +884,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 50
+    "order": 50,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:43cd9825f0da",
@@ -764,9 +902,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 51
+    "order": 51,
+    "minnaLesson": 8,
+    "minnaOrder": 2
   },
   {
     "id": "vocab:c10dfdc4875b",
@@ -783,7 +924,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 52
+    "order": 52,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:19a076e184b6",
@@ -800,7 +943,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 53
+    "order": 53,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:a36841ba498b",
@@ -814,7 +959,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 54
+    "order": 54,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:72c04ce0672f",
@@ -828,7 +975,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 55
+    "order": 55,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:5538df2bcece",
@@ -842,7 +991,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 56
+    "order": 56,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:c552e79d340b",
@@ -858,7 +1009,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 57
+    "order": 57,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:67126059f193",
@@ -870,9 +1023,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 58
+    "order": 58,
+    "minnaLesson": 2,
+    "minnaOrder": 33
   },
   {
     "id": "vocab:05123676c29c",
@@ -888,9 +1044,12 @@
     "partOfSpeech": "местоимение",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 59
+    "order": 59,
+    "minnaLesson": 3,
+    "minnaOrder": 1
   },
   {
     "id": "vocab:e9e492c68aad",
@@ -906,9 +1065,12 @@
     "partOfSpeech": "местоимение",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 60
+    "order": 60,
+    "minnaLesson": 3,
+    "minnaOrder": 5
   },
   {
     "id": "vocab:be9b8bcb5ea2",
@@ -924,9 +1086,12 @@
     "partOfSpeech": "местоимение",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 61
+    "order": 61,
+    "minnaLesson": 20,
+    "minnaOrder": 18
   },
   {
     "id": "vocab:2da7034c1e3f",
@@ -941,7 +1106,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 62
+    "order": 62,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:bd3a2ad2ad84",
@@ -953,9 +1120,12 @@
     "partOfSpeech": "числительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 63
+    "order": 63,
+    "minnaLesson": 2,
+    "minnaOrder": 4
   },
   {
     "id": "vocab:f586d7d02351",
@@ -968,9 +1138,12 @@
     "partOfSpeech": "глагол",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 64
+    "order": 64,
+    "minnaLesson": 14,
+    "minnaOrder": 18
   },
   {
     "id": "vocab:6313cc9cb5c7",
@@ -986,9 +1159,12 @@
     "partOfSpeech": "местоимение",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 65
+    "order": 65,
+    "minnaLesson": 2,
+    "minnaOrder": 1
   },
   {
     "id": "vocab:e1978f90dfd3",
@@ -1003,7 +1179,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 66
+    "order": 66,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:7ba7ba24346a",
@@ -1019,9 +1197,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 67
+    "order": 67,
+    "minnaLesson": 14,
+    "minnaOrder": 35
   },
   {
     "id": "vocab:65485b35f531",
@@ -1035,7 +1216,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 68
+    "order": 68,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:2c41aedcba3c",
@@ -1048,9 +1231,12 @@
     "partOfSpeech": "союз",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 69
+    "order": 69,
+    "minnaLesson": 19,
+    "minnaOrder": 27
   },
   {
     "id": "vocab:95d746afb341",
@@ -1065,7 +1251,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 70
+    "order": 70,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:f71424e3ff97",
@@ -1077,9 +1265,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 71
+    "order": 71,
+    "minnaLesson": 7,
+    "minnaOrder": 23
   },
   {
     "id": "vocab:d9c88143a2fc",
@@ -1093,9 +1284,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 72
+    "order": 72,
+    "minnaLesson": 16,
+    "minnaOrder": 30
   },
   {
     "id": "vocab:9476d7966dad",
@@ -1110,7 +1304,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 73
+    "order": 73,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:f0f5f6b29b86",
@@ -1124,7 +1320,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 74
+    "order": 74,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:a8722990f113",
@@ -1140,7 +1338,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 75
+    "order": 75,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:8149d77689d2",
@@ -1154,7 +1354,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 76
+    "order": 76,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:938a169f6cf1",
@@ -1166,9 +1368,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 77
+    "order": 77,
+    "minnaLesson": 7,
+    "minnaOrder": 10
   },
   {
     "id": "vocab:0a33903ccf43",
@@ -1180,9 +1385,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 78
+    "order": 78,
+    "minnaLesson": 9,
+    "minnaOrder": 9
   },
   {
     "id": "vocab:10fe0704cabd",
@@ -1196,7 +1404,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 79
+    "order": 79,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:508131fe8958",
@@ -1210,7 +1420,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 80
+    "order": 80,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:c4cdc162d76d",
@@ -1222,9 +1434,12 @@
     "partOfSpeech": "глагол",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 81
+    "order": 81,
+    "minnaLesson": 6,
+    "minnaOrder": 12
   },
   {
     "id": "vocab:4b0b49a42de7",
@@ -1237,9 +1452,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 82
+    "order": 82,
+    "minnaLesson": 22,
+    "minnaOrder": 8
   },
   {
     "id": "vocab:b48d0c99d43e",
@@ -1253,7 +1471,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 83
+    "order": 83,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:434707d737de",
@@ -1267,7 +1487,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 84
+    "order": 84,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:8e8846083397",
@@ -1280,9 +1502,12 @@
     "partOfSpeech": "союз",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 85
+    "order": 85,
+    "minnaLesson": 8,
+    "minnaOrder": 50
   },
   {
     "id": "vocab:5ef867ff8151",
@@ -1298,9 +1523,12 @@
     "partOfSpeech": "местоимение",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 86
+    "order": 86,
+    "minnaLesson": 3,
+    "minnaOrder": 2
   },
   {
     "id": "vocab:105df795717a",
@@ -1313,9 +1541,12 @@
     "partOfSpeech": "местоимение",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 87
+    "order": 87,
+    "minnaLesson": 4,
+    "minnaOrder": 33
   },
   {
     "id": "vocab:80981fa136a8",
@@ -1328,9 +1559,12 @@
     "partOfSpeech": "местоимение",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 88
+    "order": 88,
+    "minnaLesson": 20,
+    "minnaOrder": 19
   },
   {
     "id": "vocab:cb1c02a574eb",
@@ -1344,9 +1578,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 89
+    "order": 89,
+    "minnaLesson": 2,
+    "minnaOrder": 5
   },
   {
     "id": "vocab:38c854e97f51",
@@ -1361,7 +1598,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 90
+    "order": 90,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:79d922e35944",
@@ -1374,9 +1613,12 @@
     "partOfSpeech": "местоимение",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 91
+    "order": 91,
+    "minnaLesson": 2,
+    "minnaOrder": 2
   },
   {
     "id": "vocab:799b7cabe0b6",
@@ -1389,9 +1631,12 @@
     "partOfSpeech": "союз",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 92
+    "order": 92,
+    "minnaLesson": 6,
+    "minnaOrder": 38
   },
   {
     "id": "vocab:46c17215262a",
@@ -1406,7 +1651,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 93
+    "order": 93,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:e04372c490b5",
@@ -1419,9 +1666,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 94
+    "order": 94,
+    "minnaLesson": 13,
+    "minnaOrder": 12
   },
   {
     "id": "vocab:a7c72d9bb115",
@@ -1434,9 +1684,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 95
+    "order": 95,
+    "minnaLesson": 9,
+    "minnaOrder": 37
   },
   {
     "id": "vocab:2d5a93eb11df",
@@ -1449,9 +1702,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 96
+    "order": 96,
+    "minnaLesson": 5,
+    "minnaOrder": 14
   },
   {
     "id": "vocab:e7ca1b2fd506",
@@ -1469,7 +1725,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 97
+    "order": 97,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:80beed00bfd5",
@@ -1484,7 +1742,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 98
+    "order": 98,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:d9eba03b7b58",
@@ -1499,9 +1759,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 99
+    "order": 99,
+    "minnaLesson": 21,
+    "minnaOrder": 26
   },
   {
     "id": "vocab:55dbb815bac3",
@@ -1517,9 +1780,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 100
+    "order": 100,
+    "minnaLesson": 19,
+    "minnaOrder": 19
   },
   {
     "id": "vocab:3d120360238c",
@@ -1533,7 +1799,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 101
+    "order": 101,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:9b08365493af",
@@ -1551,7 +1819,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 102
+    "order": 102,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:602fdffbf23c",
@@ -1567,9 +1837,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 103
+    "order": 103,
+    "minnaLesson": 6,
+    "minnaOrder": 39
   },
   {
     "id": "vocab:edc22b8d9896",
@@ -1582,9 +1855,12 @@
     "partOfSpeech": "глагол",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 104
+    "order": 104,
+    "minnaLesson": 14,
+    "minnaOrder": 1
   },
   {
     "id": "vocab:3a94b5e981b1",
@@ -1596,9 +1872,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 105
+    "order": 105,
+    "minnaLesson": 8,
+    "minnaOrder": 28
   },
   {
     "id": "vocab:0cf2b43e9c83",
@@ -1616,7 +1895,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 106
+    "order": 106,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:ff161262ddf5",
@@ -1628,9 +1909,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 107
+    "order": 107,
+    "minnaLesson": 10,
+    "minnaOrder": 17
   },
   {
     "id": "vocab:dc0ae29019a3",
@@ -1642,9 +1926,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 108
+    "order": 108,
+    "minnaLesson": 2,
+    "minnaOrder": 24
   },
   {
     "id": "vocab:69d0d632fa3c",
@@ -1660,9 +1947,12 @@
     "partOfSpeech": "глагол",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 109
+    "order": 109,
+    "minnaLesson": 18,
+    "minnaOrder": 1
   },
   {
     "id": "vocab:90e9410bff1d",
@@ -1677,7 +1967,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 110
+    "order": 110,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:d33540fe8ef9",
@@ -1691,7 +1983,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 111
+    "order": 111,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:0144505953f1",
@@ -1703,9 +1997,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 112
+    "order": 112,
+    "minnaLesson": 4,
+    "minnaOrder": 7
   },
   {
     "id": "vocab:3f71089c32fd",
@@ -1721,9 +2018,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 113
+    "order": 113,
+    "minnaLesson": 12,
+    "minnaOrder": 44
   },
   {
     "id": "vocab:c7e14d8454ec",
@@ -1737,9 +2037,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 114
+    "order": 114,
+    "minnaLesson": 2,
+    "minnaOrder": 25
   },
   {
     "id": "vocab:677d3c5fac9a",
@@ -1753,9 +2056,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 115
+    "order": 115,
+    "minnaLesson": 10,
+    "minnaOrder": 20
   },
   {
     "id": "vocab:e1e7c2d29009",
@@ -1770,9 +2076,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 116
+    "order": 116,
+    "minnaLesson": 3,
+    "minnaOrder": 15
   },
   {
     "id": "vocab:d0fb41651f9c",
@@ -1785,9 +2094,12 @@
     "partOfSpeech": "наречие",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 117
+    "order": 117,
+    "minnaLesson": 8,
+    "minnaOrder": 45
   },
   {
     "id": "vocab:a891b73f8be2",
@@ -1800,9 +2112,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 118
+    "order": 118,
+    "minnaLesson": 9,
+    "minnaOrder": 43
   },
   {
     "id": "vocab:a71cbc3ce459",
@@ -1814,9 +2129,12 @@
     "partOfSpeech": "наречие",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 119
+    "order": 119,
+    "minnaLesson": 2,
+    "minnaOrder": 43
   },
   {
     "id": "vocab:d2cb14f88a05",
@@ -1830,9 +2148,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 120
+    "order": 120,
+    "minnaLesson": 2,
+    "minnaOrder": 44
   },
   {
     "id": "vocab:ad884a3b70d8",
@@ -1848,9 +2169,12 @@
     "partOfSpeech": "местоимение",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 121
+    "order": 121,
+    "minnaLesson": 3,
+    "minnaOrder": 4
   },
   {
     "id": "vocab:5480c153dce8",
@@ -1866,9 +2190,12 @@
     "partOfSpeech": "местоимение",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 122
+    "order": 122,
+    "minnaLesson": 3,
+    "minnaOrder": 7
   },
   {
     "id": "vocab:e8a484305978",
@@ -1884,9 +2211,12 @@
     "partOfSpeech": "местоимение",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 123
+    "order": 123,
+    "minnaLesson": 20,
+    "minnaOrder": 21
   },
   {
     "id": "vocab:a3679ee66520",
@@ -1898,9 +2228,12 @@
     "partOfSpeech": "наречие",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 124
+    "order": 124,
+    "minnaLesson": 8,
+    "minnaOrder": 48
   },
   {
     "id": "vocab:10fb2e55c0e3",
@@ -1916,9 +2249,12 @@
     "partOfSpeech": "местоимение",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 125
+    "order": 125,
+    "minnaLesson": 1,
+    "minnaOrder": 25
   },
   {
     "id": "vocab:cd4b8c638171",
@@ -1930,9 +2266,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 126
+    "order": 126,
+    "minnaLesson": 16,
+    "minnaOrder": 37
   },
   {
     "id": "vocab:cdeb0a0419a0",
@@ -1948,7 +2287,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 127
+    "order": 127,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:b21477c7db6d",
@@ -1961,9 +2302,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 128
+    "order": 128,
+    "minnaLesson": 8,
+    "minnaOrder": 47
   },
   {
     "id": "vocab:3ae88c29c49b",
@@ -1975,9 +2319,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 129
+    "order": 129,
+    "minnaLesson": 7,
+    "minnaOrder": 11
   },
   {
     "id": "vocab:ef9536b1ee46",
@@ -1991,7 +2338,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 130
+    "order": 130,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:cf5847631837",
@@ -2006,7 +2355,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 131
+    "order": 131,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:e05de4981da2",
@@ -2024,7 +2375,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 132
+    "order": 132,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:b824bec2c5db",
@@ -2037,9 +2390,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 133
+    "order": 133,
+    "minnaLesson": 21,
+    "minnaOrder": 15
   },
   {
     "id": "vocab:18046e46a13d",
@@ -2051,9 +2407,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 134
+    "order": 134,
+    "minnaLesson": 3,
+    "minnaOrder": 24
   },
   {
     "id": "vocab:278c1e0e04a4",
@@ -2069,9 +2428,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 135
+    "order": 135,
+    "minnaLesson": 2,
+    "minnaOrder": 11
   },
   {
     "id": "vocab:28111455cd33",
@@ -2083,9 +2445,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 136
+    "order": 136,
+    "minnaLesson": 12,
+    "minnaOrder": 28
   },
   {
     "id": "vocab:542f39c93dda",
@@ -2100,9 +2465,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 137
+    "order": 137,
+    "minnaLesson": 1,
+    "minnaOrder": 29
   },
   {
     "id": "vocab:4729cc56f482",
@@ -2116,9 +2484,12 @@
     "partOfSpeech": "глагол",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 138
+    "order": 138,
+    "minnaLesson": 22,
+    "minnaOrder": 2
   },
   {
     "id": "vocab:7ce7f7d30559",
@@ -2131,9 +2502,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 139
+    "order": 139,
+    "minnaLesson": 7,
+    "minnaOrder": 9
   },
   {
     "id": "vocab:bd7df6c7a20b",
@@ -2149,9 +2523,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 140
+    "order": 140,
+    "minnaLesson": 5,
+    "minnaOrder": 13
   },
   {
     "id": "vocab:43856166598b",
@@ -2166,7 +2543,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 141
+    "order": 141,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:098e9e7e672b",
@@ -2178,9 +2557,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 142
+    "order": 142,
+    "minnaLesson": 6,
+    "minnaOrder": 19
   },
   {
     "id": "vocab:ee3206bb3f56",
@@ -2195,7 +2577,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 143
+    "order": 143,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:ef9babb012a6",
@@ -2211,7 +2595,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 144
+    "order": 144,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:55c14392399b",
@@ -2224,9 +2610,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 145
+    "order": 145,
+    "minnaLesson": 13,
+    "minnaOrder": 18
   },
   {
     "id": "vocab:71e2aefb9dd8",
@@ -2239,9 +2628,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 146
+    "order": 146,
+    "minnaLesson": 7,
+    "minnaOrder": 12
   },
   {
     "id": "vocab:34784ed6ca27",
@@ -2257,7 +2649,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 147
+    "order": 147,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:f8fc73bd7574",
@@ -2271,7 +2665,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 148
+    "order": 148,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:91cf4ea2fd47",
@@ -2283,9 +2679,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 149
+    "order": 149,
+    "minnaLesson": 10,
+    "minnaOrder": 18
   },
   {
     "id": "vocab:db38ebd95550",
@@ -2299,7 +2698,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 150
+    "order": 150,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:dd1183b00546",
@@ -2313,7 +2714,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 151
+    "order": 151,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:785a99704572",
@@ -2325,9 +2728,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 152
+    "order": 152,
+    "minnaLesson": 2,
+    "minnaOrder": 17
   },
   {
     "id": "vocab:f71c69492e40",
@@ -2345,7 +2751,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 153
+    "order": 153,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:ab9f2792c440",
@@ -2359,7 +2767,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 154
+    "order": 154,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:2dbe65ee1d73",
@@ -2374,9 +2784,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 155
+    "order": 155,
+    "minnaLesson": 10,
+    "minnaOrder": 22
   },
   {
     "id": "vocab:04ab635f4bcd",
@@ -2390,9 +2803,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 156
+    "order": 156,
+    "minnaLesson": 16,
+    "minnaOrder": 45
   },
   {
     "id": "vocab:23ec5a0b3d97",
@@ -2404,9 +2820,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 157
+    "order": 157,
+    "minnaLesson": 12,
+    "minnaOrder": 24
   },
   {
     "id": "vocab:849baaf2c388",
@@ -2421,7 +2840,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 158
+    "order": 158,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:b19034ded1c6",
@@ -2436,7 +2857,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 159
+    "order": 159,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:162e00c6efc2",
@@ -2452,9 +2875,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 160
+    "order": 160,
+    "minnaLesson": 8,
+    "minnaOrder": 63
   },
   {
     "id": "vocab:6a7163f5f71c",
@@ -2470,9 +2896,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 161
+    "order": 161,
+    "minnaLesson": 7,
+    "minnaOrder": 35
   },
   {
     "id": "vocab:ede9ab2f7fe0",
@@ -2488,9 +2917,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 162
+    "order": 162,
+    "minnaLesson": 14,
+    "minnaOrder": 37
   },
   {
     "id": "vocab:27f9d4039219",
@@ -2508,7 +2940,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 163
+    "order": 163,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:267651456171",
@@ -2523,9 +2957,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 164
+    "order": 164,
+    "minnaLesson": 11,
+    "minnaOrder": 52
   },
   {
     "id": "vocab:eb5450490b57",
@@ -2539,7 +2976,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 165
+    "order": 165,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:c5b7ad76fd59",
@@ -2555,9 +2994,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 166
+    "order": 166,
+    "minnaLesson": 7,
+    "minnaOrder": 34
   },
   {
     "id": "vocab:3ae16ad93a94",
@@ -2571,7 +3013,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 167
+    "order": 167,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:a8f5f4c59e9e",
@@ -2585,7 +3029,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 168
+    "order": 168,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:f81d503d6fb6",
@@ -2603,7 +3049,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 169
+    "order": 169,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:d980cb153185",
@@ -2618,7 +3066,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 170
+    "order": 170,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:19db29fbbb2e",
@@ -2632,9 +3082,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 171
+    "order": 171,
+    "minnaLesson": 9,
+    "minnaOrder": 35
   },
   {
     "id": "vocab:5e6f9cba1710",
@@ -2648,7 +3101,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 172
+    "order": 172,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:670f2dd0dc1b",
@@ -2660,9 +3115,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 173
+    "order": 173,
+    "minnaLesson": 2,
+    "minnaOrder": 26
   },
   {
     "id": "vocab:d9aba7242416",
@@ -2676,7 +3134,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 174
+    "order": 174,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:a45af4ed89b6",
@@ -2694,7 +3154,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 175
+    "order": 175,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:0455201fe608",
@@ -2710,7 +3172,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 176
+    "order": 176,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:31893e43784b",
@@ -2722,9 +3186,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 177
+    "order": 177,
+    "minnaLesson": 6,
+    "minnaOrder": 41
   },
   {
     "id": "vocab:38249a2dd2cb",
@@ -2738,7 +3205,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 178
+    "order": 178,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:13b6dbec0365",
@@ -2751,9 +3220,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 179
+    "order": 179,
+    "minnaLesson": 8,
+    "minnaOrder": 17
   },
   {
     "id": "vocab:5d72771a3cb7",
@@ -2767,7 +3239,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 180
+    "order": 180,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:33b86212ca4f",
@@ -2781,9 +3255,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 181
+    "order": 181,
+    "minnaLesson": 8,
+    "minnaOrder": 24
   },
   {
     "id": "vocab:01a0587b49b6",
@@ -2799,9 +3276,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 182
+    "order": 182,
+    "minnaLesson": 16,
+    "minnaOrder": 15
   },
   {
     "id": "vocab:cb29ccdd2a07",
@@ -2816,9 +3296,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 183
+    "order": 183,
+    "minnaLesson": 24,
+    "minnaOrder": 12
   },
   {
     "id": "vocab:ead1ae2736b9",
@@ -2832,7 +3315,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 184
+    "order": 184,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:35e9881c2266",
@@ -2850,7 +3335,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 185
+    "order": 185,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:ca7616258748",
@@ -2862,9 +3349,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 186
+    "order": 186,
+    "minnaLesson": 1,
+    "minnaOrder": 18
   },
   {
     "id": "vocab:9d8f862791fe",
@@ -2879,7 +3369,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 187
+    "order": 187,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:537f8af3d66c",
@@ -2895,9 +3387,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 188
+    "order": 188,
+    "minnaLesson": 11,
+    "minnaOrder": 5
   },
   {
     "id": "vocab:3554fb81b8a7",
@@ -2911,7 +3406,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 189
+    "order": 189,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:f0f3826045f6",
@@ -2927,7 +3424,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 190
+    "order": 190,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:b75778f0ce0b",
@@ -2942,7 +3441,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 191
+    "order": 191,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:2dc7289c8279",
@@ -2960,7 +3461,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 192
+    "order": 192,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:3fb1b70809f4",
@@ -2976,9 +3479,12 @@
     "partOfSpeech": "наречие",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 193
+    "order": 193,
+    "minnaLesson": 11,
+    "minnaOrder": 16
   },
   {
     "id": "vocab:1cfccd0cdde5",
@@ -2996,7 +3502,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 194
+    "order": 194,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:5b8403923436",
@@ -3012,9 +3520,12 @@
     "partOfSpeech": "глагол",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 195
+    "order": 195,
+    "minnaLesson": 18,
+    "minnaOrder": 3
   },
   {
     "id": "vocab:5e8fc8669cac",
@@ -3026,9 +3537,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 196
+    "order": 196,
+    "minnaLesson": 9,
+    "minnaOrder": 8
   },
   {
     "id": "vocab:e0bcec9bd956",
@@ -3046,7 +3560,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 197
+    "order": 197,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:f1046f3190a2",
@@ -3061,9 +3577,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 198
+    "order": 198,
+    "minnaLesson": 10,
+    "minnaOrder": 34
   },
   {
     "id": "vocab:277a58c9df45",
@@ -3077,7 +3596,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 199
+    "order": 199,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:92b1621231b5",
@@ -3091,9 +3612,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 200
+    "order": 200,
+    "minnaLesson": 6,
+    "minnaOrder": 43
   },
   {
     "id": "vocab:8a88cfbcb855",
@@ -3107,7 +3631,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 201
+    "order": 201,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:3c5bb8f223fd",
@@ -3123,7 +3649,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 202
+    "order": 202,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:16adc7bd0390",
@@ -3135,9 +3663,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 203
+    "order": 203,
+    "minnaLesson": 2,
+    "minnaOrder": 34
   },
   {
     "id": "vocab:d5f359c20b6b",
@@ -3150,9 +3681,12 @@
     "partOfSpeech": "счётный суффикс",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 204
+    "order": 204,
+    "minnaLesson": 5,
+    "minnaOrder": 7
   },
   {
     "id": "vocab:f840779b9ec2",
@@ -3166,9 +3700,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 205
+    "order": 205,
+    "minnaLesson": 12,
+    "minnaOrder": 3
   },
   {
     "id": "vocab:381da4d06028",
@@ -3180,9 +3717,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 206
+    "order": 206,
+    "minnaLesson": 2,
+    "minnaOrder": 16
   },
   {
     "id": "vocab:b366a3d677a2",
@@ -3196,9 +3736,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 207
+    "order": 207,
+    "minnaLesson": 14,
+    "minnaOrder": 24
   },
   {
     "id": "vocab:7d1cf1538bcd",
@@ -3216,7 +3759,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 208
+    "order": 208,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:6c4661d6728e",
@@ -3229,9 +3774,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 209
+    "order": 209,
+    "minnaLesson": 9,
+    "minnaOrder": 32
   },
   {
     "id": "vocab:ce8facdf69c2",
@@ -3249,7 +3797,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 210
+    "order": 210,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:4cb7c969c419",
@@ -3266,7 +3816,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 211
+    "order": 211,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:5d679a1af2a5",
@@ -3281,7 +3833,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 212
+    "order": 212,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:0b36c8d6c63f",
@@ -3295,7 +3849,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 213
+    "order": 213,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:2f01adebd764",
@@ -3310,7 +3866,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 214
+    "order": 214,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:cdea017272d6",
@@ -3323,9 +3881,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 215
+    "order": 215,
+    "minnaLesson": 9,
+    "minnaOrder": 12
   },
   {
     "id": "vocab:dd36cae3a97b",
@@ -3341,9 +3902,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 216
+    "order": 216,
+    "minnaLesson": 10,
+    "minnaOrder": 31
   },
   {
     "id": "vocab:619dae70e91c",
@@ -3360,7 +3924,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 217
+    "order": 217,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:9735e9472cb0",
@@ -3374,9 +3940,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 218
+    "order": 218,
+    "minnaLesson": 2,
+    "minnaOrder": 37
   },
   {
     "id": "vocab:641ddbf693bd",
@@ -3390,9 +3959,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 219
+    "order": 219,
+    "minnaLesson": 12,
+    "minnaOrder": 17
   },
   {
     "id": "vocab:e09167a3d439",
@@ -3406,7 +3978,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 220
+    "order": 220,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:9f074820b1ba",
@@ -3423,7 +3997,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 221
+    "order": 221,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:1c9db63bdc42",
@@ -3435,9 +4011,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 222
+    "order": 222,
+    "minnaLesson": 5,
+    "minnaOrder": 21
   },
   {
     "id": "vocab:66eeeb818ba4",
@@ -3452,7 +4031,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 223
+    "order": 223,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:7a9ce8e2dfdd",
@@ -3468,9 +4049,12 @@
     "partOfSpeech": "глагол",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 224
+    "order": 224,
+    "minnaLesson": 8,
+    "minnaOrder": 999
   },
   {
     "id": "vocab:6b454b895e97",
@@ -3484,9 +4068,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 225
+    "order": 225,
+    "minnaLesson": 6,
+    "minnaOrder": 24
   },
   {
     "id": "vocab:036f4180a22e",
@@ -3499,9 +4086,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 226
+    "order": 226,
+    "minnaLesson": 9,
+    "minnaOrder": 13
   },
   {
     "id": "vocab:3464318c23f5",
@@ -3516,7 +4106,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 227
+    "order": 227,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:0dbf9ef8ca71",
@@ -3528,9 +4120,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 228
+    "order": 228,
+    "minnaLesson": 4,
+    "minnaOrder": 45
   },
   {
     "id": "vocab:6485c3c2a78f",
@@ -3546,9 +4141,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 229
+    "order": 229,
+    "minnaLesson": 7,
+    "minnaOrder": 22
   },
   {
     "id": "vocab:749f78c9d18e",
@@ -3562,7 +4160,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 230
+    "order": 230,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:2e6c7d2d9d74",
@@ -3574,9 +4174,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 231
+    "order": 231,
+    "minnaLesson": 7,
+    "minnaOrder": 25
   },
   {
     "id": "vocab:ada066edfd97",
@@ -3594,7 +4197,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 232
+    "order": 232,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:2120ff505cea",
@@ -3606,9 +4211,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 233
+    "order": 233,
+    "minnaLesson": 3,
+    "minnaOrder": 20
   },
   {
     "id": "vocab:06ac21dc7d7b",
@@ -3620,9 +4228,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 234
+    "order": 234,
+    "minnaLesson": 12,
+    "minnaOrder": 26
   },
   {
     "id": "vocab:5cc1dad1e8b2",
@@ -3636,7 +4247,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 235
+    "order": 235,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:d2b9c4765609",
@@ -3648,9 +4261,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 236
+    "order": 236,
+    "minnaLesson": 1,
+    "minnaOrder": 6
   },
   {
     "id": "vocab:5bb390da0b7d",
@@ -3666,9 +4282,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 237
+    "order": 237,
+    "minnaLesson": 9,
+    "minnaOrder": 19
   },
   {
     "id": "vocab:fc3bc1e6f1a7",
@@ -3686,7 +4305,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 238
+    "order": 238,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:321963ed3549",
@@ -3704,7 +4325,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 239
+    "order": 239,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:7cb27c411e38",
@@ -3716,9 +4339,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 240
+    "order": 240,
+    "minnaLesson": 3,
+    "minnaOrder": 16
   },
   {
     "id": "vocab:68ad5f436301",
@@ -3731,9 +4357,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 241
+    "order": 241,
+    "minnaLesson": 10,
+    "minnaOrder": 37
   },
   {
     "id": "vocab:31a803c7f524",
@@ -3746,9 +4375,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 242
+    "order": 242,
+    "minnaLesson": 11,
+    "minnaOrder": 44
   },
   {
     "id": "vocab:70f16781118e",
@@ -3762,7 +4394,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 243
+    "order": 243,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:dad2d1622082",
@@ -3778,7 +4412,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 244
+    "order": 244,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:4092bfd9bbab",
@@ -3791,9 +4427,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 245
+    "order": 245,
+    "minnaLesson": 23,
+    "minnaOrder": 22
   },
   {
     "id": "vocab:dd8ac16bd25e",
@@ -3806,9 +4445,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 246
+    "order": 246,
+    "minnaLesson": 5,
+    "minnaOrder": 5
   },
   {
     "id": "vocab:452102ad0a8b",
@@ -3820,9 +4462,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 247
+    "order": 247,
+    "minnaLesson": 1,
+    "minnaOrder": 14
   },
   {
     "id": "vocab:9b2d455dfe16",
@@ -3834,9 +4479,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 248
+    "order": 248,
+    "minnaLesson": 8,
+    "minnaOrder": 30
   },
   {
     "id": "vocab:688bc6704489",
@@ -3848,9 +4496,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 249
+    "order": 249,
+    "minnaLesson": 8,
+    "minnaOrder": 20
   },
   {
     "id": "vocab:fdc787af5874",
@@ -3862,9 +4513,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 250
+    "order": 250,
+    "minnaLesson": 9,
+    "minnaOrder": 21
   },
   {
     "id": "vocab:4afffe5811b9",
@@ -3878,9 +4532,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 251
+    "order": 251,
+    "minnaLesson": 12,
+    "minnaOrder": 10
   },
   {
     "id": "vocab:02ce4106b395",
@@ -3895,7 +4552,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 252
+    "order": 252,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:72eb77e07acf",
@@ -3908,9 +4567,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 253
+    "order": 253,
+    "minnaLesson": 22,
+    "minnaOrder": 10
   },
   {
     "id": "vocab:0509cb3b27ce",
@@ -3925,9 +4587,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 254
+    "order": 254,
+    "minnaLesson": 17,
+    "minnaOrder": 18
   },
   {
     "id": "vocab:672321bac95e",
@@ -3939,9 +4604,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 255
+    "order": 255,
+    "minnaLesson": 2,
+    "minnaOrder": 30
   },
   {
     "id": "vocab:1d22f1d02306",
@@ -3957,9 +4625,12 @@
     "partOfSpeech": "глагол",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 256
+    "order": 256,
+    "minnaLesson": 5,
+    "minnaOrder": 4
   },
   {
     "id": "vocab:248a353e0981",
@@ -3973,9 +4644,12 @@
     "partOfSpeech": "глагол",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 257
+    "order": 257,
+    "minnaLesson": 4,
+    "minnaOrder": 1
   },
   {
     "id": "vocab:5620a00afcd4",
@@ -3987,9 +4661,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 258
+    "order": 258,
+    "minnaLesson": 10,
+    "minnaOrder": 25
   },
   {
     "id": "vocab:d4a1d27d3bc1",
@@ -4001,9 +4678,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 259
+    "order": 259,
+    "minnaLesson": 4,
+    "minnaOrder": 34
   },
   {
     "id": "vocab:3e3efcb45f20",
@@ -4020,7 +4700,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 260
+    "order": 260,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:e82727193ed6",
@@ -4034,7 +4716,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 261
+    "order": 261,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:b4faf372f3bf",
@@ -4048,7 +4732,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 262
+    "order": 262,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:797ae8d5624a",
@@ -4060,9 +4746,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 263
+    "order": 263,
+    "minnaLesson": 6,
+    "minnaOrder": 28
   },
   {
     "id": "vocab:ec4e1dfc873d",
@@ -4076,9 +4765,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 264
+    "order": 264,
+    "minnaLesson": 5,
+    "minnaOrder": 28
   },
   {
     "id": "vocab:21675e5a8220",
@@ -4092,9 +4784,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 265
+    "order": 265,
+    "minnaLesson": 10,
+    "minnaOrder": 999
   },
   {
     "id": "vocab:dbd7cd319c62",
@@ -4106,9 +4801,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 266
+    "order": 266,
+    "minnaLesson": 6,
+    "minnaOrder": 22
   },
   {
     "id": "vocab:d99745fbb662",
@@ -4123,9 +4821,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 267
+    "order": 267,
+    "minnaLesson": 19,
+    "minnaOrder": 8
   },
   {
     "id": "vocab:f2fa049fdd83",
@@ -4141,7 +4842,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 268
+    "order": 268,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:85eb994887e2",
@@ -4153,9 +4856,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 269
+    "order": 269,
+    "minnaLesson": 3,
+    "minnaOrder": 8
   },
   {
     "id": "vocab:8f663254b0c2",
@@ -4168,9 +4874,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 270
+    "order": 270,
+    "minnaLesson": 23,
+    "minnaOrder": 23
   },
   {
     "id": "vocab:d12ee2e932b9",
@@ -4182,9 +4891,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 271
+    "order": 271,
+    "minnaLesson": 13,
+    "minnaOrder": 16
   },
   {
     "id": "vocab:ae3e0a705f76",
@@ -4202,7 +4914,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 272
+    "order": 272,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:ba6c46f68c5b",
@@ -4220,7 +4934,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 273
+    "order": 273,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:a21ba677f2a8",
@@ -4233,9 +4949,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 274
+    "order": 274,
+    "minnaLesson": 12,
+    "minnaOrder": 2
   },
   {
     "id": "vocab:6d7293f7cfba",
@@ -4251,9 +4970,12 @@
     "partOfSpeech": "наречие",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 275
+    "order": 275,
+    "minnaLesson": 10,
+    "minnaOrder": 39
   },
   {
     "id": "vocab:b00c4af0a291",
@@ -4265,9 +4987,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 276
+    "order": 276,
+    "minnaLesson": 4,
+    "minnaOrder": 48
   },
   {
     "id": "vocab:a59efa305760",
@@ -4279,9 +5004,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 277
+    "order": 277,
+    "minnaLesson": 4,
+    "minnaOrder": 8
   },
   {
     "id": "vocab:41ee3e1c2867",
@@ -4295,7 +5023,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 278
+    "order": 278,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:cff3c57405d3",
@@ -4309,9 +5039,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 279
+    "order": 279,
+    "minnaLesson": 11,
+    "minnaOrder": 13
   },
   {
     "id": "vocab:f114f6f499d6",
@@ -4326,7 +5059,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 280
+    "order": 280,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:6ff51bace3a7",
@@ -4342,7 +5077,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 281
+    "order": 281,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:9dd0572f0581",
@@ -4355,9 +5092,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 282
+    "order": 282,
+    "minnaLesson": 3,
+    "minnaOrder": 23
   },
   {
     "id": "vocab:20a1278928b1",
@@ -4371,7 +5111,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 283
+    "order": 283,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:4aab6998645b",
@@ -4383,9 +5125,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 284
+    "order": 284,
+    "minnaLesson": 11,
+    "minnaOrder": 36
   },
   {
     "id": "vocab:976c4f7174bb",
@@ -4398,9 +5143,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 285
+    "order": 285,
+    "minnaLesson": 11,
+    "minnaOrder": 35
   },
   {
     "id": "vocab:e1634cb3e943",
@@ -4414,7 +5162,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 286
+    "order": 286,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:a8b9eb425d9e",
@@ -4430,9 +5180,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 287
+    "order": 287,
+    "minnaLesson": 12,
+    "minnaOrder": 13
   },
   {
     "id": "vocab:dd3425074077",
@@ -4449,7 +5202,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 288
+    "order": 288,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:2eb252da722f",
@@ -4467,7 +5222,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 289
+    "order": 289,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:04e80a2ba1b8",
@@ -4479,9 +5236,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 290
+    "order": 290,
+    "minnaLesson": 4,
+    "minnaOrder": 44
   },
   {
     "id": "vocab:eda751e069b4",
@@ -4496,7 +5256,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 291
+    "order": 291,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:d106dac02339",
@@ -4513,7 +5275,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 292
+    "order": 292,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:372b08211ec1",
@@ -4525,9 +5289,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 293
+    "order": 293,
+    "minnaLesson": 23,
+    "minnaOrder": 28
   },
   {
     "id": "vocab:0df89f50104f",
@@ -4541,9 +5308,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 294
+    "order": 294,
+    "minnaLesson": 10,
+    "minnaOrder": 8
   },
   {
     "id": "vocab:db35a99e2801",
@@ -4558,7 +5328,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 295
+    "order": 295,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:9210e024fce9",
@@ -4573,7 +5345,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 296
+    "order": 296,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:442c4aa1ca91",
@@ -4588,7 +5362,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 297
+    "order": 297,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:2e1642b24853",
@@ -4602,7 +5378,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 298
+    "order": 298,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:ae0cc00f94c9",
@@ -4620,7 +5398,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 299
+    "order": 299,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:491cfa69be08",
@@ -4635,9 +5415,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 300
+    "order": 300,
+    "minnaLesson": 20,
+    "minnaOrder": 12
   },
   {
     "id": "vocab:aa60dd4a1112",
@@ -4651,9 +5434,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 301
+    "order": 301,
+    "minnaLesson": 8,
+    "minnaOrder": 15
   },
   {
     "id": "vocab:76f05a073975",
@@ -4670,7 +5456,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 302
+    "order": 302,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:6f4691297f99",
@@ -4685,7 +5473,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 303
+    "order": 303,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:47c1fdbe2fae",
@@ -4699,7 +5489,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 304
+    "order": 304,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:9ac35c399077",
@@ -4713,9 +5505,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 305
+    "order": 305,
+    "minnaLesson": 11,
+    "minnaOrder": 9
   },
   {
     "id": "vocab:2a7c4baf86ec",
@@ -4730,7 +5525,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 306
+    "order": 306,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:9a7c962266b7",
@@ -4742,9 +5539,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 307
+    "order": 307,
+    "minnaLesson": 4,
+    "minnaOrder": 21
   },
   {
     "id": "vocab:c92dbe626aff",
@@ -4756,9 +5556,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 308
+    "order": 308,
+    "minnaLesson": 4,
+    "minnaOrder": 20
   },
   {
     "id": "vocab:4f134c9b387b",
@@ -4776,7 +5579,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 309
+    "order": 309,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:93bdc81dd9fb",
@@ -4794,7 +5599,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 310
+    "order": 310,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:a2694d259ee2",
@@ -4811,7 +5618,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 311
+    "order": 311,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:8699b8bec2bc",
@@ -4826,7 +5635,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 312
+    "order": 312,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:402eb0d21ff7",
@@ -4841,7 +5652,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 313
+    "order": 313,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:05cf590971c8",
@@ -4853,9 +5666,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 314
+    "order": 314,
+    "minnaLesson": 10,
+    "minnaOrder": 24
   },
   {
     "id": "vocab:9949d8744583",
@@ -4873,7 +5689,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 315
+    "order": 315,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:a123a147d7b7",
@@ -4891,7 +5709,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 316
+    "order": 316,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:8e862f05f099",
@@ -4909,7 +5729,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 317
+    "order": 317,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:20cbecd474d8",
@@ -4926,7 +5748,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 318
+    "order": 318,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:230d5c734305",
@@ -4940,9 +5764,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 319
+    "order": 319,
+    "minnaLesson": 13,
+    "minnaOrder": 15
   },
   {
     "id": "vocab:1288e600bea0",
@@ -4954,9 +5781,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 320
+    "order": 320,
+    "minnaLesson": 6,
+    "minnaOrder": 27
   },
   {
     "id": "vocab:66e4692df7b6",
@@ -4974,7 +5804,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 321
+    "order": 321,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:ae00442122cf",
@@ -4992,7 +5824,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 322
+    "order": 322,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:5791e248f1c2",
@@ -5006,7 +5840,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 323
+    "order": 323,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:c74892f56538",
@@ -5020,9 +5856,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 324
+    "order": 324,
+    "minnaLesson": 8,
+    "minnaOrder": 25
   },
   {
     "id": "vocab:b55dd305d134",
@@ -5036,9 +5875,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 325
+    "order": 325,
+    "minnaLesson": 3,
+    "minnaOrder": 19
   },
   {
     "id": "vocab:3c32cfb08a14",
@@ -5055,7 +5897,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 326
+    "order": 326,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:5e5300cf62e8",
@@ -5070,7 +5914,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 327
+    "order": 327,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:ce75c75644a6",
@@ -5084,9 +5930,12 @@
     "partOfSpeech": "наречие",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 328
+    "order": 328,
+    "minnaLesson": 4,
+    "minnaOrder": 14
   },
   {
     "id": "vocab:379317368752",
@@ -5099,9 +5948,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 329
+    "order": 329,
+    "minnaLesson": 5,
+    "minnaOrder": 26
   },
   {
     "id": "vocab:7a27eadef1d6",
@@ -5114,9 +5966,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 330
+    "order": 330,
+    "minnaLesson": 5,
+    "minnaOrder": 23
   },
   {
     "id": "vocab:9c1d724a61f9",
@@ -5132,7 +5987,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 331
+    "order": 331,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:0400a204bdb7",
@@ -5149,7 +6006,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 332
+    "order": 332,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:0020b9ee4eb1",
@@ -5166,7 +6025,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 333
+    "order": 333,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:eb1c9a5df93f",
@@ -5179,9 +6040,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 334
+    "order": 334,
+    "minnaLesson": 4,
+    "minnaOrder": 32
   },
   {
     "id": "vocab:61994485cb78",
@@ -5198,7 +6062,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 335
+    "order": 335,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:ec5bd86b7269",
@@ -5214,9 +6080,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 336
+    "order": 336,
+    "minnaLesson": 10,
+    "minnaOrder": 35
   },
   {
     "id": "vocab:4e2aefb8558f",
@@ -5234,7 +6103,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 337
+    "order": 337,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:8af5030b7aca",
@@ -5246,9 +6117,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 338
+    "order": 338,
+    "minnaLesson": 14,
+    "minnaOrder": 25
   },
   {
     "id": "vocab:c9a15e8777af",
@@ -5264,7 +6138,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 339
+    "order": 339,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:785adc4f9d4c",
@@ -5279,7 +6155,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 340
+    "order": 340,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:a96e3a2b3396",
@@ -5293,7 +6171,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 341
+    "order": 341,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:4c39babf5ff8",
@@ -5307,7 +6187,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 342
+    "order": 342,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:6e922a750ec0",
@@ -5325,7 +6207,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 343
+    "order": 343,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:c10cb3070dfe",
@@ -5339,7 +6223,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 344
+    "order": 344,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:a94a4be08f53",
@@ -5355,7 +6241,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 345
+    "order": 345,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:39fff8fc4b8c",
@@ -5369,7 +6257,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 346
+    "order": 346,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:4cc27797ba98",
@@ -5381,9 +6271,12 @@
     "partOfSpeech": "глагол",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 347
+    "order": 347,
+    "minnaLesson": 6,
+    "minnaOrder": 10
   },
   {
     "id": "vocab:a371cc6a546f",
@@ -5395,9 +6288,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 348
+    "order": 348,
+    "minnaLesson": 2,
+    "minnaOrder": 9
   },
   {
     "id": "vocab:5cb07674a3bd",
@@ -5411,7 +6307,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 349
+    "order": 349,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:b36b221d335c",
@@ -5425,9 +6323,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 350
+    "order": 350,
+    "minnaLesson": 11,
+    "minnaOrder": 7
   },
   {
     "id": "vocab:1713d0bbe810",
@@ -5442,7 +6343,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 351
+    "order": 351,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:6f54881e59d8",
@@ -5454,9 +6357,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 352
+    "order": 352,
+    "minnaLesson": 2,
+    "minnaOrder": 21
   },
   {
     "id": "vocab:e8a5cbdf0a3f",
@@ -5472,9 +6378,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 353
+    "order": 353,
+    "minnaLesson": 8,
+    "minnaOrder": 36
   },
   {
     "id": "vocab:e7bdf892f93f",
@@ -5489,7 +6398,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 354
+    "order": 354,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:573bc15b1d93",
@@ -5504,7 +6415,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 355
+    "order": 355,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:c88e0ba104e7",
@@ -5522,7 +6435,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 356
+    "order": 356,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:205cbe928107",
@@ -5537,7 +6452,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 357
+    "order": 357,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:1000ee441a61",
@@ -5552,9 +6469,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 358
+    "order": 358,
+    "minnaLesson": 11,
+    "minnaOrder": 8
   },
   {
     "id": "vocab:222ae96df72c",
@@ -5569,7 +6489,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 359
+    "order": 359,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:8fea1e3f3c8a",
@@ -5583,7 +6505,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 360
+    "order": 360,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:8bfeb208b416",
@@ -5595,9 +6519,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 361
+    "order": 361,
+    "minnaLesson": 11,
+    "minnaOrder": 38
   },
   {
     "id": "vocab:1f4bb6e5033e",
@@ -5611,9 +6538,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 362
+    "order": 362,
+    "minnaLesson": 9,
+    "minnaOrder": 34
   },
   {
     "id": "vocab:9d1aa046d6da",
@@ -5631,7 +6561,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 363
+    "order": 363,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:ec6fd2f84522",
@@ -5646,7 +6578,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 364
+    "order": 364,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:d5c2e6981391",
@@ -5661,7 +6595,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 365
+    "order": 365,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:cd08f9cdc2ed",
@@ -5673,9 +6609,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 366
+    "order": 366,
+    "minnaLesson": 7,
+    "minnaOrder": 21
   },
   {
     "id": "vocab:390ac6443d2e",
@@ -5690,9 +6629,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 367
+    "order": 367,
+    "minnaLesson": 16,
+    "minnaOrder": 25
   },
   {
     "id": "vocab:6156bfb418dd",
@@ -5706,7 +6648,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 368
+    "order": 368,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:16fda19d790d",
@@ -5724,7 +6668,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 369
+    "order": 369,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:978a2cefa50b",
@@ -5742,7 +6688,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 370
+    "order": 370,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:d5c916ca8514",
@@ -5757,9 +6705,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 371
+    "order": 371,
+    "minnaLesson": 9,
+    "minnaOrder": 27
   },
   {
     "id": "vocab:e3ad76810f3c",
@@ -5771,9 +6722,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 372
+    "order": 372,
+    "minnaLesson": 2,
+    "minnaOrder": 20
   },
   {
     "id": "vocab:d00ef0a9d527",
@@ -5791,7 +6745,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 373
+    "order": 373,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:e8cdf8b85a6b",
@@ -5805,9 +6761,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 374
+    "order": 374,
+    "minnaLesson": 16,
+    "minnaOrder": 24
   },
   {
     "id": "vocab:ebf194a3161b",
@@ -5819,9 +6778,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 375
+    "order": 375,
+    "minnaLesson": 5,
+    "minnaOrder": 15
   },
   {
     "id": "vocab:78fd1a0e8afd",
@@ -5833,9 +6795,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 376
+    "order": 376,
+    "minnaLesson": 2,
+    "minnaOrder": 29
   },
   {
     "id": "vocab:995a632b12e5",
@@ -5853,7 +6818,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 377
+    "order": 377,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:8ec35978bd26",
@@ -5865,9 +6832,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 378
+    "order": 378,
+    "minnaLesson": 2,
+    "minnaOrder": 8
   },
   {
     "id": "vocab:142536efd1b1",
@@ -5881,7 +6851,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 379
+    "order": 379,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:e65bf7ad2328",
@@ -5895,9 +6867,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 380
+    "order": 380,
+    "minnaLesson": 11,
+    "minnaOrder": 11
   },
   {
     "id": "vocab:75ed3c3b2bfd",
@@ -5914,7 +6889,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 381
+    "order": 381,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:2c5c99977c06",
@@ -5929,7 +6906,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 382
+    "order": 382,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:5101640e7e3b",
@@ -5941,9 +6920,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 383
+    "order": 383,
+    "minnaLesson": 6,
+    "minnaOrder": 44
   },
   {
     "id": "vocab:d6b85573f340",
@@ -5957,9 +6939,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 384
+    "order": 384,
+    "minnaLesson": 8,
+    "minnaOrder": 39
   },
   {
     "id": "vocab:8cd440a18106",
@@ -5973,9 +6958,12 @@
     "partOfSpeech": "глагол",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 385
+    "order": 385,
+    "minnaLesson": 7,
+    "minnaOrder": 6
   },
   {
     "id": "vocab:640761cb8b56",
@@ -5989,9 +6977,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 386
+    "order": 386,
+    "minnaLesson": 16,
+    "minnaOrder": 11
   },
   {
     "id": "vocab:83da29377598",
@@ -6003,9 +6994,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 387
+    "order": 387,
+    "minnaLesson": 19,
+    "minnaOrder": 9
   },
   {
     "id": "vocab:1313ed47fb56",
@@ -6021,9 +7015,12 @@
     "partOfSpeech": "глагол",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 388
+    "order": 388,
+    "minnaLesson": 14,
+    "minnaOrder": 10
   },
   {
     "id": "vocab:5b9670420a38",
@@ -6039,9 +7036,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 389
+    "order": 389,
+    "minnaLesson": 7,
+    "minnaOrder": 8
   },
   {
     "id": "vocab:218ea67735db",
@@ -6053,9 +7053,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 390
+    "order": 390,
+    "minnaLesson": 6,
+    "minnaOrder": 42
   },
   {
     "id": "vocab:5bae55950780",
@@ -6071,7 +7074,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 391
+    "order": 391,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:8dc7006bda60",
@@ -6085,9 +7090,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 392
+    "order": 392,
+    "minnaLesson": 12,
+    "minnaOrder": 18
   },
   {
     "id": "vocab:d7960dc78d2d",
@@ -6103,7 +7111,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 393
+    "order": 393,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:a95b0a87ad71",
@@ -6117,7 +7127,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 394
+    "order": 394,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:d671097071c6",
@@ -6132,7 +7144,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 395
+    "order": 395,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:3318a1b091d3",
@@ -6148,7 +7162,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 396
+    "order": 396,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:e8579084ba70",
@@ -6163,7 +7179,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 397
+    "order": 397,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:cdfb776826d4",
@@ -6176,9 +7194,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 398
+    "order": 398,
+    "minnaLesson": 12,
+    "minnaOrder": 12
   },
   {
     "id": "vocab:4daa103d7db3",
@@ -6195,7 +7216,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 399
+    "order": 399,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:375cfbefdd6b",
@@ -6211,7 +7234,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 400
+    "order": 400,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:6298cfc5d6a1",
@@ -6229,7 +7254,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 401
+    "order": 401,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:5ef4f7dde927",
@@ -6245,9 +7272,12 @@
     "partOfSpeech": "глагол",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 402
+    "order": 402,
+    "minnaLesson": 13,
+    "minnaOrder": 7
   },
   {
     "id": "vocab:151fd7216444",
@@ -6262,7 +7292,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 403
+    "order": 403,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:f16244c58570",
@@ -6275,9 +7307,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 404
+    "order": 404,
+    "minnaLesson": 12,
+    "minnaOrder": 16
   },
   {
     "id": "vocab:6a2d47333e5a",
@@ -6293,9 +7328,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 405
+    "order": 405,
+    "minnaLesson": 20,
+    "minnaOrder": 16
   },
   {
     "id": "vocab:3f18999e098c",
@@ -6309,9 +7347,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 406
+    "order": 406,
+    "minnaLesson": 12,
+    "minnaOrder": 38
   },
   {
     "id": "vocab:ca332ac7b4b8",
@@ -6327,9 +7368,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 407
+    "order": 407,
+    "minnaLesson": 8,
+    "minnaOrder": 40
   },
   {
     "id": "vocab:7b4aecdf7b9c",
@@ -6343,7 +7387,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 408
+    "order": 408,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:f7c7f35d9e38",
@@ -6358,7 +7404,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 409
+    "order": 409,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:980a922ad3e3",
@@ -6372,7 +7420,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 410
+    "order": 410,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:e6afab391a17",
@@ -6384,9 +7434,12 @@
     "partOfSpeech": "выражение",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 411
+    "order": 411,
+    "minnaLesson": 10,
+    "minnaOrder": 7
   },
   {
     "id": "vocab:d4779ac36c2e",
@@ -6399,9 +7452,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 412
+    "order": 412,
+    "minnaLesson": 8,
+    "minnaOrder": 13
   },
   {
     "id": "vocab:38a8411ec3a9",
@@ -6415,7 +7471,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 413
+    "order": 413,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:c373555102ff",
@@ -6428,9 +7486,12 @@
     "partOfSpeech": "наречие",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 414
+    "order": 414,
+    "minnaLesson": 9,
+    "minnaOrder": 38
   },
   {
     "id": "vocab:0d38b011134d",
@@ -6445,7 +7506,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 415
+    "order": 415,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:6030b5027684",
@@ -6461,7 +7524,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 416
+    "order": 416,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:19f270c68ff2",
@@ -6478,7 +7543,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 417
+    "order": 417,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:08a3ed212d48",
@@ -6494,9 +7561,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 418
+    "order": 418,
+    "minnaLesson": 10,
+    "minnaOrder": 30
   },
   {
     "id": "vocab:9661cbac618a",
@@ -6514,7 +7584,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 419
+    "order": 419,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:1763fc412ae4",
@@ -6530,7 +7602,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 420
+    "order": 420,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:1ef8a05bf302",
@@ -6543,9 +7617,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 421
+    "order": 421,
+    "minnaLesson": 17,
+    "minnaOrder": 28
   },
   {
     "id": "vocab:50525927ee48",
@@ -6561,7 +7638,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 422
+    "order": 422,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:822c5e11a620",
@@ -6579,7 +7658,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 423
+    "order": 423,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:523266ea6f73",
@@ -6597,7 +7678,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 424
+    "order": 424,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:86f67e2dc3eb",
@@ -6612,7 +7695,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 425
+    "order": 425,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:5c89b3094a67",
@@ -6625,9 +7710,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 426
+    "order": 426,
+    "minnaLesson": 8,
+    "minnaOrder": 38
   },
   {
     "id": "vocab:dcc87a37fb56",
@@ -6639,9 +7727,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 427
+    "order": 427,
+    "minnaLesson": 3,
+    "minnaOrder": 9
   },
   {
     "id": "vocab:0c6e923ef913",
@@ -6658,7 +7749,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 428
+    "order": 428,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:8ae27e3b514f",
@@ -6670,9 +7763,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 429
+    "order": 429,
+    "minnaLesson": 8,
+    "minnaOrder": 14
   },
   {
     "id": "vocab:b8317395af01",
@@ -6684,9 +7780,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 430
+    "order": 430,
+    "minnaLesson": 2,
+    "minnaOrder": 10
   },
   {
     "id": "vocab:d2546ac97b08",
@@ -6700,9 +7799,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 431
+    "order": 431,
+    "minnaLesson": 12,
+    "minnaOrder": 11
   },
   {
     "id": "vocab:d91ee7a9ed68",
@@ -6718,9 +7820,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 432
+    "order": 432,
+    "minnaLesson": 5,
+    "minnaOrder": 17
   },
   {
     "id": "vocab:de5a45266732",
@@ -6734,7 +7839,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 433
+    "order": 433,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:15f41364211a",
@@ -6752,7 +7859,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 434
+    "order": 434,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:69a792520f6d",
@@ -6766,9 +7875,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 435
+    "order": 435,
+    "minnaLesson": 6,
+    "minnaOrder": 25
   },
   {
     "id": "vocab:44d9d70862b3",
@@ -6780,9 +7892,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 436
+    "order": 436,
+    "minnaLesson": 4,
+    "minnaOrder": 46
   },
   {
     "id": "vocab:9edf8548bbc0",
@@ -6796,7 +7911,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 437
+    "order": 437,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:3be88666ba0f",
@@ -6814,7 +7931,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 438
+    "order": 438,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:63bc7722fa1e",
@@ -6828,7 +7947,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 439
+    "order": 439,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:af7459ef1e42",
@@ -6842,7 +7963,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 440
+    "order": 440,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:d890e45616a9",
@@ -6857,7 +7980,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 441
+    "order": 441,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:436f1c3c6517",
@@ -6875,7 +8000,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 442
+    "order": 442,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:ebec6584630d",
@@ -6892,7 +8019,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 443
+    "order": 443,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:51a671ec1724",
@@ -6908,7 +8037,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 444
+    "order": 444,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:178469ba7aa0",
@@ -6925,7 +8056,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 445
+    "order": 445,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:2dacb910b2e8",
@@ -6942,7 +8075,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 446
+    "order": 446,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:44ba38cf8bc2",
@@ -6956,9 +8091,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 447
+    "order": 447,
+    "minnaLesson": 8,
+    "minnaOrder": 33
   },
   {
     "id": "vocab:cf23f5fba1de",
@@ -6974,9 +8112,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 448
+    "order": 448,
+    "minnaLesson": 7,
+    "minnaOrder": 1
   },
   {
     "id": "vocab:e101e41f548c",
@@ -6988,9 +8129,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 449
+    "order": 449,
+    "minnaLesson": 11,
+    "minnaOrder": 27
   },
   {
     "id": "vocab:4fee5be397f6",
@@ -7005,7 +8149,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 450
+    "order": 450,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:78c044b951b0",
@@ -7017,9 +8163,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 451
+    "order": 451,
+    "minnaLesson": 12,
+    "minnaOrder": 22
   },
   {
     "id": "vocab:20fcc4f54f3f",
@@ -7037,7 +8186,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 452
+    "order": 452,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:0eaa93c14491",
@@ -7049,9 +8200,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 453
+    "order": 453,
+    "minnaLesson": 5,
+    "minnaOrder": 25
   },
   {
     "id": "vocab:b8c4cd80dbb5",
@@ -7063,9 +8217,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 454
+    "order": 454,
+    "minnaLesson": 5,
+    "minnaOrder": 22
   },
   {
     "id": "vocab:814bdc2cecda",
@@ -7079,9 +8236,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 455
+    "order": 455,
+    "minnaLesson": 1,
+    "minnaOrder": 12
   },
   {
     "id": "vocab:1729d60f09e9",
@@ -7094,9 +8254,12 @@
     "partOfSpeech": "числительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 456
+    "order": 456,
+    "minnaLesson": 3,
+    "minnaOrder": 31
   },
   {
     "id": "vocab:c1b47e6ff2dd",
@@ -7108,9 +8271,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 457
+    "order": 457,
+    "minnaLesson": 13,
+    "minnaOrder": 19
   },
   {
     "id": "vocab:f8fa96946f4f",
@@ -7126,7 +8292,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 458
+    "order": 458,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:4d0ca7b32041",
@@ -7141,7 +8309,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 459
+    "order": 459,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:319e218950c1",
@@ -7157,9 +8327,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 460
+    "order": 460,
+    "minnaLesson": 10,
+    "minnaOrder": 32
   },
   {
     "id": "vocab:acba6e07ba4a",
@@ -7172,9 +8345,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 461
+    "order": 461,
+    "minnaLesson": 24,
+    "minnaOrder": 14
   },
   {
     "id": "vocab:5ff8719d88d1",
@@ -7191,7 +8367,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 462
+    "order": 462,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:4db42e0181df",
@@ -7208,7 +8386,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 463
+    "order": 463,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:7734194821f2",
@@ -7221,9 +8401,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 464
+    "order": 464,
+    "minnaLesson": 10,
+    "minnaOrder": 21
   },
   {
     "id": "vocab:244e13892048",
@@ -7241,7 +8424,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 465
+    "order": 465,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:27df3d58020a",
@@ -7257,9 +8442,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 466
+    "order": 466,
+    "minnaLesson": 16,
+    "minnaOrder": 27
   },
   {
     "id": "vocab:406d15f6e9b0",
@@ -7276,7 +8464,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 467
+    "order": 467,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:5028971b395e",
@@ -7291,7 +8481,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 468
+    "order": 468,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:60813fffd121",
@@ -7305,7 +8497,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 469
+    "order": 469,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:4162724f9a26",
@@ -7320,7 +8514,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 470
+    "order": 470,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:a556e5edce0d",
@@ -7334,9 +8530,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 471
+    "order": 471,
+    "minnaLesson": 16,
+    "minnaOrder": 18
   },
   {
     "id": "vocab:6a397012280f",
@@ -7352,7 +8551,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 472
+    "order": 472,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:1122cac4095f",
@@ -7368,9 +8569,12 @@
     "partOfSpeech": "глагол",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 473
+    "order": 473,
+    "minnaLesson": 7,
+    "minnaOrder": 5
   },
   {
     "id": "vocab:1c0b0f77b6ff",
@@ -7384,7 +8588,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 474
+    "order": 474,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:8fa5a63fc770",
@@ -7397,9 +8603,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 475
+    "order": 475,
+    "minnaLesson": 8,
+    "minnaOrder": 12
   },
   {
     "id": "vocab:3a2de0afcae9",
@@ -7413,7 +8622,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 476
+    "order": 476,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:5b303264b994",
@@ -7426,9 +8637,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 477
+    "order": 477,
+    "minnaLesson": 1,
+    "minnaOrder": 21
   },
   {
     "id": "vocab:9ee7cd3382dc",
@@ -7442,7 +8656,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 478
+    "order": 478,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:992fc0733950",
@@ -7454,9 +8670,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 479
+    "order": 479,
+    "minnaLesson": 25,
+    "minnaOrder": 6
   },
   {
     "id": "vocab:2f62b9db5e60",
@@ -7469,9 +8688,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 480
+    "order": 480,
+    "minnaLesson": 17,
+    "minnaOrder": 17
   },
   {
     "id": "vocab:6f5049e2d485",
@@ -7488,7 +8710,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 481
+    "order": 481,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:57ed89b2406d",
@@ -7506,7 +8730,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 482
+    "order": 482,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:b3a8593e533c",
@@ -7519,9 +8745,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 483
+    "order": 483,
+    "minnaLesson": 17,
+    "minnaOrder": 16
   },
   {
     "id": "vocab:3af80b5b2a96",
@@ -7535,7 +8764,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 484
+    "order": 484,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:3d2ca62c5f94",
@@ -7550,7 +8781,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 485
+    "order": 485,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:8568eded6e66",
@@ -7562,9 +8795,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 486
+    "order": 486,
+    "minnaLesson": 16,
+    "minnaOrder": 13
   },
   {
     "id": "vocab:2e610178aea8",
@@ -7576,9 +8812,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 487
+    "order": 487,
+    "minnaLesson": 5,
+    "minnaOrder": 49
   },
   {
     "id": "vocab:23911a071821",
@@ -7590,9 +8829,12 @@
     "partOfSpeech": "глагол",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 488
+    "order": 488,
+    "minnaLesson": 18,
+    "minnaOrder": 3
   },
   {
     "id": "vocab:f665c2128ada",
@@ -7607,7 +8849,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 489
+    "order": 489,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:2fd7d45c8d01",
@@ -7625,7 +8869,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 490
+    "order": 490,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:6f664d3ded35",
@@ -7637,9 +8883,12 @@
     "partOfSpeech": "выражение",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 491
+    "order": 491,
+    "minnaLesson": 10,
+    "minnaOrder": 6
   },
   {
     "id": "vocab:1fcb2fece8f1",
@@ -7655,9 +8904,12 @@
     "partOfSpeech": "глагол",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 492
+    "order": 492,
+    "minnaLesson": 15,
+    "minnaOrder": 7
   },
   {
     "id": "vocab:3134199c2556",
@@ -7669,9 +8921,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 493
+    "order": 493,
+    "minnaLesson": 5,
+    "minnaOrder": 11
   },
   {
     "id": "vocab:ffa3dda331e4",
@@ -7683,9 +8938,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 494
+    "order": 494,
+    "minnaLesson": 14,
+    "minnaOrder": 23
   },
   {
     "id": "vocab:43c874a6c8af",
@@ -7699,7 +8957,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 495
+    "order": 495,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:96845304fd98",
@@ -7715,9 +8975,12 @@
     "partOfSpeech": "глагол",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 496
+    "order": 496,
+    "minnaLesson": 15,
+    "minnaOrder": 4
   },
   {
     "id": "vocab:a082687f7a72",
@@ -7731,9 +8994,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 497
+    "order": 497,
+    "minnaLesson": 12,
+    "minnaOrder": 5
   },
   {
     "id": "vocab:f9b377e25368",
@@ -7747,7 +9013,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 498
+    "order": 498,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:9d4a68ce12b6",
@@ -7762,7 +9030,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 499
+    "order": 499,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:45fbcb867017",
@@ -7774,9 +9044,12 @@
     "partOfSpeech": "глагол",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 500
+    "order": 500,
+    "minnaLesson": 22,
+    "minnaOrder": 1
   },
   {
     "id": "vocab:5d32281da9ae",
@@ -7792,9 +9065,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 501
+    "order": 501,
+    "minnaLesson": 10,
+    "minnaOrder": 36
   },
   {
     "id": "vocab:5d7a8d133b7b",
@@ -7810,9 +9086,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 502
+    "order": 502,
+    "minnaLesson": 4,
+    "minnaOrder": 23
   },
   {
     "id": "vocab:0b492c32093e",
@@ -7826,7 +9105,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 503
+    "order": 503,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:d46ae79a267a",
@@ -7840,9 +9121,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 504
+    "order": 504,
+    "minnaLesson": 4,
+    "minnaOrder": 22
   },
   {
     "id": "vocab:3e253822403a",
@@ -7856,7 +9140,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 505
+    "order": 505,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:4d76d06d8403",
@@ -7871,9 +9157,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 506
+    "order": 506,
+    "minnaLesson": 8,
+    "minnaOrder": 37
   },
   {
     "id": "vocab:fcea29f1923b",
@@ -7890,7 +9179,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 507
+    "order": 507,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:7e4fccba7fc7",
@@ -7906,7 +9197,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 508
+    "order": 508,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:4dae36779424",
@@ -7921,7 +9214,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 509
+    "order": 509,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:e25cf6ed2fef",
@@ -7933,9 +9228,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 510
+    "order": 510,
+    "minnaLesson": 8,
+    "minnaOrder": 26
   },
   {
     "id": "vocab:9ef6c9d703b9",
@@ -7947,9 +9245,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 511
+    "order": 511,
+    "minnaLesson": 6,
+    "minnaOrder": 45
   },
   {
     "id": "vocab:db32745bbc3b",
@@ -7962,9 +9263,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 512
+    "order": 512,
+    "minnaLesson": 11,
+    "minnaOrder": 40
   },
   {
     "id": "vocab:8e6c15bef9a3",
@@ -7982,7 +9286,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 513
+    "order": 513,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:679e34031ec7",
@@ -7995,9 +9301,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 514
+    "order": 514,
+    "minnaLesson": 12,
+    "minnaOrder": 20
   },
   {
     "id": "vocab:0c8a588e53a5",
@@ -8010,9 +9319,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 515
+    "order": 515,
+    "minnaLesson": 6,
+    "minnaOrder": 40
   },
   {
     "id": "vocab:f47c4aee42ee",
@@ -8030,7 +9342,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 516
+    "order": 516,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:a7c36fdb7072",
@@ -8044,9 +9358,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 517
+    "order": 517,
+    "minnaLesson": 1,
+    "minnaOrder": 23
   },
   {
     "id": "vocab:62b5c13164dd",
@@ -8058,9 +9375,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 518
+    "order": 518,
+    "minnaLesson": 5,
+    "minnaOrder": 10
   },
   {
     "id": "vocab:3c039918bae5",
@@ -8076,7 +9396,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 519
+    "order": 519,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:b1d440d4e168",
@@ -8091,7 +9413,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 520
+    "order": 520,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:78255b98606e",
@@ -8109,7 +9433,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 521
+    "order": 521,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:7817fc9d646e",
@@ -8127,7 +9453,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 522
+    "order": 522,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:86e7fb81c670",
@@ -8139,9 +9467,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 523
+    "order": 523,
+    "minnaLesson": 4,
+    "minnaOrder": 49
   },
   {
     "id": "vocab:eb9acca7ba59",
@@ -8157,9 +9488,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 524
+    "order": 524,
+    "minnaLesson": 12,
+    "minnaOrder": 19
   },
   {
     "id": "vocab:0a38c6500420",
@@ -8175,7 +9509,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 525
+    "order": 525,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:d5d8c608aa98",
@@ -8193,7 +9529,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 526
+    "order": 526,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:b62cb9ce4cdd",
@@ -8209,9 +9547,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 527
+    "order": 527,
+    "minnaLesson": 16,
+    "minnaOrder": 19
   },
   {
     "id": "vocab:9ea671262d2d",
@@ -8229,7 +9570,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 528
+    "order": 528,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:03d03cf25dba",
@@ -8242,9 +9585,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 529
+    "order": 529,
+    "minnaLesson": 18,
+    "minnaOrder": 19
   },
   {
     "id": "vocab:7c134ec81285",
@@ -8258,9 +9604,12 @@
     "partOfSpeech": "наречие",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 530
+    "order": 530,
+    "minnaLesson": 21,
+    "minnaOrder": 10
   },
   {
     "id": "vocab:dc29195f187e",
@@ -8276,9 +9625,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 531
+    "order": 531,
+    "minnaLesson": 23,
+    "minnaOrder": 2
   },
   {
     "id": "vocab:eb7e67590252",
@@ -8294,7 +9646,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 532
+    "order": 532,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:c518fb91164d",
@@ -8308,7 +9662,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 533
+    "order": 533,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:eec0f9399189",
@@ -8321,9 +9677,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 534
+    "order": 534,
+    "minnaLesson": 12,
+    "minnaOrder": 23
   },
   {
     "id": "vocab:c34fdb60926c",
@@ -8338,7 +9697,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 535
+    "order": 535,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:84e465b526bb",
@@ -8356,7 +9717,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 536
+    "order": 536,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:0a3894175f43",
@@ -8370,9 +9733,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 537
+    "order": 537,
+    "minnaLesson": 8,
+    "minnaOrder": 21
   },
   {
     "id": "vocab:34108268e1f3",
@@ -8390,7 +9756,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 538
+    "order": 538,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:0c1dbd4838de",
@@ -8405,9 +9773,12 @@
     "partOfSpeech": "числительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 539
+    "order": 539,
+    "minnaLesson": 11,
+    "minnaOrder": 6
   },
   {
     "id": "vocab:c65a346458d6",
@@ -8421,7 +9792,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 540
+    "order": 540,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:153de066694b",
@@ -8437,7 +9810,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 541
+    "order": 541,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:94c207682133",
@@ -8450,9 +9825,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 542
+    "order": 542,
+    "minnaLesson": 11,
+    "minnaOrder": 17
   },
   {
     "id": "vocab:750786cc5554",
@@ -8467,7 +9845,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 543
+    "order": 543,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:c17f97fafcce",
@@ -8484,7 +9864,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 544
+    "order": 544,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:efac1fc5029b",
@@ -8500,9 +9882,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 545
+    "order": 545,
+    "minnaLesson": 6,
+    "minnaOrder": 21
   },
   {
     "id": "vocab:d8c3a3f0d0f3",
@@ -8514,9 +9899,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 546
+    "order": 546,
+    "minnaLesson": 4,
+    "minnaOrder": 50
   },
   {
     "id": "vocab:c428d02d4342",
@@ -8532,9 +9920,12 @@
     "partOfSpeech": "глагол",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 547
+    "order": 547,
+    "minnaLesson": 13,
+    "minnaOrder": 6
   },
   {
     "id": "vocab:6d824d511031",
@@ -8550,9 +9941,12 @@
     "partOfSpeech": "глагол",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 548
+    "order": 548,
+    "minnaLesson": 16,
+    "minnaOrder": 5
   },
   {
     "id": "vocab:1ff0529d0315",
@@ -8567,7 +9961,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 549
+    "order": 549,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:cbbfc8cad604",
@@ -8583,9 +9979,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 550
+    "order": 550,
+    "minnaLesson": 10,
+    "minnaOrder": 9
   },
   {
     "id": "vocab:a379d413fdf0",
@@ -8600,7 +9999,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 551
+    "order": 551,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:358fc382cb32",
@@ -8618,7 +10019,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 552
+    "order": 552,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:898b067287f3",
@@ -8633,7 +10036,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 553
+    "order": 553,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:9d432ac114cf",
@@ -8647,7 +10052,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 554
+    "order": 554,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:a771d4f949f2",
@@ -8665,7 +10072,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 555
+    "order": 555,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:bdb125e5c61b",
@@ -8681,7 +10090,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 556
+    "order": 556,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:f7e1da43df7a",
@@ -8696,7 +10107,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 557
+    "order": 557,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:1696ca67b7ec",
@@ -8713,7 +10126,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 558
+    "order": 558,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:a739fc485b5d",
@@ -8727,7 +10142,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 559
+    "order": 559,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:98eace7008c1",
@@ -8743,7 +10160,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 560
+    "order": 560,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:8997f64f5278",
@@ -8757,9 +10176,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 561
+    "order": 561,
+    "minnaLesson": 8,
+    "minnaOrder": 31
   },
   {
     "id": "vocab:d2b2316e45ca",
@@ -8775,7 +10197,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 562
+    "order": 562,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:658b912df8f3",
@@ -8791,9 +10215,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 563
+    "order": 563,
+    "minnaLesson": 10,
+    "minnaOrder": 14
   },
   {
     "id": "vocab:6eeff514e06d",
@@ -8808,7 +10235,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 564
+    "order": 564,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:62c4216674c5",
@@ -8821,9 +10250,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 565
+    "order": 565,
+    "minnaLesson": 11,
+    "minnaOrder": 12
   },
   {
     "id": "vocab:4f8e83945d23",
@@ -8838,7 +10270,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 566
+    "order": 566,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:8d29f60b2377",
@@ -8853,7 +10287,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 567
+    "order": 567,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:9cd7c780c3a3",
@@ -8867,9 +10303,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 568
+    "order": 568,
+    "minnaLesson": 4,
+    "minnaOrder": 17
   },
   {
     "id": "vocab:a1cda8cb1101",
@@ -8885,7 +10324,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 569
+    "order": 569,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:7ecfe0d24896",
@@ -8900,7 +10341,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 570
+    "order": 570,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:532c73de5dd5",
@@ -8914,9 +10357,12 @@
     "partOfSpeech": "счётный суффикс",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 571
+    "order": 571,
+    "minnaLesson": 4,
+    "minnaOrder": 24
   },
   {
     "id": "vocab:246b5ae84d78",
@@ -8930,7 +10376,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 572
+    "order": 572,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:67775e3b2551",
@@ -8946,7 +10394,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 573
+    "order": 573,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:156f17113e37",
@@ -8962,7 +10412,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 574
+    "order": 574,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:397b682fa72a",
@@ -8980,7 +10432,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 575
+    "order": 575,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:a81612169c9b",
@@ -8992,9 +10446,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 576
+    "order": 576,
+    "minnaLesson": 5,
+    "minnaOrder": 8
   },
   {
     "id": "vocab:8b5843f7fb2e",
@@ -9007,9 +10464,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 577
+    "order": 577,
+    "minnaLesson": 16,
+    "minnaOrder": 999
   },
   {
     "id": "vocab:13696bc9b50d",
@@ -9021,9 +10481,12 @@
     "partOfSpeech": "числительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 578
+    "order": 578,
+    "minnaLesson": 3,
+    "minnaOrder": 30
   },
   {
     "id": "vocab:734d275fd96b",
@@ -9035,9 +10498,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 579
+    "order": 579,
+    "minnaLesson": 1,
+    "minnaOrder": 22
   },
   {
     "id": "vocab:c551bc3f7c6e",
@@ -9052,9 +10518,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 580
+    "order": 580,
+    "minnaLesson": 17,
+    "minnaOrder": 25
   },
   {
     "id": "vocab:e78074927c19",
@@ -9066,9 +10535,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 581
+    "order": 581,
+    "minnaLesson": 3,
+    "minnaOrder": 14
   },
   {
     "id": "vocab:d1564029008d",
@@ -9080,9 +10552,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 582
+    "order": 582,
+    "minnaLesson": 11,
+    "minnaOrder": 29
   },
   {
     "id": "vocab:c1a28465a245",
@@ -9096,9 +10571,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 583
+    "order": 583,
+    "minnaLesson": 17,
+    "minnaOrder": 23
   },
   {
     "id": "vocab:c9b5da4d1085",
@@ -9112,7 +10590,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 584
+    "order": 584,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:68571540e124",
@@ -9124,9 +10604,12 @@
     "partOfSpeech": "счётный суффикс",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 585
+    "order": 585,
+    "minnaLesson": 15,
+    "minnaOrder": 15
   },
   {
     "id": "vocab:782272bfdac0",
@@ -9142,9 +10625,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 586
+    "order": 586,
+    "minnaLesson": 10,
+    "minnaOrder": 11
   },
   {
     "id": "vocab:ecee43eb0483",
@@ -9162,7 +10648,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 587
+    "order": 587,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:79ddbb2b98d6",
@@ -9178,7 +10666,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 588
+    "order": 588,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:dc19a213cd6c",
@@ -9196,7 +10686,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 589
+    "order": 589,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:1227b2037082",
@@ -9213,7 +10705,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 590
+    "order": 590,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:1635de1a9498",
@@ -9231,7 +10725,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 591
+    "order": 591,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:01420cdf0f66",
@@ -9248,7 +10744,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 592
+    "order": 592,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:95827b08e35c",
@@ -9262,7 +10760,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 593
+    "order": 593,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:71c372d7b275",
@@ -9277,7 +10777,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 594
+    "order": 594,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:8ea4b03d7f2c",
@@ -9291,7 +10793,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 595
+    "order": 595,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:84887dde48d0",
@@ -9306,7 +10810,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 596
+    "order": 596,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:7d27bbcf746f",
@@ -9324,7 +10830,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 597
+    "order": 597,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:55f3080ce45b",
@@ -9339,7 +10847,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 598
+    "order": 598,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:e34295f3e135",
@@ -9355,9 +10865,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 599
+    "order": 599,
+    "minnaLesson": 14,
+    "minnaOrder": 27
   },
   {
     "id": "vocab:cfc75623ae7c",
@@ -9369,9 +10882,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 600
+    "order": 600,
+    "minnaLesson": 22,
+    "minnaOrder": 9
   },
   {
     "id": "vocab:0ca0de9dea9c",
@@ -9385,7 +10901,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 601
+    "order": 601,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:cd1bcc2b1b9d",
@@ -9398,9 +10916,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 602
+    "order": 602,
+    "minnaLesson": 8,
+    "minnaOrder": 9
   },
   {
     "id": "vocab:fa320a51ea59",
@@ -9417,7 +10938,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 603
+    "order": 603,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:0e8f798dbf05",
@@ -9430,9 +10953,12 @@
     "partOfSpeech": "счётный суффикс",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 604
+    "order": 604,
+    "minnaLesson": 2,
+    "minnaOrder": 7
   },
   {
     "id": "vocab:3839786bac2d",
@@ -9446,7 +10972,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 605
+    "order": 605,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:7309a238e80c",
@@ -9462,7 +10990,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 606
+    "order": 606,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:12047d019b5e",
@@ -9474,9 +11004,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 607
+    "order": 607,
+    "minnaLesson": 11,
+    "minnaOrder": 42
   },
   {
     "id": "vocab:84d5fa43e647",
@@ -9493,7 +11026,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 608
+    "order": 608,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:fd1c93832f8f",
@@ -9508,7 +11043,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 609
+    "order": 609,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:a59ba12bc5d0",
@@ -9521,9 +11058,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 610
+    "order": 610,
+    "minnaLesson": 4,
+    "minnaOrder": 36
   },
   {
     "id": "vocab:039a69622577",
@@ -9536,9 +11076,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 611
+    "order": 611,
+    "minnaLesson": 4,
+    "minnaOrder": 38
   },
   {
     "id": "vocab:d5fab890810d",
@@ -9554,7 +11097,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 612
+    "order": 612,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:25849435331d",
@@ -9570,9 +11115,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 613
+    "order": 613,
+    "minnaLesson": 4,
+    "minnaOrder": 37
   },
   {
     "id": "vocab:a0ff0f67c8ca",
@@ -9587,9 +11135,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 614
+    "order": 614,
+    "minnaLesson": 3,
+    "minnaOrder": 32
   },
   {
     "id": "vocab:6318b0423a8a",
@@ -9603,7 +11154,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 615
+    "order": 615,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:04015c3825bb",
@@ -9618,7 +11171,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 616
+    "order": 616,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:a812b1ac7f9a",
@@ -9630,9 +11185,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 617
+    "order": 617,
+    "minnaLesson": 14,
+    "minnaOrder": 21
   },
   {
     "id": "vocab:7a0f4c14758a",
@@ -9647,7 +11205,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 618
+    "order": 618,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:115ec83476ca",
@@ -9665,7 +11225,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 619
+    "order": 619,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:07a4101167df",
@@ -9679,7 +11241,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 620
+    "order": 620,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:22836046e27b",
@@ -9695,9 +11259,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 621
+    "order": 621,
+    "minnaLesson": 10,
+    "minnaOrder": 10
   },
   {
     "id": "vocab:d10bb92f3e44",
@@ -9709,9 +11276,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 622
+    "order": 622,
+    "minnaLesson": 4,
+    "minnaOrder": 47
   },
   {
     "id": "vocab:ae534d4ca872",
@@ -9727,9 +11297,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 623
+    "order": 623,
+    "minnaLesson": 16,
+    "minnaOrder": 23
   },
   {
     "id": "vocab:4f0f6b6ae763",
@@ -9743,9 +11316,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 624
+    "order": 624,
+    "minnaLesson": 17,
+    "minnaOrder": 19
   },
   {
     "id": "vocab:5b92758003d8",
@@ -9763,7 +11339,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 625
+    "order": 625,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:1a0aec6793c8",
@@ -9776,9 +11354,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 626
+    "order": 626,
+    "minnaLesson": 4,
+    "minnaOrder": 25
   },
   {
     "id": "vocab:936289666e8d",
@@ -9790,9 +11371,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 627
+    "order": 627,
+    "minnaLesson": 6,
+    "minnaOrder": 23
   },
   {
     "id": "vocab:95ccaa32f524",
@@ -9808,9 +11392,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 628
+    "order": 628,
+    "minnaLesson": 17,
+    "minnaOrder": 26
   },
   {
     "id": "vocab:72c525f37a46",
@@ -9823,9 +11410,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 629
+    "order": 629,
+    "minnaLesson": 5,
+    "minnaOrder": 18
   },
   {
     "id": "vocab:50b217ed0be6",
@@ -9841,7 +11431,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 630
+    "order": 630,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:2d555713001b",
@@ -9859,7 +11451,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 631
+    "order": 631,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:8b869217499a",
@@ -9871,9 +11465,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 632
+    "order": 632,
+    "minnaLesson": 4,
+    "minnaOrder": 9
   },
   {
     "id": "vocab:ae2b9f6d7ed2",
@@ -9888,7 +11485,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 633
+    "order": 633,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:285b008622f9",
@@ -9903,7 +11502,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 634
+    "order": 634,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:1907b6fc38f7",
@@ -9917,7 +11518,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 635
+    "order": 635,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:645e1e3b4d7d",
@@ -9929,9 +11532,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 636
+    "order": 636,
+    "minnaLesson": 11,
+    "minnaOrder": 28
   },
   {
     "id": "vocab:7a842087087c",
@@ -9943,9 +11549,12 @@
     "partOfSpeech": "глагол",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 637
+    "order": 637,
+    "minnaLesson": 20,
+    "minnaOrder": 999
   },
   {
     "id": "vocab:418493d94175",
@@ -9957,9 +11566,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 638
+    "order": 638,
+    "minnaLesson": 13,
+    "minnaOrder": 13
   },
   {
     "id": "vocab:2e2abd26ca43",
@@ -9977,7 +11589,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 639
+    "order": 639,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:61fd50f12e65",
@@ -9989,9 +11603,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 640
+    "order": 640,
+    "minnaLesson": 5,
+    "minnaOrder": 27
   },
   {
     "id": "vocab:7a4ef637be19",
@@ -10003,9 +11620,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 641
+    "order": 641,
+    "minnaLesson": 5,
+    "minnaOrder": 24
   },
   {
     "id": "vocab:c68f2caa2fe5",
@@ -10017,9 +11637,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 642
+    "order": 642,
+    "minnaLesson": 5,
+    "minnaOrder": 30
   },
   {
     "id": "vocab:7e9d38afeba0",
@@ -10037,7 +11660,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 643
+    "order": 643,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:4d6673969429",
@@ -10051,9 +11676,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 644
+    "order": 644,
+    "minnaLesson": 6,
+    "minnaOrder": 20
   },
   {
     "id": "vocab:932afda20bae",
@@ -10071,7 +11699,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 645
+    "order": 645,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:dc7d39c7af25",
@@ -10085,7 +11715,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 646
+    "order": 646,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:2ba96bef9a4e",
@@ -10098,9 +11730,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 647
+    "order": 647,
+    "minnaLesson": 7,
+    "minnaOrder": 40
   },
   {
     "id": "vocab:0139a208fec6",
@@ -10112,9 +11747,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 648
+    "order": 648,
+    "minnaLesson": 11,
+    "minnaOrder": 34
   },
   {
     "id": "vocab:ee85169acdff",
@@ -10129,9 +11767,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 649
+    "order": 649,
+    "minnaLesson": 9,
+    "minnaOrder": 7
   },
   {
     "id": "vocab:67f5908e108f",
@@ -10143,9 +11784,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 650
+    "order": 650,
+    "minnaLesson": 12,
+    "minnaOrder": 9
   },
   {
     "id": "vocab:85e4ba2f2830",
@@ -10158,9 +11802,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 651
+    "order": 651,
+    "minnaLesson": 16,
+    "minnaOrder": 31
   },
   {
     "id": "vocab:c597c353cb48",
@@ -10175,9 +11822,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 652
+    "order": 652,
+    "minnaLesson": 10,
+    "minnaOrder": 38
   },
   {
     "id": "vocab:a23d308800d0",
@@ -10189,9 +11839,12 @@
     "partOfSpeech": "прилагательное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 653
+    "order": 653,
+    "minnaLesson": 8,
+    "minnaOrder": 19
   },
   {
     "id": "vocab:f7a15687a1a0",
@@ -10203,9 +11856,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 654
+    "order": 654,
+    "minnaLesson": 10,
+    "minnaOrder": 16
   },
   {
     "id": "vocab:92b3bb727ecc",
@@ -10219,7 +11875,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 655
+    "order": 655,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:fe270991f6ad",
@@ -10234,7 +11892,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 656
+    "order": 656,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:5fc0f979e62e",
@@ -10248,7 +11908,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 657
+    "order": 657,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:f9ccc7bfdf92",
@@ -10262,7 +11924,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 658
+    "order": 658,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:7ecc2c4bfced",
@@ -10277,9 +11941,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 659
+    "order": 659,
+    "minnaLesson": 11,
+    "minnaOrder": 10
   },
   {
     "id": "vocab:bf44ddad0835",
@@ -10294,7 +11961,9 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 660
+    "order": 660,
+    "minnaLesson": null,
+    "minnaOrder": null
   },
   {
     "id": "vocab:1ed0362cc310",
@@ -10310,9 +11979,12 @@
     "partOfSpeech": "существительное",
     "sourceRefs": [
       "openjlpt",
-      "jmdict-rus"
+      "jmdict-rus",
+      "minna-lessons"
     ],
-    "order": 661
+    "order": 661,
+    "minnaLesson": 21,
+    "minnaOrder": 20
   },
   {
     "id": "vocab:9d5bde24ec34",
@@ -10328,6 +12000,8 @@
       "openjlpt",
       "jmdict-rus"
     ],
-    "order": 662
+    "order": 662,
+    "minnaLesson": null,
+    "minnaOrder": null
   }
 ]

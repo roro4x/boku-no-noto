@@ -58,6 +58,12 @@ for (const item of vocabulary) {
   assert(item.reading?.trim(), `${item.id} has no reading`)
   assert(item.meaningsRu?.length > 0 && item.meaningsRu.every((meaning) => meaning.trim()), `${item.id} has no Russian meanings`)
   assert(item.partOfSpeech?.trim(), `${item.id} has no part of speech`)
+  assert(item.minnaLesson === null || (Number.isInteger(item.minnaLesson) && item.minnaLesson >= 1 && item.minnaLesson <= 25), `${item.id} has an invalid Minna no Nihongo lesson`)
+  assert(item.minnaOrder === null || (Number.isInteger(item.minnaOrder) && item.minnaOrder >= 1), `${item.id} has an invalid Minna no Nihongo order`)
+  assert((item.minnaLesson === null) === (item.minnaOrder === null), `${item.id} has an incomplete Minna no Nihongo placement`)
+  if (item.minnaLesson !== null) {
+    assert(item.sourceRefs.includes('minna-lessons'), `${item.id} is missing the Minna no Nihongo source`)
+  }
 }
 
 for (const item of kanji) {

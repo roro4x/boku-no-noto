@@ -1,0 +1,1402 @@
+{
+  "vocab:b3b4041c5248": {
+    "lesson": 4,
+    "order": 30
+  },
+  "vocab:bee501faf07b": {
+    "lesson": 3,
+    "order": 3
+  },
+  "vocab:34e6f7d220ea": {
+    "lesson": 3,
+    "order": 6
+  },
+  "vocab:60dd63379ec2": {
+    "lesson": 20,
+    "order": 20
+  },
+  "vocab:afdf384f680f": {
+    "lesson": 1,
+    "order": 3
+  },
+  "vocab:ac4706068b85": {
+    "lesson": 2,
+    "order": 6
+  },
+  "vocab:0cf05b3a0d25": {
+    "lesson": 22,
+    "order": 20
+  },
+  "vocab:a5aceb642637": {
+    "lesson": 16,
+    "order": 4
+  },
+  "vocab:d727a76b2207": {
+    "lesson": 2,
+    "order": 3
+  },
+  "vocab:e372e95ec86b": {
+    "lesson": 8,
+    "order": 16
+  },
+  "vocab:6d4596ae460d": {
+    "lesson": 1,
+    "order": 30
+  },
+  "vocab:026ae57b503a": {
+    "lesson": 11,
+    "order": 15
+  },
+  "vocab:4fc98c69389f": {
+    "lesson": 3,
+    "order": 29
+  },
+  "vocab:d305fa14a80c": {
+    "lesson": 2,
+    "order": 31
+  },
+  "vocab:cb96f363df42": {
+    "lesson": 10,
+    "order": 42
+  },
+  "vocab:fac6fc083814": {
+    "lesson": 5,
+    "order": 48
+  },
+  "vocab:dea2a1df8b3d": {
+    "lesson": 6,
+    "order": 49
+  },
+  "vocab:f74dd1ee9aa3": {
+    "lesson": 10,
+    "order": 3
+  },
+  "vocab:8ac60a4060e6": {
+    "lesson": 6,
+    "order": 52
+  },
+  "vocab:eb1695baf6a5": {
+    "lesson": 3,
+    "order": 17
+  },
+  "vocab:7f02ae8fa1d7": {
+    "lesson": 8,
+    "order": 29
+  },
+  "vocab:3707072a6b50": {
+    "lesson": 16,
+    "order": 26
+  },
+  "vocab:12d9487797ce": {
+    "lesson": 24,
+    "order": 10
+  },
+  "vocab:2568873ebdc1": {
+    "lesson": 8,
+    "order": 27
+  },
+  "vocab:669019c62536": {
+    "lesson": 24,
+    "order": 13
+  },
+  "vocab:3e015d0a8b33": {
+    "lesson": 7,
+    "order": 26
+  },
+  "vocab:c6f43a8cc314": {
+    "lesson": 11,
+    "order": 37
+  },
+  "vocab:af378a4c866b": {
+    "lesson": 11,
+    "order": 39
+  },
+  "vocab:f843b00173c0": {
+    "lesson": 6,
+    "order": 32
+  },
+  "vocab:edca336b1faf": {
+    "lesson": 6,
+    "order": 26
+  },
+  "vocab:89807c7c22d2": {
+    "lesson": 7,
+    "order": 32
+  },
+  "vocab:7a073616e516": {
+    "lesson": 24,
+    "order": 17
+  },
+  "vocab:2007947770c4": {
+    "lesson": 7,
+    "order": 33
+  },
+  "vocab:687082e55c2f": {
+    "lesson": 11,
+    "order": 2
+  },
+  "vocab:e2d6576c7671": {
+    "lesson": 2,
+    "order": 19
+  },
+  "vocab:0ce2b98d3ba7": {
+    "lesson": 7,
+    "order": 7
+  },
+  "vocab:6e6a06687d47": {
+    "lesson": 2,
+    "order": 22
+  },
+  "vocab:9d648d38adb5": {
+    "lesson": 2,
+    "order": 27
+  },
+  "vocab:43cd9825f0da": {
+    "lesson": 8,
+    "order": 2
+  },
+  "vocab:67126059f193": {
+    "lesson": 2,
+    "order": 33
+  },
+  "vocab:05123676c29c": {
+    "lesson": 3,
+    "order": 1
+  },
+  "vocab:e9e492c68aad": {
+    "lesson": 3,
+    "order": 5
+  },
+  "vocab:be9b8bcb5ea2": {
+    "lesson": 20,
+    "order": 18
+  },
+  "vocab:bd3a2ad2ad84": {
+    "lesson": 2,
+    "order": 4
+  },
+  "vocab:f586d7d02351": {
+    "lesson": 14,
+    "order": 18
+  },
+  "vocab:6313cc9cb5c7": {
+    "lesson": 2,
+    "order": 1
+  },
+  "vocab:7ba7ba24346a": {
+    "lesson": 14,
+    "order": 35
+  },
+  "vocab:2c41aedcba3c": {
+    "lesson": 19,
+    "order": 27
+  },
+  "vocab:f71424e3ff97": {
+    "lesson": 7,
+    "order": 23
+  },
+  "vocab:d9c88143a2fc": {
+    "lesson": 16,
+    "order": 30
+  },
+  "vocab:938a169f6cf1": {
+    "lesson": 7,
+    "order": 10
+  },
+  "vocab:0a33903ccf43": {
+    "lesson": 9,
+    "order": 9
+  },
+  "vocab:c4cdc162d76d": {
+    "lesson": 6,
+    "order": 12
+  },
+  "vocab:4b0b49a42de7": {
+    "lesson": 22,
+    "order": 8
+  },
+  "vocab:8e8846083397": {
+    "lesson": 8,
+    "order": 50
+  },
+  "vocab:5ef867ff8151": {
+    "lesson": 3,
+    "order": 2
+  },
+  "vocab:105df795717a": {
+    "lesson": 4,
+    "order": 33
+  },
+  "vocab:80981fa136a8": {
+    "lesson": 20,
+    "order": 19
+  },
+  "vocab:cb1c02a574eb": {
+    "lesson": 2,
+    "order": 5
+  },
+  "vocab:79d922e35944": {
+    "lesson": 2,
+    "order": 2
+  },
+  "vocab:799b7cabe0b6": {
+    "lesson": 6,
+    "order": 38
+  },
+  "vocab:e04372c490b5": {
+    "lesson": 13,
+    "order": 12
+  },
+  "vocab:a7c72d9bb115": {
+    "lesson": 9,
+    "order": 37
+  },
+  "vocab:2d5a93eb11df": {
+    "lesson": 5,
+    "order": 14
+  },
+  "vocab:d9eba03b7b58": {
+    "lesson": 21,
+    "order": 26
+  },
+  "vocab:55dbb815bac3": {
+    "lesson": 19,
+    "order": 19
+  },
+  "vocab:602fdffbf23c": {
+    "lesson": 6,
+    "order": 39
+  },
+  "vocab:edc22b8d9896": {
+    "lesson": 14,
+    "order": 1
+  },
+  "vocab:3a94b5e981b1": {
+    "lesson": 8,
+    "order": 28
+  },
+  "vocab:ff161262ddf5": {
+    "lesson": 10,
+    "order": 17
+  },
+  "vocab:dc0ae29019a3": {
+    "lesson": 2,
+    "order": 24
+  },
+  "vocab:69d0d632fa3c": {
+    "lesson": 18,
+    "order": 1
+  },
+  "vocab:0144505953f1": {
+    "lesson": 4,
+    "order": 7
+  },
+  "vocab:3f71089c32fd": {
+    "lesson": 12,
+    "order": 44
+  },
+  "vocab:c7e14d8454ec": {
+    "lesson": 2,
+    "order": 25
+  },
+  "vocab:677d3c5fac9a": {
+    "lesson": 10,
+    "order": 20
+  },
+  "vocab:e1e7c2d29009": {
+    "lesson": 3,
+    "order": 15
+  },
+  "vocab:d0fb41651f9c": {
+    "lesson": 8,
+    "order": 45
+  },
+  "vocab:a891b73f8be2": {
+    "lesson": 9,
+    "order": 43
+  },
+  "vocab:a71cbc3ce459": {
+    "lesson": 2,
+    "order": 43
+  },
+  "vocab:d2cb14f88a05": {
+    "lesson": 2,
+    "order": 44
+  },
+  "vocab:ad884a3b70d8": {
+    "lesson": 3,
+    "order": 4
+  },
+  "vocab:5480c153dce8": {
+    "lesson": 3,
+    "order": 7
+  },
+  "vocab:e8a484305978": {
+    "lesson": 20,
+    "order": 21
+  },
+  "vocab:a3679ee66520": {
+    "lesson": 8,
+    "order": 48
+  },
+  "vocab:10fb2e55c0e3": {
+    "lesson": 1,
+    "order": 25
+  },
+  "vocab:cd4b8c638171": {
+    "lesson": 16,
+    "order": 37
+  },
+  "vocab:b21477c7db6d": {
+    "lesson": 8,
+    "order": 47
+  },
+  "vocab:3ae88c29c49b": {
+    "lesson": 7,
+    "order": 11
+  },
+  "vocab:b824bec2c5db": {
+    "lesson": 21,
+    "order": 15
+  },
+  "vocab:18046e46a13d": {
+    "lesson": 3,
+    "order": 24
+  },
+  "vocab:278c1e0e04a4": {
+    "lesson": 2,
+    "order": 11
+  },
+  "vocab:28111455cd33": {
+    "lesson": 12,
+    "order": 28
+  },
+  "vocab:542f39c93dda": {
+    "lesson": 1,
+    "order": 29
+  },
+  "vocab:4729cc56f482": {
+    "lesson": 22,
+    "order": 2
+  },
+  "vocab:7ce7f7d30559": {
+    "lesson": 7,
+    "order": 9
+  },
+  "vocab:bd7df6c7a20b": {
+    "lesson": 5,
+    "order": 13
+  },
+  "vocab:098e9e7e672b": {
+    "lesson": 6,
+    "order": 19
+  },
+  "vocab:55c14392399b": {
+    "lesson": 13,
+    "order": 18
+  },
+  "vocab:71e2aefb9dd8": {
+    "lesson": 7,
+    "order": 12
+  },
+  "vocab:91cf4ea2fd47": {
+    "lesson": 10,
+    "order": 18
+  },
+  "vocab:785a99704572": {
+    "lesson": 2,
+    "order": 17
+  },
+  "vocab:2dbe65ee1d73": {
+    "lesson": 10,
+    "order": 22
+  },
+  "vocab:04ab635f4bcd": {
+    "lesson": 16,
+    "order": 45
+  },
+  "vocab:23ec5a0b3d97": {
+    "lesson": 12,
+    "order": 24
+  },
+  "vocab:162e00c6efc2": {
+    "lesson": 8,
+    "order": 63
+  },
+  "vocab:6a7163f5f71c": {
+    "lesson": 7,
+    "order": 35
+  },
+  "vocab:ede9ab2f7fe0": {
+    "lesson": 14,
+    "order": 37
+  },
+  "vocab:267651456171": {
+    "lesson": 11,
+    "order": 52
+  },
+  "vocab:c5b7ad76fd59": {
+    "lesson": 7,
+    "order": 34
+  },
+  "vocab:19db29fbbb2e": {
+    "lesson": 9,
+    "order": 35
+  },
+  "vocab:670f2dd0dc1b": {
+    "lesson": 2,
+    "order": 26
+  },
+  "vocab:31893e43784b": {
+    "lesson": 6,
+    "order": 41
+  },
+  "vocab:13b6dbec0365": {
+    "lesson": 8,
+    "order": 17
+  },
+  "vocab:33b86212ca4f": {
+    "lesson": 8,
+    "order": 24
+  },
+  "vocab:01a0587b49b6": {
+    "lesson": 16,
+    "order": 15
+  },
+  "vocab:cb29ccdd2a07": {
+    "lesson": 24,
+    "order": 12
+  },
+  "vocab:ca7616258748": {
+    "lesson": 1,
+    "order": 18
+  },
+  "vocab:537f8af3d66c": {
+    "lesson": 11,
+    "order": 5
+  },
+  "vocab:3fb1b70809f4": {
+    "lesson": 11,
+    "order": 16
+  },
+  "vocab:5b8403923436": {
+    "lesson": 18,
+    "order": 3
+  },
+  "vocab:5e8fc8669cac": {
+    "lesson": 9,
+    "order": 8
+  },
+  "vocab:f1046f3190a2": {
+    "lesson": 10,
+    "order": 34
+  },
+  "vocab:92b1621231b5": {
+    "lesson": 6,
+    "order": 43
+  },
+  "vocab:16adc7bd0390": {
+    "lesson": 2,
+    "order": 34
+  },
+  "vocab:d5f359c20b6b": {
+    "lesson": 5,
+    "order": 7
+  },
+  "vocab:f840779b9ec2": {
+    "lesson": 12,
+    "order": 3
+  },
+  "vocab:381da4d06028": {
+    "lesson": 2,
+    "order": 16
+  },
+  "vocab:b366a3d677a2": {
+    "lesson": 14,
+    "order": 24
+  },
+  "vocab:6c4661d6728e": {
+    "lesson": 9,
+    "order": 32
+  },
+  "vocab:cdea017272d6": {
+    "lesson": 9,
+    "order": 12
+  },
+  "vocab:dd36cae3a97b": {
+    "lesson": 10,
+    "order": 31
+  },
+  "vocab:9735e9472cb0": {
+    "lesson": 2,
+    "order": 37
+  },
+  "vocab:641ddbf693bd": {
+    "lesson": 12,
+    "order": 17
+  },
+  "vocab:1c9db63bdc42": {
+    "lesson": 5,
+    "order": 21
+  },
+  "vocab:7a9ce8e2dfdd": {
+    "lesson": 8,
+    "order": 999
+  },
+  "vocab:6b454b895e97": {
+    "lesson": 6,
+    "order": 24
+  },
+  "vocab:036f4180a22e": {
+    "lesson": 9,
+    "order": 13
+  },
+  "vocab:0dbf9ef8ca71": {
+    "lesson": 4,
+    "order": 45
+  },
+  "vocab:6485c3c2a78f": {
+    "lesson": 7,
+    "order": 22
+  },
+  "vocab:2e6c7d2d9d74": {
+    "lesson": 7,
+    "order": 25
+  },
+  "vocab:2120ff505cea": {
+    "lesson": 3,
+    "order": 20
+  },
+  "vocab:06ac21dc7d7b": {
+    "lesson": 12,
+    "order": 26
+  },
+  "vocab:d2b9c4765609": {
+    "lesson": 1,
+    "order": 6
+  },
+  "vocab:5bb390da0b7d": {
+    "lesson": 9,
+    "order": 19
+  },
+  "vocab:7cb27c411e38": {
+    "lesson": 3,
+    "order": 16
+  },
+  "vocab:68ad5f436301": {
+    "lesson": 10,
+    "order": 37
+  },
+  "vocab:31a803c7f524": {
+    "lesson": 11,
+    "order": 44
+  },
+  "vocab:4092bfd9bbab": {
+    "lesson": 23,
+    "order": 22
+  },
+  "vocab:dd8ac16bd25e": {
+    "lesson": 5,
+    "order": 5
+  },
+  "vocab:452102ad0a8b": {
+    "lesson": 1,
+    "order": 14
+  },
+  "vocab:9b2d455dfe16": {
+    "lesson": 8,
+    "order": 30
+  },
+  "vocab:688bc6704489": {
+    "lesson": 8,
+    "order": 20
+  },
+  "vocab:fdc787af5874": {
+    "lesson": 9,
+    "order": 21
+  },
+  "vocab:4afffe5811b9": {
+    "lesson": 12,
+    "order": 10
+  },
+  "vocab:72eb77e07acf": {
+    "lesson": 22,
+    "order": 10
+  },
+  "vocab:0509cb3b27ce": {
+    "lesson": 17,
+    "order": 18
+  },
+  "vocab:672321bac95e": {
+    "lesson": 2,
+    "order": 30
+  },
+  "vocab:1d22f1d02306": {
+    "lesson": 5,
+    "order": 4
+  },
+  "vocab:248a353e0981": {
+    "lesson": 4,
+    "order": 1
+  },
+  "vocab:5620a00afcd4": {
+    "lesson": 10,
+    "order": 25
+  },
+  "vocab:d4a1d27d3bc1": {
+    "lesson": 4,
+    "order": 34
+  },
+  "vocab:797ae8d5624a": {
+    "lesson": 6,
+    "order": 28
+  },
+  "vocab:ec4e1dfc873d": {
+    "lesson": 5,
+    "order": 28
+  },
+  "vocab:21675e5a8220": {
+    "lesson": 10,
+    "order": 999
+  },
+  "vocab:dbd7cd319c62": {
+    "lesson": 6,
+    "order": 22
+  },
+  "vocab:d99745fbb662": {
+    "lesson": 19,
+    "order": 8
+  },
+  "vocab:85eb994887e2": {
+    "lesson": 3,
+    "order": 8
+  },
+  "vocab:8f663254b0c2": {
+    "lesson": 23,
+    "order": 23
+  },
+  "vocab:d12ee2e932b9": {
+    "lesson": 13,
+    "order": 16
+  },
+  "vocab:a21ba677f2a8": {
+    "lesson": 12,
+    "order": 2
+  },
+  "vocab:6d7293f7cfba": {
+    "lesson": 10,
+    "order": 39
+  },
+  "vocab:b00c4af0a291": {
+    "lesson": 4,
+    "order": 48
+  },
+  "vocab:a59efa305760": {
+    "lesson": 4,
+    "order": 8
+  },
+  "vocab:cff3c57405d3": {
+    "lesson": 11,
+    "order": 13
+  },
+  "vocab:9dd0572f0581": {
+    "lesson": 3,
+    "order": 23
+  },
+  "vocab:4aab6998645b": {
+    "lesson": 11,
+    "order": 36
+  },
+  "vocab:976c4f7174bb": {
+    "lesson": 11,
+    "order": 35
+  },
+  "vocab:a8b9eb425d9e": {
+    "lesson": 12,
+    "order": 13
+  },
+  "vocab:04e80a2ba1b8": {
+    "lesson": 4,
+    "order": 44
+  },
+  "vocab:372b08211ec1": {
+    "lesson": 23,
+    "order": 28
+  },
+  "vocab:0df89f50104f": {
+    "lesson": 10,
+    "order": 8
+  },
+  "vocab:491cfa69be08": {
+    "lesson": 20,
+    "order": 12
+  },
+  "vocab:aa60dd4a1112": {
+    "lesson": 8,
+    "order": 15
+  },
+  "vocab:9ac35c399077": {
+    "lesson": 11,
+    "order": 9
+  },
+  "vocab:9a7c962266b7": {
+    "lesson": 4,
+    "order": 21
+  },
+  "vocab:c92dbe626aff": {
+    "lesson": 4,
+    "order": 20
+  },
+  "vocab:05cf590971c8": {
+    "lesson": 10,
+    "order": 24
+  },
+  "vocab:230d5c734305": {
+    "lesson": 13,
+    "order": 15
+  },
+  "vocab:1288e600bea0": {
+    "lesson": 6,
+    "order": 27
+  },
+  "vocab:c74892f56538": {
+    "lesson": 8,
+    "order": 25
+  },
+  "vocab:b55dd305d134": {
+    "lesson": 3,
+    "order": 19
+  },
+  "vocab:ce75c75644a6": {
+    "lesson": 4,
+    "order": 14
+  },
+  "vocab:379317368752": {
+    "lesson": 5,
+    "order": 26
+  },
+  "vocab:7a27eadef1d6": {
+    "lesson": 5,
+    "order": 23
+  },
+  "vocab:eb1c9a5df93f": {
+    "lesson": 4,
+    "order": 32
+  },
+  "vocab:ec5bd86b7269": {
+    "lesson": 10,
+    "order": 35
+  },
+  "vocab:8af5030b7aca": {
+    "lesson": 14,
+    "order": 25
+  },
+  "vocab:4cc27797ba98": {
+    "lesson": 6,
+    "order": 10
+  },
+  "vocab:a371cc6a546f": {
+    "lesson": 2,
+    "order": 9
+  },
+  "vocab:b36b221d335c": {
+    "lesson": 11,
+    "order": 7
+  },
+  "vocab:6f54881e59d8": {
+    "lesson": 2,
+    "order": 21
+  },
+  "vocab:e8a5cbdf0a3f": {
+    "lesson": 8,
+    "order": 36
+  },
+  "vocab:1000ee441a61": {
+    "lesson": 11,
+    "order": 8
+  },
+  "vocab:8bfeb208b416": {
+    "lesson": 11,
+    "order": 38
+  },
+  "vocab:1f4bb6e5033e": {
+    "lesson": 9,
+    "order": 34
+  },
+  "vocab:cd08f9cdc2ed": {
+    "lesson": 7,
+    "order": 21
+  },
+  "vocab:390ac6443d2e": {
+    "lesson": 16,
+    "order": 25
+  },
+  "vocab:d5c916ca8514": {
+    "lesson": 9,
+    "order": 27
+  },
+  "vocab:e3ad76810f3c": {
+    "lesson": 2,
+    "order": 20
+  },
+  "vocab:e8cdf8b85a6b": {
+    "lesson": 16,
+    "order": 24
+  },
+  "vocab:ebf194a3161b": {
+    "lesson": 5,
+    "order": 15
+  },
+  "vocab:78fd1a0e8afd": {
+    "lesson": 2,
+    "order": 29
+  },
+  "vocab:8ec35978bd26": {
+    "lesson": 2,
+    "order": 8
+  },
+  "vocab:e65bf7ad2328": {
+    "lesson": 11,
+    "order": 11
+  },
+  "vocab:5101640e7e3b": {
+    "lesson": 6,
+    "order": 44
+  },
+  "vocab:d6b85573f340": {
+    "lesson": 8,
+    "order": 39
+  },
+  "vocab:8cd440a18106": {
+    "lesson": 7,
+    "order": 6
+  },
+  "vocab:640761cb8b56": {
+    "lesson": 16,
+    "order": 11
+  },
+  "vocab:83da29377598": {
+    "lesson": 19,
+    "order": 9
+  },
+  "vocab:1313ed47fb56": {
+    "lesson": 14,
+    "order": 10
+  },
+  "vocab:5b9670420a38": {
+    "lesson": 7,
+    "order": 8
+  },
+  "vocab:218ea67735db": {
+    "lesson": 6,
+    "order": 42
+  },
+  "vocab:8dc7006bda60": {
+    "lesson": 12,
+    "order": 18
+  },
+  "vocab:cdfb776826d4": {
+    "lesson": 12,
+    "order": 12
+  },
+  "vocab:5ef4f7dde927": {
+    "lesson": 13,
+    "order": 7
+  },
+  "vocab:f16244c58570": {
+    "lesson": 12,
+    "order": 16
+  },
+  "vocab:6a2d47333e5a": {
+    "lesson": 20,
+    "order": 16
+  },
+  "vocab:3f18999e098c": {
+    "lesson": 12,
+    "order": 38
+  },
+  "vocab:ca332ac7b4b8": {
+    "lesson": 8,
+    "order": 40
+  },
+  "vocab:e6afab391a17": {
+    "lesson": 10,
+    "order": 7
+  },
+  "vocab:d4779ac36c2e": {
+    "lesson": 8,
+    "order": 13
+  },
+  "vocab:c373555102ff": {
+    "lesson": 9,
+    "order": 38
+  },
+  "vocab:08a3ed212d48": {
+    "lesson": 10,
+    "order": 30
+  },
+  "vocab:1ef8a05bf302": {
+    "lesson": 17,
+    "order": 28
+  },
+  "vocab:5c89b3094a67": {
+    "lesson": 8,
+    "order": 38
+  },
+  "vocab:dcc87a37fb56": {
+    "lesson": 3,
+    "order": 9
+  },
+  "vocab:8ae27e3b514f": {
+    "lesson": 8,
+    "order": 14
+  },
+  "vocab:b8317395af01": {
+    "lesson": 2,
+    "order": 10
+  },
+  "vocab:d2546ac97b08": {
+    "lesson": 12,
+    "order": 11
+  },
+  "vocab:d91ee7a9ed68": {
+    "lesson": 5,
+    "order": 17
+  },
+  "vocab:69a792520f6d": {
+    "lesson": 6,
+    "order": 25
+  },
+  "vocab:44d9d70862b3": {
+    "lesson": 4,
+    "order": 46
+  },
+  "vocab:44ba38cf8bc2": {
+    "lesson": 8,
+    "order": 33
+  },
+  "vocab:cf23f5fba1de": {
+    "lesson": 7,
+    "order": 1
+  },
+  "vocab:e101e41f548c": {
+    "lesson": 11,
+    "order": 27
+  },
+  "vocab:78c044b951b0": {
+    "lesson": 12,
+    "order": 22
+  },
+  "vocab:0eaa93c14491": {
+    "lesson": 5,
+    "order": 25
+  },
+  "vocab:b8c4cd80dbb5": {
+    "lesson": 5,
+    "order": 22
+  },
+  "vocab:814bdc2cecda": {
+    "lesson": 1,
+    "order": 12
+  },
+  "vocab:1729d60f09e9": {
+    "lesson": 3,
+    "order": 31
+  },
+  "vocab:c1b47e6ff2dd": {
+    "lesson": 13,
+    "order": 19
+  },
+  "vocab:319e218950c1": {
+    "lesson": 10,
+    "order": 32
+  },
+  "vocab:acba6e07ba4a": {
+    "lesson": 24,
+    "order": 14
+  },
+  "vocab:7734194821f2": {
+    "lesson": 10,
+    "order": 21
+  },
+  "vocab:27df3d58020a": {
+    "lesson": 16,
+    "order": 27
+  },
+  "vocab:a556e5edce0d": {
+    "lesson": 16,
+    "order": 18
+  },
+  "vocab:1122cac4095f": {
+    "lesson": 7,
+    "order": 5
+  },
+  "vocab:8fa5a63fc770": {
+    "lesson": 8,
+    "order": 12
+  },
+  "vocab:5b303264b994": {
+    "lesson": 1,
+    "order": 21
+  },
+  "vocab:992fc0733950": {
+    "lesson": 25,
+    "order": 6
+  },
+  "vocab:2f62b9db5e60": {
+    "lesson": 17,
+    "order": 17
+  },
+  "vocab:b3a8593e533c": {
+    "lesson": 17,
+    "order": 16
+  },
+  "vocab:8568eded6e66": {
+    "lesson": 16,
+    "order": 13
+  },
+  "vocab:2e610178aea8": {
+    "lesson": 5,
+    "order": 49
+  },
+  "vocab:23911a071821": {
+    "lesson": 18,
+    "order": 3
+  },
+  "vocab:6f664d3ded35": {
+    "lesson": 10,
+    "order": 6
+  },
+  "vocab:1fcb2fece8f1": {
+    "lesson": 15,
+    "order": 7
+  },
+  "vocab:3134199c2556": {
+    "lesson": 5,
+    "order": 11
+  },
+  "vocab:ffa3dda331e4": {
+    "lesson": 14,
+    "order": 23
+  },
+  "vocab:96845304fd98": {
+    "lesson": 15,
+    "order": 4
+  },
+  "vocab:a082687f7a72": {
+    "lesson": 12,
+    "order": 5
+  },
+  "vocab:45fbcb867017": {
+    "lesson": 22,
+    "order": 1
+  },
+  "vocab:5d32281da9ae": {
+    "lesson": 10,
+    "order": 36
+  },
+  "vocab:5d7a8d133b7b": {
+    "lesson": 4,
+    "order": 23
+  },
+  "vocab:d46ae79a267a": {
+    "lesson": 4,
+    "order": 22
+  },
+  "vocab:4d76d06d8403": {
+    "lesson": 8,
+    "order": 37
+  },
+  "vocab:e25cf6ed2fef": {
+    "lesson": 8,
+    "order": 26
+  },
+  "vocab:9ef6c9d703b9": {
+    "lesson": 6,
+    "order": 45
+  },
+  "vocab:db32745bbc3b": {
+    "lesson": 11,
+    "order": 40
+  },
+  "vocab:679e34031ec7": {
+    "lesson": 12,
+    "order": 20
+  },
+  "vocab:0c8a588e53a5": {
+    "lesson": 6,
+    "order": 40
+  },
+  "vocab:a7c36fdb7072": {
+    "lesson": 1,
+    "order": 23
+  },
+  "vocab:62b5c13164dd": {
+    "lesson": 5,
+    "order": 10
+  },
+  "vocab:86e7fb81c670": {
+    "lesson": 4,
+    "order": 49
+  },
+  "vocab:eb9acca7ba59": {
+    "lesson": 12,
+    "order": 19
+  },
+  "vocab:b62cb9ce4cdd": {
+    "lesson": 16,
+    "order": 19
+  },
+  "vocab:03d03cf25dba": {
+    "lesson": 18,
+    "order": 19
+  },
+  "vocab:7c134ec81285": {
+    "lesson": 21,
+    "order": 10
+  },
+  "vocab:dc29195f187e": {
+    "lesson": 23,
+    "order": 2
+  },
+  "vocab:eec0f9399189": {
+    "lesson": 12,
+    "order": 23
+  },
+  "vocab:0a3894175f43": {
+    "lesson": 8,
+    "order": 21
+  },
+  "vocab:0c1dbd4838de": {
+    "lesson": 11,
+    "order": 6
+  },
+  "vocab:94c207682133": {
+    "lesson": 11,
+    "order": 17
+  },
+  "vocab:efac1fc5029b": {
+    "lesson": 6,
+    "order": 21
+  },
+  "vocab:d8c3a3f0d0f3": {
+    "lesson": 4,
+    "order": 50
+  },
+  "vocab:c428d02d4342": {
+    "lesson": 13,
+    "order": 6
+  },
+  "vocab:6d824d511031": {
+    "lesson": 16,
+    "order": 5
+  },
+  "vocab:cbbfc8cad604": {
+    "lesson": 10,
+    "order": 9
+  },
+  "vocab:8997f64f5278": {
+    "lesson": 8,
+    "order": 31
+  },
+  "vocab:658b912df8f3": {
+    "lesson": 10,
+    "order": 14
+  },
+  "vocab:62c4216674c5": {
+    "lesson": 11,
+    "order": 12
+  },
+  "vocab:9cd7c780c3a3": {
+    "lesson": 4,
+    "order": 17
+  },
+  "vocab:532c73de5dd5": {
+    "lesson": 4,
+    "order": 24
+  },
+  "vocab:a81612169c9b": {
+    "lesson": 5,
+    "order": 8
+  },
+  "vocab:8b5843f7fb2e": {
+    "lesson": 16,
+    "order": 999
+  },
+  "vocab:13696bc9b50d": {
+    "lesson": 3,
+    "order": 30
+  },
+  "vocab:734d275fd96b": {
+    "lesson": 1,
+    "order": 22
+  },
+  "vocab:c551bc3f7c6e": {
+    "lesson": 17,
+    "order": 25
+  },
+  "vocab:e78074927c19": {
+    "lesson": 3,
+    "order": 14
+  },
+  "vocab:d1564029008d": {
+    "lesson": 11,
+    "order": 29
+  },
+  "vocab:c1a28465a245": {
+    "lesson": 17,
+    "order": 23
+  },
+  "vocab:68571540e124": {
+    "lesson": 15,
+    "order": 15
+  },
+  "vocab:782272bfdac0": {
+    "lesson": 10,
+    "order": 11
+  },
+  "vocab:e34295f3e135": {
+    "lesson": 14,
+    "order": 27
+  },
+  "vocab:cfc75623ae7c": {
+    "lesson": 22,
+    "order": 9
+  },
+  "vocab:cd1bcc2b1b9d": {
+    "lesson": 8,
+    "order": 9
+  },
+  "vocab:0e8f798dbf05": {
+    "lesson": 2,
+    "order": 7
+  },
+  "vocab:12047d019b5e": {
+    "lesson": 11,
+    "order": 42
+  },
+  "vocab:a59ba12bc5d0": {
+    "lesson": 4,
+    "order": 36
+  },
+  "vocab:039a69622577": {
+    "lesson": 4,
+    "order": 38
+  },
+  "vocab:25849435331d": {
+    "lesson": 4,
+    "order": 37
+  },
+  "vocab:a0ff0f67c8ca": {
+    "lesson": 3,
+    "order": 32
+  },
+  "vocab:a812b1ac7f9a": {
+    "lesson": 14,
+    "order": 21
+  },
+  "vocab:22836046e27b": {
+    "lesson": 10,
+    "order": 10
+  },
+  "vocab:d10bb92f3e44": {
+    "lesson": 4,
+    "order": 47
+  },
+  "vocab:ae534d4ca872": {
+    "lesson": 16,
+    "order": 23
+  },
+  "vocab:4f0f6b6ae763": {
+    "lesson": 17,
+    "order": 19
+  },
+  "vocab:1a0aec6793c8": {
+    "lesson": 4,
+    "order": 25
+  },
+  "vocab:936289666e8d": {
+    "lesson": 6,
+    "order": 23
+  },
+  "vocab:95ccaa32f524": {
+    "lesson": 17,
+    "order": 26
+  },
+  "vocab:72c525f37a46": {
+    "lesson": 5,
+    "order": 18
+  },
+  "vocab:8b869217499a": {
+    "lesson": 4,
+    "order": 9
+  },
+  "vocab:645e1e3b4d7d": {
+    "lesson": 11,
+    "order": 28
+  },
+  "vocab:7a842087087c": {
+    "lesson": 20,
+    "order": 999
+  },
+  "vocab:418493d94175": {
+    "lesson": 13,
+    "order": 13
+  },
+  "vocab:61fd50f12e65": {
+    "lesson": 5,
+    "order": 27
+  },
+  "vocab:7a4ef637be19": {
+    "lesson": 5,
+    "order": 24
+  },
+  "vocab:c68f2caa2fe5": {
+    "lesson": 5,
+    "order": 30
+  },
+  "vocab:4d6673969429": {
+    "lesson": 6,
+    "order": 20
+  },
+  "vocab:2ba96bef9a4e": {
+    "lesson": 7,
+    "order": 40
+  },
+  "vocab:0139a208fec6": {
+    "lesson": 11,
+    "order": 34
+  },
+  "vocab:ee85169acdff": {
+    "lesson": 9,
+    "order": 7
+  },
+  "vocab:67f5908e108f": {
+    "lesson": 12,
+    "order": 9
+  },
+  "vocab:85e4ba2f2830": {
+    "lesson": 16,
+    "order": 31
+  },
+  "vocab:c597c353cb48": {
+    "lesson": 10,
+    "order": 38
+  },
+  "vocab:a23d308800d0": {
+    "lesson": 8,
+    "order": 19
+  },
+  "vocab:f7a15687a1a0": {
+    "lesson": 10,
+    "order": 16
+  },
+  "vocab:7ecc2c4bfced": {
+    "lesson": 11,
+    "order": 10
+  },
+  "vocab:1ed0362cc310": {
+    "lesson": 21,
+    "order": 20
+  }
+}

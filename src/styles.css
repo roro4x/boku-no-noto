@@ -662,12 +662,30 @@ a:hover {
   border: 1px solid var(--moss);
 }
 
-.search-field {
+.study-tools--vocabulary {
+  grid-template-columns: minmax(12rem, 0.8fr) minmax(0, 1.2fr);
+  align-items: end;
+}
+
+.search-field,
+.lesson-field {
   display: grid;
   gap: 0.3rem;
   color: var(--ink-strong);
   font-size: 0.875rem;
   font-weight: 700;
+}
+
+.lesson-field select {
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.5rem 2rem 0.5rem 0.6rem;
+  color: var(--ink);
+  background: var(--paper);
+  border: 2px inset #c9c0b5;
+  border-radius: 0;
+  font: inherit;
+  font-variant-numeric: tabular-nums;
 }
 
 .search-field__row {
@@ -749,6 +767,17 @@ a:hover {
 
 .study-row__content span {
   overflow-wrap: anywhere;
+}
+
+.study-row__content .study-row__lesson {
+  padding: 0.1rem 0.3rem;
+  color: var(--ink-strong);
+  background: var(--sage);
+  border: 1px solid var(--moss);
+  font-family: "Courier New", monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  white-space: nowrap;
 }
 
 .study-row__content small {
@@ -1638,6 +1667,10 @@ a:hover {
   }
 
   .study-row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .study-tools--vocabulary {
     grid-template-columns: minmax(0, 1fr);
   }
 

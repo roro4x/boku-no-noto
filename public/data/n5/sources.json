@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "accessedAt": "2026-09-18",
+  "accessedAt": "2026-09-29",
   "sources": [
     {
       "id": "openjlpt",
@@ -26,6 +26,13 @@
       "dictionaryDate": "2026-09-14",
       "license": "EDRDG licence / CC BY-SA 4.0 distribution terms",
       "usage": "Japanese readings for the selected kanji."
+    },
+    {
+      "id": "minna-lessons",
+      "title": "Minna no Nihongo N5 Vocabulary (Lessons 1–25)",
+      "url": "https://jlptbenkyo.com/articles/jlpt-n5-minna-no-nihongo-vocabulary/",
+      "license": "Reference only; source list and translations are not reproduced.",
+      "usage": "Lesson numbers and within-lesson ordering for matching words already present in this dataset."
     },
     {
       "id": "jlpt-official",

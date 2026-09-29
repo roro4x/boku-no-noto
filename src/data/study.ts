@@ -19,6 +19,8 @@ export type VocabularyItem = {
   partOfSpeech: string
   sourceRefs: string[]
   order: number
+  minnaLesson: number | null
+  minnaOrder: number | null
 }
 
 export type KanjiItem = {
@@ -32,6 +34,7 @@ export type KanjiItem = {
 }
 
 export type StudyItem = GrammarItem | VocabularyItem | KanjiItem
+export type VocabularyLessonFilter = number | 'all' | 'extra'
 
 export const categories: Array<{ id: StudyCategory; label: string; labelJa: string }> = [
   { id: 'grammar', label: 'Грамматика', labelJa: '文法' },
@@ -68,4 +71,18 @@ export const searchStudyItems = (items: StudyItem[], query: string) => {
     (item) =>
       normalizedQuery.length === 0 || normalizeSearch(itemSearchText(item)).includes(normalizedQuery),
   )
+}
+
+export const filterVocabularyByLesson = (
+  items: StudyItem[],
+  lesson: VocabularyLessonFilter,
+) => {
+  if (lesson === 'all') return items
+  const vocabulary = items.filter(isVocabularyItem)
+  if (lesson === 'extra') {
+    return vocabulary.filter((item) => item.minnaLesson === null)
+  }
+  return vocabulary
+    .filter((item) => item.minnaLesson === lesson)
+    .sort((a, b) => (a.minnaOrder ?? Number.MAX_SAFE_INTEGER) - (b.minnaOrder ?? Number.MAX_SAFE_INTEGER))
 }

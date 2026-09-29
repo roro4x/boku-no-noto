@@ -11,12 +11,13 @@ if (!openJlptDir || !jmdictPath || !kanjidicPath) {
 }
 
 const readJson = async (path) => JSON.parse(await readFile(path, 'utf8'))
-const [openVocabulary, openGrammar, openKanji, jmdict, kanjidic] = await Promise.all([
+const [openVocabulary, openGrammar, openKanji, jmdict, kanjidic, minnaLessonMap] = await Promise.all([
   readJson(resolve(openJlptDir, 'openjlpt-vocab-n5.json')),
   readJson(resolve(openJlptDir, 'openjlpt-grammar-n5.json')),
   readJson(resolve(openJlptDir, 'openjlpt-kanji-n5.json')),
   readJson(resolve(jmdictPath)),
   readJson(resolve(kanjidicPath)),
+  readJson(resolve('scripts/minna-lesson-map.json')),
 ])
 
 const grammarRu = [
@@ -161,14 +162,18 @@ const vocabulary = openVocabulary.map((item, index) => {
   }
 
   const reading = item.reading || (isKana(item.word) || editorialFallback ? item.word : entry?.kana[0]?.text ?? '')
+  const id = stableId('vocab', item.word, reading)
+  const minnaPlacement = minnaLessonMap[id]
   return {
-    id: stableId('vocab', item.word, reading),
+    id,
     term: item.word,
     reading,
     meaningsRu,
     partOfSpeech: editorialFallback?.[1] ?? posRu(senses[0]?.partOfSpeech ?? []),
-    sourceRefs: ['openjlpt', 'jmdict-rus'],
+    sourceRefs: minnaPlacement ? ['openjlpt', 'jmdict-rus', 'minna-lessons'] : ['openjlpt', 'jmdict-rus'],
     order: index + 1,
+    minnaLesson: minnaPlacement?.lesson ?? null,
+    minnaOrder: minnaPlacement?.order ?? null,
   }
 })
 
@@ -232,7 +237,7 @@ await mkdir(outputDir, { recursive: true })
 
 const sources = {
   schemaVersion: 1,
-  accessedAt: '2026-09-18',
+  accessedAt: '2026-09-29',
   sources: [
     {
       id: 'openjlpt',
@@ -260,6 +265,13 @@ const sources = {
       usage: 'Japanese readings for the selected kanji.',
     },
     {
+      id: 'minna-lessons',
+      title: 'Minna no Nihongo N5 Vocabulary (Lessons 1–25)',
+      url: 'https://jlptbenkyo.com/articles/jlpt-n5-minna-no-nihongo-vocabulary/',
+      license: 'Reference only; source list and translations are not reproduced.',
+      usage: 'Lesson numbers and within-lesson ordering for matching words already present in this dataset.',
+    },
+    {
       id: 'jlpt-official',
       title: 'Official JLPT FAQ',
       url: 'https://www.jlpt.jp/e/faq/',
@@ -275,7 +287,7 @@ const sources = {
 
 const manifest = {
   schemaVersion: 1,
-  datasetVersion: '2026-09-openjlpt-1',
+  datasetVersion: '2026-09-openjlpt-minna-1',
   language: 'ru',
   level: 'N5',
   categories: { grammar: grammar.length, vocabulary: vocabulary.length, kanji: kanji.length },

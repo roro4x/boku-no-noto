@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import {
+  filterVocabularyByLesson,
   normalizeSearch,
   searchStudyItems,
   type GrammarItem,
@@ -24,6 +25,17 @@ const vocabulary: VocabularyItem = {
   partOfSpeech: 'существительное',
   sourceRefs: ['openjlpt'],
   order: 2,
+  minnaLesson: 1,
+  minnaOrder: 4,
+}
+
+const extraVocabulary: VocabularyItem = {
+  ...vocabulary,
+  id: 'vocab:extra',
+  term: '余分',
+  reading: 'よぶん',
+  minnaLesson: null,
+  minnaOrder: null,
 }
 
 describe('normalizeSearch', () => {
@@ -41,5 +53,14 @@ describe('searchStudyItems', () => {
     expect(searchStudyItems(items, 'がっこう')).toEqual([vocabulary])
     expect(searchStudyItems(items, 'ても')).toEqual([grammar])
     expect(searchStudyItems(items, 'несуществующий запрос')).toEqual([])
+  })
+})
+
+describe('filterVocabularyByLesson', () => {
+  it('separates Minna no Nihongo lessons from additional N5 words', () => {
+    const items = [extraVocabulary, vocabulary]
+    expect(filterVocabularyByLesson(items, 1)).toEqual([vocabulary])
+    expect(filterVocabularyByLesson(items, 'extra')).toEqual([extraVocabulary])
+    expect(filterVocabularyByLesson(items, 'all')).toEqual(items)
   })
 })

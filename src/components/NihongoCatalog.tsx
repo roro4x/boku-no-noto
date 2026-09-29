@@ -1,11 +1,14 @@
 import { useEffect, useMemo, useState } from 'react'
 import {
   categories,
+  filterVocabularyByLesson,
   isGrammarItem,
   isVocabularyItem,
   searchStudyItems,
   type StudyCategory,
   type StudyItem,
+  type VocabularyItem,
+  type VocabularyLessonFilter,
 } from '../data/study'
 import type { SiteLocale } from '../i18n'
 
@@ -18,6 +21,15 @@ type NihongoCatalogProps = {
   category: StudyCategory
   itemId?: string
   locale: SiteLocale
+}
+
+const wordsRu = (count: number) => {
+  const mod100 = count % 100
+  const mod10 = count % 10
+  if (mod100 >= 11 && mod100 <= 14) return 'слов'
+  if (mod10 === 1) return 'слово'
+  if (mod10 >= 2 && mod10 <= 4) return 'слова'
+  return 'слов'
 }
 
 const catalogCopy = {
@@ -41,6 +53,12 @@ const catalogCopy = {
     kunyomi: 'Кунъёми',
     wordExamples: 'Примеры слов',
     details: 'Подробнее',
+    lessonFilter: 'Урок Minna no Nihongo',
+    allLessons: 'Все уроки и дополнительные слова',
+    lesson: (lesson: number, count: number) => `Урок ${lesson} — ${count} ${wordsRu(count)}`,
+    extraLesson: (count: number) => `Дополнительные N5 — ${count} ${wordsRu(count)}`,
+    lessonFact: 'Урок',
+    extraFact: 'Дополнительная лексика N5',
   },
   ja: {
     loading: '教材を開いています…',
@@ -62,6 +80,12 @@ const catalogCopy = {
     kunyomi: '訓読み',
     wordExamples: '言葉の例',
     details: '詳しく見る',
+    lessonFilter: 'みんなの日本語の課',
+    allLessons: '全課と追加語彙',
+    lesson: (lesson: number, count: number) => `第${lesson}課 — ${count}語`,
+    extraLesson: (count: number) => `N5追加語彙 — ${count}語`,
+    lessonFact: '課',
+    extraFact: 'N5追加語彙',
   },
 } as const
 
@@ -74,9 +98,21 @@ const categoryFile: Record<StudyCategory, string> = {
 const categoryHeading = (category: StudyCategory) =>
   categories.find((item) => item.id === category) ?? categories[0]
 
-const routeFor = (category: StudyCategory, itemId?: string, query = '') => {
+const parseLessonFilter = (value: string | null): VocabularyLessonFilter => {
+  if (value === 'extra') return 'extra'
+  const lesson = Number(value)
+  return Number.isInteger(lesson) && lesson >= 1 && lesson <= 25 ? lesson : 'all'
+}
+
+const routeFor = (
+  category: StudyCategory,
+  itemId?: string,
+  query = '',
+  lesson: VocabularyLessonFilter = 'all',
+) => {
   const params = new URLSearchParams()
   if (query) params.set('q', query)
+  if (category === 'vocabulary' && lesson !== 'all') params.set('lesson', String(lesson))
   const suffix = params.size ? `?${params.toString()}` : ''
   return `#/nihongo/${category}${itemId ? `/${encodeURIComponent(itemId)}` : ''}${suffix}`
 }
@@ -84,6 +120,7 @@ const routeFor = (category: StudyCategory, itemId?: string, query = '') => {
 export function NihongoCatalog({ category, itemId, locale }: NihongoCatalogProps) {
   const params = new URLSearchParams(window.location.hash.split('?')[1] ?? '')
   const [query, setQuery] = useState(params.get('q') ?? '')
+  const [lesson, setLesson] = useState<VocabularyLessonFilter>(parseLessonFilter(params.get('lesson')))
   const [items, setItems] = useState<StudyItem[]>([])
   const [manifest, setManifest] = useState<Manifest | null>(null)
   const [loadState, setLoadState] = useState<'loading' | 'ready' | 'error'>('loading')
@@ -121,17 +158,32 @@ export function NihongoCatalog({ category, itemId, locale }: NihongoCatalogProps
   useEffect(() => {
     const routeParams = new URLSearchParams(window.location.hash.split('?')[1] ?? '')
     setQuery(routeParams.get('q') ?? '')
+    setLesson(category === 'vocabulary' ? parseLessonFilter(routeParams.get('lesson')) : 'all')
   }, [category, itemId])
 
   useEffect(() => {
     setVisibleCount(40)
-  }, [category, query])
+  }, [category, lesson, query])
 
-  const searchResults = useMemo(() => searchStudyItems(items, query), [items, query])
+  const lessonCounts = useMemo(() => {
+    const counts = new Map<number, number>()
+    let extra = 0
+    for (const item of items) {
+      if (!isVocabularyItem(item)) continue
+      if (item.minnaLesson === null) extra += 1
+      else counts.set(item.minnaLesson, (counts.get(item.minnaLesson) ?? 0) + 1)
+    }
+    return { counts, extra }
+  }, [items])
+  const lessonItems = useMemo(
+    () => category === 'vocabulary' ? filterVocabularyByLesson(items, lesson) : items,
+    [category, items, lesson],
+  )
+  const searchResults = useMemo(() => searchStudyItems(lessonItems, query), [lessonItems, query])
   const detailItem = itemId ? items.find((item) => item.id === decodeURIComponent(itemId)) : undefined
 
-  const updateViewState = (nextQuery: string) => {
-    window.history.replaceState(null, '', routeFor(category, undefined, nextQuery))
+  const updateViewState = (nextQuery: string, nextLesson = lesson) => {
+    window.history.replaceState(null, '', routeFor(category, undefined, nextQuery, nextLesson))
   }
 
   if (loadState === 'loading') {
@@ -177,12 +229,33 @@ export function NihongoCatalog({ category, itemId, locale }: NihongoCatalogProps
 
       {detailItem ? (
         <article className="study-detail">
-          <a className="back-link" href={routeFor(category, undefined, query)}>{copy.back}</a>
+          <a className="back-link" href={routeFor(category, undefined, query, lesson)}>{copy.back}</a>
           <ItemDetail item={detailItem} locale={locale} />
         </article>
       ) : (
         <>
-          <div className="study-tools">
+          <div className={`study-tools${category === 'vocabulary' ? ' study-tools--vocabulary' : ''}`}>
+            {category === 'vocabulary' && (
+              <label className="lesson-field">
+                <span>{copy.lessonFilter}</span>
+                <select
+                  value={lesson}
+                  onChange={(event) => {
+                    const nextLesson = parseLessonFilter(event.target.value)
+                    setLesson(nextLesson)
+                    updateViewState(query, nextLesson)
+                  }}
+                >
+                  <option value="all">{copy.allLessons}</option>
+                  {Array.from({ length: 25 }, (_, index) => index + 1).map((lessonNumber) => (
+                    <option key={lessonNumber} value={lessonNumber}>
+                      {copy.lesson(lessonNumber, lessonCounts.counts.get(lessonNumber) ?? 0)}
+                    </option>
+                  ))}
+                  <option value="extra">{copy.extraLesson(lessonCounts.extra)}</option>
+                </select>
+              </label>
+            )}
             <label className="search-field">
               <span>{copy.search(locale === 'ja' ? heading.labelJa : heading.label)}</span>
               <span className="search-field__row">
@@ -231,9 +304,9 @@ export function NihongoCatalog({ category, itemId, locale }: NihongoCatalogProps
             <ol className="study-list">
               {searchResults.slice(0, visibleCount).map((item) => (
                 <li key={item.id} className="study-row">
-                  <ItemSummary item={item} />
+                  <ItemSummary item={item} locale={locale} />
                   <div className="study-row__actions">
-                    <a href={routeFor(category, item.id, query)}>{copy.details}</a>
+                    <a href={routeFor(category, item.id, query, lesson)}>{copy.details}</a>
                   </div>
                 </li>
               ))}
@@ -256,12 +329,12 @@ export function NihongoCatalog({ category, itemId, locale }: NihongoCatalogProps
   )
 }
 
-function ItemSummary({ item }: { item: StudyItem }) {
+function ItemSummary({ item, locale }: { item: StudyItem; locale: SiteLocale }) {
   if (isGrammarItem(item)) {
     return <div className="study-row__content"><strong lang="ja">{item.pattern}</strong><span lang="ru">{item.meaningRu}</span><small lang="ja">{item.examples[0]?.textJa}</small></div>
   }
   if (isVocabularyItem(item)) {
-    return <div className="study-row__content"><strong lang="ja">{item.term}</strong><span lang="ja">{item.reading}</span><span lang="ru">{item.meaningsRu.join('; ')}</span><small lang="ru">{item.partOfSpeech}</small></div>
+    return <div className="study-row__content"><strong lang="ja">{item.term}</strong><span lang="ja">{item.reading}</span><span lang="ru">{item.meaningsRu.join('; ')}</span><span className="study-row__lesson" lang={item.minnaLesson === null ? undefined : 'ja'}>{item.minnaLesson === null ? (locale === 'ru' ? 'Доп. N5' : 'N5追加') : `第${item.minnaLesson}課`}</span><small lang="ru">{item.partOfSpeech}</small></div>
   }
   return <div className="study-row__content study-row__content--kanji"><strong lang="ja">{item.character}</strong><span lang="ru">{item.meaningsRu.join('; ')}</span><small lang="ja">{[...item.readings.on, ...item.readings.kun].join(' · ')}</small></div>
 }
@@ -272,7 +345,12 @@ function ItemDetail({ item, locale }: { item: StudyItem; locale: SiteLocale }) {
     return <><h3 lang="ja">{item.pattern}</h3><p className="detail-lead" lang="ru">{item.meaningRu}</p><p lang="ru">{item.explanationRu}</p>{item.examples.map((example) => <div className="example-note" key={example.textJa}><p lang="ja">{example.textJa}</p><p lang="ru">{example.translationRu}</p></div>)}</>
   }
   if (isVocabularyItem(item)) {
-    return <><h3 lang="ja">{item.term}</h3><p className="detail-reading" lang="ja">{item.reading}</p><p className="detail-lead" lang="ru">{item.meaningsRu.join('; ')}</p><dl className="detail-facts"><div><dt>{copy.partOfSpeech}</dt><dd lang="ru">{item.partOfSpeech}</dd></div></dl></>
+    return <><h3 lang="ja">{item.term}</h3><p className="detail-reading" lang="ja">{item.reading}</p><p className="detail-lead" lang="ru">{item.meaningsRu.join('; ')}</p><dl className="detail-facts"><div><dt>{copy.partOfSpeech}</dt><dd lang="ru">{item.partOfSpeech}</dd></div><div><dt>{copy.lessonFact}</dt><dd>{lessonName(item, locale, copy.extraFact)}</dd></div></dl></>
   }
   return <><h3 className="detail-kanji" lang="ja">{item.character}</h3><p className="detail-lead" lang="ru">{item.meaningsRu.join('; ')}</p><dl className="detail-facts"><div><dt>{copy.onyomi}</dt><dd lang="ja">{item.readings.on.join('、') || '—'}</dd></div><div><dt>{copy.kunyomi}</dt><dd lang="ja">{item.readings.kun.join('、') || '—'}</dd></div></dl><h4>{copy.wordExamples}</h4><ul className="kanji-examples">{item.examples.map((example) => <li key={`${example.term}-${example.reading}`}><span lang="ja">{example.term}</span><span lang="ja">{example.reading}</span><span lang="ru">{example.meaningRu}</span></li>)}</ul></>
+}
+
+function lessonName(item: VocabularyItem, locale: SiteLocale, extraLabel: string) {
+  if (item.minnaLesson === null) return extraLabel
+  return locale === 'ru' ? `Minna no Nihongo · урок ${item.minnaLesson}` : `みんなの日本語 · 第${item.minnaLesson}課`
 }
