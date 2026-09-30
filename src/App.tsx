@@ -4,6 +4,7 @@ import { LinksDirectory } from './components/LinksDirectory'
 import { NihongoCatalog } from './components/NihongoCatalog'
 import { NotesArchive } from './components/NotesArchive'
 import { PromptLibrary } from './components/PromptLibrary'
+import { SeasonalAtmosphere } from './components/SeasonalAtmosphere'
 import { SiteClock } from './components/SiteClock'
 import { TextArchive } from './components/TextArchive'
 import { nextAvailableTrackIndex, nextTrackIndex, playlist } from './data/playlist'
@@ -204,6 +205,8 @@ function App() {
 
             <SiteClock locale={locale} />
 
+            <SeasonalAtmosphere locale={locale} />
+
             <MusicPlayer locale={locale} />
 
             <section className="side-box site-info" aria-labelledby="about-title">
@@ -290,6 +293,7 @@ function Home({ locale }: { locale: SiteLocale }) {
 function MusicPlayer({ locale }: { locale: SiteLocale }) {
   const copy = siteCopy[locale]
   const audioRef = useRef<HTMLAudioElement>(null)
+  const displayRef = useRef<HTMLDivElement>(null)
   const [isPlaying, setIsPlaying] = useState(false)
   const [currentTime, setCurrentTime] = useState(0)
   const [duration, setDuration] = useState(0)
@@ -297,10 +301,13 @@ function MusicPlayer({ locale }: { locale: SiteLocale }) {
   const [hasError, setHasError] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0)
+  const [displayMode, setDisplayMode] = useState<'time' | 'track'>('time')
+  const [isDisplayVisible, setIsDisplayVisible] = useState(true)
   const wantsPlaybackRef = useRef(false)
   const failedTracksRef = useRef(new Set<number>())
   const currentTrack = playlist[currentTrackIndex]
   const isEmpty = playlist.length === 0
+  const hasPlayerNotice = isEmpty || hasError
 
   useEffect(() => {
     if (audioRef.current) audioRef.current.volume = volume / 100
@@ -310,6 +317,30 @@ function MusicPlayer({ locale }: { locale: SiteLocale }) {
     wantsPlaybackRef.current = false
     audioRef.current?.pause()
   }, [])
+
+  useEffect(() => {
+    const display = displayRef.current
+    if (!display || typeof IntersectionObserver === 'undefined') return
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsDisplayVisible(entry.isIntersecting),
+      { threshold: 0.1 },
+    )
+    observer.observe(display)
+    return () => observer.disconnect()
+  }, [])
+
+  useEffect(() => {
+    if (!currentTrack || !isDisplayVisible) {
+      setDisplayMode('time')
+      return
+    }
+
+    const interval = window.setInterval(() => {
+      setDisplayMode((mode) => mode === 'time' ? 'track' : 'time')
+    }, 6000)
+    return () => window.clearInterval(interval)
+  }, [currentTrack, isDisplayVisible])
 
   const handleTrackFailure = useCallback(() => {
     setIsPlaying(false)
@@ -406,18 +437,83 @@ function MusicPlayer({ locale }: { locale: SiteLocale }) {
     setCurrentTrackIndex(nextIndex)
   }
 
+  const changeTrack = (direction: 'previous' | 'next') => {
+    const audio = audioRef.current
+    if (!audio || playlist.length === 0) return
+
+    const targetIndex = direction === 'next'
+      ? nextTrackIndex(currentTrackIndex, playlist.length)
+      : (currentTrackIndex - 1 + playlist.length) % playlist.length
+    if (targetIndex === null) return
+
+    failedTracksRef.current.clear()
+    setHasError(false)
+    setCurrentTime(0)
+
+    if (targetIndex === currentTrackIndex) {
+      audio.currentTime = 0
+      if (wantsPlaybackRef.current) {
+        setIsLoading(true)
+        void audio.play()
+          .then(() => setIsLoading(false))
+          .catch(handleTrackFailure)
+      }
+      return
+    }
+
+    setDuration(0)
+    setCurrentTrackIndex(targetIndex)
+  }
+
   return (
-    <section className="side-box player-box" aria-labelledby="player-title">
+    <section
+      className="side-box player-box"
+      aria-busy={isLoading}
+      aria-labelledby="player-title"
+    >
       <h2 id="player-title" lang={locale}>{copy.musicTitle}</h2>
       <div className="player-display">
-        <span title={currentTrack?.title}>{currentTrack?.display ?? 'NO TAPE'}</span>
-        <span>{formatPlayerTime(currentTime)} / {formatPlayerTime(duration)}</span>
+        <div
+          className="player-display__readout"
+          ref={displayRef}
+          aria-label={currentTrack
+            ? `${currentTrack.title}. ${formatPlayerTime(currentTime)} / ${formatPlayerTime(duration)}`
+            : copy.audioEmpty}
+        >
+          {!currentTrack ? (
+            <span className="player-display__time" aria-hidden="true">NO TAPE</span>
+          ) : displayMode === 'time' ? (
+            <span className="player-display__time" aria-hidden="true">
+              {formatPlayerTime(currentTime)} / {formatPlayerTime(duration)}
+            </span>
+          ) : (
+            <span className="player-display__track" title={currentTrack.title} aria-hidden="true">
+              <span>{currentTrack.title}</span>
+            </span>
+          )}
+        </div>
       </div>
-      <div className="player-tape" aria-hidden="true">
-        <span />
-        <span />
-      </div>
-      <div className="player-controls" aria-describedby="player-note">
+      <label className="player-volume">
+        <span>{copy.volume}</span>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value={volume}
+          aria-label={copy.volumeLabel}
+          onChange={(event) => setVolume(Number(event.target.value))}
+        />
+      </label>
+      <div className="player-controls" aria-describedby={hasPlayerNotice ? 'player-note' : undefined}>
+        <button
+          className="player-skip"
+          type="button"
+          onClick={() => changeTrack('previous')}
+          disabled={isEmpty || isLoading}
+          aria-label={copy.previousTrackLabel}
+        >
+          <span className="player-skip-icon player-skip-icon--previous" aria-hidden="true" />
+        </button>
         <button
           className="player-toggle"
           type="button"
@@ -431,29 +527,25 @@ function MusicPlayer({ locale }: { locale: SiteLocale }) {
           >
             {isPlaying && <><i /><i /></>}
           </span>
-          {hasError ? copy.retryAudio : isPlaying ? copy.pause : copy.play}
         </button>
-        <label>
-          <span>{copy.volume}</span>
-          <input
-            type="range"
-            min="0"
-            max="100"
-            value={volume}
-            aria-label={copy.volumeLabel}
-            onChange={(event) => setVolume(Number(event.target.value))}
-          />
-        </label>
+        <button
+          className="player-skip"
+          type="button"
+          onClick={() => changeTrack('next')}
+          disabled={isEmpty || isLoading}
+          aria-label={copy.nextTrackLabel}
+        >
+          <span className="player-skip-icon" aria-hidden="true" />
+        </button>
       </div>
-      <p id="player-note" role="status" aria-live="polite">
-        {isEmpty
-          ? copy.audioEmpty
-          : hasError
-            ? copy.audioError
-            : isLoading
-              ? copy.audioLoading
-              : copy.audioReady(currentTrack.title)}
-      </p>
+      <span className="visually-hidden" role="status" aria-live="polite" aria-atomic="true">
+        {isLoading ? copy.audioLoading : ''}
+      </span>
+      {hasPlayerNotice && (
+        <p id="player-note" role="status" aria-live="polite">
+          {isEmpty ? copy.audioEmpty : copy.audioError}
+        </p>
+      )}
       {currentTrack && (
         <audio
           ref={audioRef}

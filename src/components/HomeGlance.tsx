@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import {
   pickRandomVocabulary,
   splitMeaningParts,
@@ -19,6 +19,10 @@ const glanceCopy = {
     wordLoading: 'Открываю словарь…',
     wordError: 'Словарь сейчас не открылся.',
     meaningLabel: 'Варианты перевода',
+    meaningPrompt: 'Сначала вспомните перевод',
+    showMeaning: 'Показать перевод',
+    hideMeaning: 'Скрыть перевод',
+    nextWord: 'Другое слово',
     wordLink: (term: string) => `Открыть слово «${term}» в словаре N5`,
   },
   ja: {
@@ -26,6 +30,10 @@ const glanceCopy = {
     wordLoading: '辞書を開いています…',
     wordError: '今、辞書を開けません。',
     meaningLabel: 'ロシア語訳',
+    meaningPrompt: 'まず、意味を思い出してみましょう',
+    showMeaning: '訳を見る',
+    hideMeaning: '訳を隠す',
+    nextWord: '次の言葉',
     wordLink: (term: string) => `「${term}」をN5辞書で開く`,
   },
 } as const
@@ -48,9 +56,20 @@ const rememberWordId = (id: string) => {
 
 export function HomeGlance({ locale }: HomeGlanceProps) {
   const copy = glanceCopy[locale]
+  const vocabulary = useRef<VocabularyItem[]>([])
   const [word, setWord] = useState<VocabularyItem | null>(null)
   const [wordState, setWordState] = useState<'loading' | 'ready' | 'error'>('loading')
+  const [isMeaningVisible, setIsMeaningVisible] = useState(false)
   const meaningParts = word ? splitMeaningParts(word.meaningsRu[0]) : []
+
+  const showNextWord = () => {
+    const nextWord = pickRandomVocabulary(vocabulary.current, word?.id ?? null)
+    if (!nextWord) return
+    visitWordId = nextWord.id
+    rememberWordId(nextWord.id)
+    setWord(nextWord)
+    setIsMeaningVisible(false)
+  }
 
   useEffect(() => {
     let active = true
@@ -61,6 +80,7 @@ export function HomeGlance({ locale }: HomeGlanceProps) {
       })
       .then((items) => {
         if (!active) return
+        vocabulary.current = items
         let nextWord = visitWordId
           ? items.find((item) => item.id === visitWordId) ?? null
           : null
@@ -87,25 +107,56 @@ export function HomeGlance({ locale }: HomeGlanceProps) {
     <div className="home-glance">
       <section className="home-glance__word" aria-labelledby="random-word-title">
         <h3 id="random-word-title">{copy.wordTitle}</h3>
-        <div className="home-glance__word-body" aria-live="polite">
+        <div className="home-glance__word-body">
           {wordState === 'loading' && <p className="home-glance__notice">{copy.wordLoading}</p>}
           {wordState === 'error' && <p className="home-glance__notice">{copy.wordError}</p>}
           {wordState === 'ready' && word && (
             <>
-              <a
-                className="home-glance__term"
-                href={`#/nihongo/vocabulary/${encodeURIComponent(word.id)}`}
-                lang="ja"
-                aria-label={copy.wordLink(word.term)}
-              >
-                {word.term}
-              </a>
-              {word.reading !== word.term && <span className="home-glance__reading" lang="ja">{word.reading}</span>}
-              <ul className="home-glance__meanings" lang="ru" aria-label={copy.meaningLabel}>
-                {meaningParts.map((meaning, index) => (
-                  <li key={`${meaning}-${index}`}>{meaning}</li>
-                ))}
-              </ul>
+              <div className="home-glance__result" aria-live="polite" aria-atomic="true">
+                <div className="home-glance__word-copy">
+                  <a
+                    className="home-glance__term"
+                    href={`#/nihongo/vocabulary/${encodeURIComponent(word.id)}`}
+                    lang="ja"
+                    aria-label={copy.wordLink(word.term)}
+                  >
+                    {word.term}
+                  </a>
+                </div>
+                <div className="home-glance__meaning-stage" data-revealed={isMeaningVisible}>
+                  <div className="home-glance__meaning-card">
+                    <p className="home-glance__meaning-face home-glance__meaning-prompt" aria-hidden={isMeaningVisible}>
+                      {copy.meaningPrompt}
+                    </p>
+                    <div
+                      className="home-glance__meaning-face home-glance__meaning-answer"
+                      id="home-glance-meaning"
+                      aria-label={copy.meaningLabel}
+                      aria-hidden={!isMeaningVisible}
+                    >
+                      {word.reading !== word.term && <span className="home-glance__reading" lang="ja">{word.reading}</span>}
+                      <ul className="home-glance__meanings" lang="ru">
+                        {meaningParts.map((meaning, index) => (
+                          <li key={`${meaning}-${index}`}>{meaning}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="home-glance__actions">
+                <button
+                  type="button"
+                  aria-controls="home-glance-meaning"
+                  aria-expanded={isMeaningVisible}
+                  onClick={() => setIsMeaningVisible((isVisible) => !isVisible)}
+                >
+                  {isMeaningVisible ? copy.hideMeaning : copy.showMeaning}
+                </button>
+                <button type="button" onClick={showNextWord}>
+                  {copy.nextWord}
+                </button>
+              </div>
             </>
           )}
         </div>
