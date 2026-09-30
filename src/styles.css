@@ -1527,6 +1527,7 @@ html[data-season-paused] .weather-raindrop {
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
+  cursor: pointer;
   transition:
     background-color 100ms ease-out,
     box-shadow 100ms ease-out,
@@ -2276,7 +2277,7 @@ html[data-season-paused] .weather-raindrop {
   margin: 0;
 }
 
-.site-footer a {
+.site-footer .utility-link {
   font-size: 0.75rem;
 }
 

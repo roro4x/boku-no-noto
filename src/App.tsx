@@ -248,7 +248,20 @@ function App() {
             <span lang="ja">僕のノート</span> · {copy.footerMade}
           </p>
           <p>
-            <a className="utility-link" href="#/">{copy.footerHome}</a>
+            <button
+              type="button"
+              className="utility-link"
+              onClick={() => {
+                window.scrollTo({
+                  top: 0,
+                  behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches
+                    ? 'auto'
+                    : 'smooth',
+                })
+              }}
+            >
+              {copy.footerHome}
+            </button>
           </p>
         </footer>
       </div>
