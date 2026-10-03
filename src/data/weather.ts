@@ -1,17 +1,14 @@
 import type { Season } from './season'
+import type { Coordinates } from './geolocation'
 
 export type WeatherEffect = 'dry' | 'rain' | 'snow'
 export type RainIntensity = 'none' | 'drizzle' | 'rain' | 'heavy'
 export type WeatherCondition = 'clear' | 'cloudy' | 'fog' | 'drizzle' | 'rain' | 'heavy' | 'snow' | 'thunderstorm'
 export type WeatherSource = 'open-meteo' | 'wttr'
 
-export const weatherSources = {
-  'open-meteo': { name: 'Open-Meteo', url: 'https://open-meteo.com/' },
-  wttr: { name: 'wttr.in', url: 'https://wttr.in/' },
-} as const
-
 export type WeatherSnapshot = {
   source: WeatherSource
+  approximate?: boolean
   effect: WeatherEffect
   rainIntensity: RainIntensity
   weatherCode: number
@@ -21,7 +18,6 @@ export type WeatherSnapshot = {
   windDirection: number
 }
 
-type Coordinates = { latitude: number; longitude: number }
 const requestTimeoutMs = 8000
 const rainCodes = new Set([51, 53, 55, 56, 57, 61, 63, 65, 66, 67, 80, 81, 82, 95, 96, 99])
 const snowCodes = new Set([71, 73, 75, 77, 85, 86])
@@ -139,7 +135,15 @@ const requestWeather = async (url: URL, parse: (payload: unknown) => WeatherSnap
   }
 }
 
-export const fetchCurrentWeather = async (coordinates: Coordinates, signal?: AbortSignal): Promise<WeatherSnapshot> => {
+export const fetchCurrentWeather = async (coordinates?: Coordinates, signal?: AbortSignal): Promise<WeatherSnapshot> => {
+  // wttr.in can resolve the caller's approximate location by IP when the
+  // browser's location service is unavailable. No device coordinates are sent.
+  if (!coordinates) {
+    const endpoint = new URL('https://wttr.in/')
+    endpoint.searchParams.set('format', 'j1')
+    return { ...await requestWeather(endpoint, readWttr, signal), approximate: true }
+  }
+
   const latitude = coordinates.latitude.toFixed(2)
   const longitude = coordinates.longitude.toFixed(2)
   const primary = new URL('https://api.open-meteo.com/v1/forecast')

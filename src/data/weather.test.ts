@@ -159,3 +159,19 @@ describe('particle season', () => {
     expect(resolveParticleSeason('spring')).toBe('spring')
   })
 })
+
+describe('weather without device location', () => {
+  it('uses approximate IP weather when device coordinates are unavailable', async () => {
+    const fetch = vi.fn().mockResolvedValue(jsonResponse(backupPayload()))
+    vi.stubGlobal('fetch', fetch)
+    const weather = await fetchCurrentWeather()
+    expect(weather).toMatchObject({ source: 'wttr', approximate: true, windSpeed: 5 })
+    expect(String(fetch.mock.calls[0][0])).toBe('https://wttr.in/?format=j1')
+    expect(fetch).toHaveBeenCalledTimes(1)
+  })
+
+  it('reports an error if approximate weather is unavailable too', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockRejectedValue(new TypeError('Network error')))
+    await expect(fetchCurrentWeather()).rejects.toThrow('Network error')
+  })
+})

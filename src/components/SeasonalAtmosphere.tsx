@@ -5,13 +5,13 @@ import {
   fetchCurrentWeather,
   resolveParticleSeason,
   resolveWeatherCondition,
-  weatherSources,
   type RainIntensity,
   type WeatherEffect,
   type WeatherCondition,
   type WeatherSnapshot,
 } from '../data/weather'
 import type { SiteLocale } from '../i18n'
+import { getVisitorCoordinates, isPermissionDenied } from '../data/geolocation'
 
 type SeasonMode = 'auto' | 'off'
 
@@ -43,7 +43,7 @@ type WeatherStatus = 'off' | 'locating' | 'loading' | 'ready' | 'denied' | 'erro
 
 const seasonStorageKey = 'boku-no-noto-season-mode'
 const weatherStorageKey = 'boku-no-noto-local-weather'
-const weatherCacheKey = 'boku-no-noto-weather-cache-v3'
+const weatherCacheKey = 'boku-no-noto-weather-cache-v4'
 const weatherRefreshMs = 30 * 60 * 1000
 const weatherRetryMs = 5 * 60 * 1000
 
@@ -108,9 +108,7 @@ const copy = {
       snow: 'снег',
       thunderstorm: 'гроза',
     },
-    privacyBefore: 'Геолокация → ',
-    privacyAfter: '; при ошибке → ',
-    source: 'Данные',
+    approximate: 'примерное место',
     season: {
       winter: 'Зима · тихий снег',
       spring: 'Весна · лепестки сакуры',
@@ -157,9 +155,7 @@ const copy = {
       snow: '雪',
       thunderstorm: '雷雨',
     },
-    privacyBefore: '位置情報 → ',
-    privacyAfter: '、エラー時 → ',
-    source: '提供元',
+    approximate: 'おおよその現在地',
     season: {
       winter: '冬・静かな雪',
       spring: '春・桜の花びら',
@@ -185,29 +181,6 @@ const getInitialWeatherEnabled = () => {
   }
 }
 
-const getVisitorCoordinates = () => new Promise<GeolocationCoordinates>((resolve, reject) => {
-  if (!navigator.geolocation) {
-    reject(new Error('Geolocation is unavailable'))
-    return
-  }
-
-  navigator.geolocation.getCurrentPosition(
-    (position) => resolve(position.coords),
-    reject,
-    {
-      enableHighAccuracy: false,
-      maximumAge: 15 * 60 * 1000,
-      timeout: 10 * 1000,
-    },
-  )
-})
-
-const isPermissionDenied = (error: unknown) =>
-  typeof error === 'object'
-  && error !== null
-  && 'code' in error
-  && error.code === 1
-
 const isWeatherEffect = (value: unknown): value is WeatherEffect =>
   value === 'dry' || value === 'rain' || value === 'snow'
 
@@ -218,6 +191,7 @@ const isWeatherSnapshot = (value: unknown): value is WeatherSnapshot => {
   if (typeof value !== 'object' || value === null) return false
   const candidate = value as Partial<WeatherSnapshot>
   return (candidate.source === 'open-meteo' || candidate.source === 'wttr')
+    && (candidate.approximate === undefined || typeof candidate.approximate === 'boolean')
     && isWeatherEffect(candidate.effect)
     && isRainIntensity(candidate.rainIntensity)
     && [
@@ -481,14 +455,11 @@ export function SeasonalAtmosphere({ locale }: { locale: SiteLocale }) {
 
       setWeatherStatus('locating')
       try {
-        const coordinates = await getVisitorCoordinates()
+        const coordinates = await getVisitorCoordinates(controller.signal)
         if (!active) return
         setWeatherStatus('loading')
         const weather = await fetchCurrentWeather(
-          {
-            latitude: coordinates.latitude,
-            longitude: coordinates.longitude,
-          },
+          coordinates,
           controller.signal,
         )
         if (!active) return
@@ -585,7 +556,6 @@ export function SeasonalAtmosphere({ locale }: { locale: SiteLocale }) {
               type="button"
               aria-label={weatherEnabled ? text.weatherDisableLabel : text.weatherEnableLabel}
               aria-pressed={weatherEnabled}
-              aria-describedby="weather-privacy"
               onClick={() => {
                 if (weatherEnabled) {
                   setWeather(null)
@@ -624,7 +594,7 @@ export function SeasonalAtmosphere({ locale }: { locale: SiteLocale }) {
                     </svg>
                     {text.wind} {Math.round(weather.windSpeed)} {text.windUnit}
                   </span>
-                  <span>{text.source}: {weatherSources[weather.source].name}</span>
+                  {weather.approximate && <span>{text.approximate}</span>}
                 </div>
               </>
             ) : (
@@ -635,12 +605,6 @@ export function SeasonalAtmosphere({ locale }: { locale: SiteLocale }) {
             )}
           </div>
         </div>
-        <p className="weather-privacy" id="weather-privacy">
-          {text.privacyBefore}
-          <a href="https://open-meteo.com/" target="_blank" rel="noreferrer">Open-Meteo</a>
-          {text.privacyAfter}
-          <a href="https://wttr.in/" target="_blank" rel="noreferrer">wttr.in</a>
-        </p>
       </section>
     </>
   )
