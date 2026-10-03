@@ -31,4 +31,10 @@ export const siteLinks: SiteLink[] = [
     url: 'https://tadoku.org/japanese/en/',
     banner: 'assets/banners/tadoku.svg',
   },
+  {
+    id: 'tofugu',
+    title: 'Tofugu',
+    url: 'https://www.tofugu.com/',
+    banner: 'assets/banners/tofugu.svg',
+  },
 ]

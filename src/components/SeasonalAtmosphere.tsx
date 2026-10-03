@@ -3,8 +3,12 @@ import { createPortal } from 'react-dom'
 import { resolveSeason, type Season } from '../data/season'
 import {
   fetchCurrentWeather,
+  resolveParticleSeason,
+  resolveWeatherCondition,
+  weatherSources,
   type RainIntensity,
   type WeatherEffect,
+  type WeatherCondition,
   type WeatherSnapshot,
 } from '../data/weather'
 import type { SiteLocale } from '../i18n'
@@ -36,11 +40,10 @@ type AtmosphereStyle = CSSProperties & {
 }
 
 type WeatherStatus = 'off' | 'locating' | 'loading' | 'ready' | 'denied' | 'error'
-type WeatherCondition = 'clear' | 'cloudy' | 'fog' | 'drizzle' | 'rain' | 'heavy' | 'snow' | 'thunderstorm'
 
 const seasonStorageKey = 'boku-no-noto-season-mode'
 const weatherStorageKey = 'boku-no-noto-local-weather'
-const weatherCacheKey = 'boku-no-noto-weather-cache-v2'
+const weatherCacheKey = 'boku-no-noto-weather-cache-v3'
 const weatherRefreshMs = 30 * 60 * 1000
 const weatherRetryMs = 5 * 60 * 1000
 
@@ -81,6 +84,8 @@ const copy = {
     weatherOff: 'не включена',
     locating: 'определяем место',
     loading: 'получаем данные',
+    loadingHint: 'проверяем источники',
+    seasonSeparator: ' · ',
     drizzle: 'морось',
     rain: 'дождь',
     heavy: 'ливень',
@@ -104,7 +109,8 @@ const copy = {
       thunderstorm: 'гроза',
     },
     privacyBefore: 'Геолокация → ',
-    privacyAfter: '',
+    privacyAfter: '; при ошибке → ',
+    source: 'Данные',
     season: {
       winter: 'Зима · тихий снег',
       spring: 'Весна · лепестки сакуры',
@@ -127,6 +133,8 @@ const copy = {
     weatherOff: 'オフです',
     locating: '現在地を確認中',
     loading: '天気を取得中',
+    loadingHint: '提供元を確認中',
+    seasonSeparator: '・',
     drizzle: '霧雨',
     rain: '雨',
     heavy: '大雨',
@@ -150,7 +158,8 @@ const copy = {
       thunderstorm: '雷雨',
     },
     privacyBefore: '位置情報 → ',
-    privacyAfter: '',
+    privacyAfter: '、エラー時 → ',
+    source: '提供元',
     season: {
       winter: '冬・静かな雪',
       spring: '春・桜の花びら',
@@ -208,7 +217,8 @@ const isRainIntensity = (value: unknown): value is RainIntensity =>
 const isWeatherSnapshot = (value: unknown): value is WeatherSnapshot => {
   if (typeof value !== 'object' || value === null) return false
   const candidate = value as Partial<WeatherSnapshot>
-  return isWeatherEffect(candidate.effect)
+  return (candidate.source === 'open-meteo' || candidate.source === 'wttr')
+    && isWeatherEffect(candidate.effect)
     && isRainIntensity(candidate.rainIntensity)
     && [
       candidate.weatherCode,
@@ -299,17 +309,6 @@ const getRainStyle = (style: RainStyle, intensity: RainIntensity): RainStyle => 
   }
 }
 
-const resolveWeatherCondition = (weather: WeatherSnapshot): WeatherCondition => {
-  if (weather.weatherCode >= 95) return 'thunderstorm'
-  if (weather.effect === 'snow') return 'snow'
-  if (weather.effect === 'rain') {
-    return weather.rainIntensity === 'none' ? 'rain' : weather.rainIntensity
-  }
-  if (weather.weatherCode === 45 || weather.weatherCode === 48) return 'fog'
-  if (weather.weatherCode >= 1 && weather.weatherCode <= 3) return 'cloudy'
-  return 'clear'
-}
-
 const formatTemperature = (temperature: number) => {
   const rounded = Math.round(temperature)
   return `${rounded > 0 ? '+' : ''}${rounded}°`
@@ -365,6 +364,10 @@ export function SeasonalAtmosphere({ locale }: { locale: SiteLocale }) {
   const weatherEffect = weather?.effect ?? null
   const rainIntensity = weather?.rainIntensity ?? 'none'
   const weatherCondition = weather ? resolveWeatherCondition(weather) : null
+  const particleSeason = resolveParticleSeason(season, weather?.effect)
+  const seasonStatus = weatherEffect === 'snow'
+    ? `${text.season[season].split(/[·・]/)[0].trim()}${text.seasonSeparator}${text.snow}`
+    : text.season[season]
   const weatherStatusText = weatherStatus === 'off'
       ? text.weatherOff
       : weatherStatus === 'locating'
@@ -379,13 +382,15 @@ export function SeasonalAtmosphere({ locale }: { locale: SiteLocale }) {
     : weatherStatus === 'locating' || weatherStatus === 'denied'
       ? text.weatherLocationHint
       : weatherStatus === 'loading'
-        ? 'Open-Meteo'
-        : text.weatherFallbackHint
+        ? text.loadingHint
+        : isEnabled ? text.weatherFallbackHint : text.disabled
   const atmosphere = isEnabled
     ? createPortal(
         <div
           className="seasonal-atmosphere"
           data-weather={weatherEffect ?? 'seasonal'}
+          data-condition={weatherCondition ?? 'seasonal'}
+          data-particle-season={particleSeason}
           data-rain={rainIntensity}
           style={getAtmosphereStyle(weather)}
           aria-hidden="true"
@@ -396,7 +401,7 @@ export function SeasonalAtmosphere({ locale }: { locale: SiteLocale }) {
               style={getParticleStyle(style, weather)}
               key={index}
             >
-              {season === 'autumn' && (
+              {particleSeason === 'autumn' && (
                 <svg
                   className="seasonal-maple-leaf"
                   viewBox="0 0 24 24"
@@ -452,7 +457,7 @@ export function SeasonalAtmosphere({ locale }: { locale: SiteLocale }) {
   }, [weatherEnabled])
 
   useEffect(() => {
-    if (!weatherEnabled || !isEnabled) return
+    if (!weatherEnabled) return
 
     let active = true
     const controller = new AbortController()
@@ -510,10 +515,10 @@ export function SeasonalAtmosphere({ locale }: { locale: SiteLocale }) {
       controller.abort()
       if (refreshTimer !== undefined) window.clearTimeout(refreshTimer)
     }
-  }, [isEnabled, weatherEnabled, weatherRefreshToken])
+  }, [weatherEnabled, weatherRefreshToken])
 
   useEffect(() => {
-    if (!weatherEnabled || !isEnabled) return
+    if (!weatherEnabled) return
 
     const requestRefresh = () => {
       if (!document.hidden && navigator.onLine) {
@@ -531,7 +536,7 @@ export function SeasonalAtmosphere({ locale }: { locale: SiteLocale }) {
       window.removeEventListener('online', requestRefresh)
       document.removeEventListener('visibilitychange', handleVisibility)
     }
-  }, [isEnabled, weatherEnabled])
+  }, [weatherEnabled])
 
   useEffect(() => {
     const root = document.documentElement
@@ -570,7 +575,7 @@ export function SeasonalAtmosphere({ locale }: { locale: SiteLocale }) {
           </button>
         </div>
         <p className="season-status" aria-live="polite">
-          {isEnabled ? text.season[season] : text.disabled}
+          {isEnabled ? seasonStatus : text.disabled}
         </p>
         <div className="weather-board" data-state={weatherStatus}>
           <div className="weather-board-head">
@@ -619,6 +624,7 @@ export function SeasonalAtmosphere({ locale }: { locale: SiteLocale }) {
                     </svg>
                     {text.wind} {Math.round(weather.windSpeed)} {text.windUnit}
                   </span>
+                  <span>{text.source}: {weatherSources[weather.source].name}</span>
                 </div>
               </>
             ) : (
@@ -633,6 +639,7 @@ export function SeasonalAtmosphere({ locale }: { locale: SiteLocale }) {
           {text.privacyBefore}
           <a href="https://open-meteo.com/" target="_blank" rel="noreferrer">Open-Meteo</a>
           {text.privacyAfter}
+          <a href="https://wttr.in/" target="_blank" rel="noreferrer">wttr.in</a>
         </p>
       </section>
     </>

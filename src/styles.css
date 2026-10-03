@@ -148,20 +148,20 @@ a:hover {
   animation: season-fall var(--season-effective-duration, var(--season-duration)) linear var(--season-delay) infinite;
 }
 
-html[data-season="winter"] .seasonal-particle {
+.seasonal-atmosphere[data-particle-season="winter"] .seasonal-particle {
   background: rgba(255, 253, 248, 0.92);
   border: 1px solid rgba(83, 112, 123, 0.35);
   box-shadow: 2px 2px 0 rgba(83, 112, 123, 0.12);
 }
 
-html[data-season="spring"] .seasonal-particle {
+.seasonal-atmosphere[data-particle-season="spring"] .seasonal-particle {
   height: 5px;
   background: #d7aab5;
   border: 1px solid rgba(140, 91, 104, 0.32);
   border-radius: 70% 25% 70% 25%;
 }
 
-html[data-season="summer"] .seasonal-atmosphere::before {
+.seasonal-atmosphere[data-particle-season="summer"]::before {
   opacity: 0.36;
   background:
     linear-gradient(112deg, transparent 28%, rgba(255, 248, 193, 0.48) 42%, transparent 55%),
@@ -169,26 +169,53 @@ html[data-season="summer"] .seasonal-atmosphere::before {
   animation: summer-light 24s ease-in-out infinite alternate;
 }
 
-html[data-season="summer"] .seasonal-particle {
+.seasonal-atmosphere[data-particle-season="summer"] .seasonal-particle {
   background: rgba(255, 244, 164, 0.72);
   box-shadow: 0 0 5px rgba(255, 241, 142, 0.36);
 }
 
-html[data-season="autumn"] .seasonal-particle {
+.seasonal-atmosphere[data-particle-season="autumn"] .seasonal-particle {
   width: calc(var(--season-size) + 7px);
   height: calc(var(--season-size) + 7px);
   color: #dfb52f;
 }
 
-html[data-season="autumn"] .seasonal-particle:nth-child(3n + 1) {
+.seasonal-atmosphere[data-particle-season="autumn"] .seasonal-particle:nth-child(3n + 1) {
   color: #edc84b;
 }
 
-html[data-season="autumn"] .seasonal-particle:nth-child(3n + 2) {
+/* Weather changes the light without covering the page or flashing. */
+.seasonal-atmosphere[data-condition="cloudy"]::before,
+.seasonal-atmosphere[data-condition="drizzle"]::before,
+.seasonal-atmosphere[data-condition="rain"]::before,
+.seasonal-atmosphere[data-condition="heavy"]::before,
+.seasonal-atmosphere[data-condition="thunderstorm"]::before {
+  opacity: 1;
+  background: rgba(62, 91, 105, 0.04);
+  animation: none;
+}
+
+.seasonal-atmosphere[data-condition="thunderstorm"]::before {
+  background: rgba(46, 69, 82, 0.08);
+}
+
+.seasonal-atmosphere[data-condition="fog"]::before {
+  opacity: 1;
+  background: linear-gradient(180deg, rgba(238, 239, 227, 0.03), rgba(238, 239, 227, 0.16));
+  animation: none;
+}
+
+.seasonal-atmosphere[data-particle-season="summer"][data-condition="cloudy"] .seasonal-particle,
+.seasonal-atmosphere[data-particle-season="summer"][data-condition="fog"] .seasonal-particle,
+.seasonal-atmosphere[data-particle-season="summer"][data-weather="rain"] .seasonal-particle {
+  display: none;
+}
+
+.seasonal-atmosphere[data-particle-season="autumn"] .seasonal-particle:nth-child(3n + 2) {
   color: #d9a81f;
 }
 
-html[data-season="autumn"] .seasonal-particle:nth-child(3n + 3) {
+.seasonal-atmosphere[data-particle-season="autumn"] .seasonal-particle:nth-child(3n + 3) {
   color: #f0cf63;
 }
 
@@ -2296,7 +2323,7 @@ html[data-season-paused] .weather-raindrop {
     display: none;
   }
 
-  .seasonal-atmosphere[data-rain] .weather-raindrop {
+  .seasonal-atmosphere[data-rain] .weather-raindrop:nth-child(n) {
     display: none;
   }
 
