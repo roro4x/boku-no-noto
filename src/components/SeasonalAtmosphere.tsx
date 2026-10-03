@@ -3,6 +3,8 @@ import { createPortal } from 'react-dom'
 import { resolveSeason, type Season } from '../data/season'
 import {
   fetchCurrentWeather,
+  WeatherRequestError,
+  type WeatherFailure,
   resolveParticleSeason,
   resolveWeatherCondition,
   type RainIntensity,
@@ -92,7 +94,9 @@ const copy = {
     snow: 'снег',
     dry: 'сухо',
     denied: 'нет доступа к месту',
-    weatherError: 'повторим позже',
+    weatherError: 'погода недоступна',
+    retry: 'Повторить загрузку погоды',
+    failure: { network: 'не удалось подключиться', timeout: 'сервис не ответил вовремя', response: 'сервис вернул ошибку', limited: 'превышен лимит запросов' },
     weatherEnableHint: 'нажмите «ВКЛ»',
     weatherLocationHint: 'по геолокации',
     weatherFallbackHint: 'сезонный эффект работает',
@@ -139,7 +143,9 @@ const copy = {
     snow: '雪',
     dry: '晴れ',
     denied: '位置情報なし',
-    weatherError: '後で再試行',
+    weatherError: '天気を取得できません',
+    retry: '天気をもう一度取得する',
+    failure: { network: '接続できません', timeout: '応答がありません', response: '応答にエラーがあります', limited: 'リクエストの上限です' },
     weatherEnableHint: '「オン」で表示',
     weatherLocationHint: '位置情報を使用',
     weatherFallbackHint: '季節の演出は動作中',
@@ -330,6 +336,7 @@ export function SeasonalAtmosphere({ locale }: { locale: SiteLocale }) {
   const [weatherStatus, setWeatherStatus] = useState<WeatherStatus>(
     weatherEnabled ? 'locating' : 'off',
   )
+  const [weatherFailure, setWeatherFailure] = useState<WeatherFailure>('network')
   const [weather, setWeather] = useState<WeatherSnapshot | null>(null)
   const [weatherRefreshToken, setWeatherRefreshToken] = useState(0)
   const season: Season = resolveSeason(new Date())
@@ -355,9 +362,11 @@ export function SeasonalAtmosphere({ locale }: { locale: SiteLocale }) {
     ? text.weatherEnableHint
     : weatherStatus === 'locating' || weatherStatus === 'denied'
       ? text.weatherLocationHint
-      : weatherStatus === 'loading'
-        ? text.loadingHint
-        : isEnabled ? text.weatherFallbackHint : text.disabled
+      : weatherStatus === 'error'
+        ? text.failure[weatherFailure]
+        : weatherStatus === 'loading'
+          ? text.loadingHint
+          : isEnabled ? text.weatherFallbackHint : text.disabled
   const atmosphere = isEnabled
     ? createPortal(
         <div
@@ -471,6 +480,7 @@ export function SeasonalAtmosphere({ locale }: { locale: SiteLocale }) {
         if (!active || controller.signal.aborted) return
         setWeather(null)
         setWeatherStatus(isPermissionDenied(error) ? 'denied' : 'error')
+        setWeatherFailure(error instanceof WeatherRequestError ? error.kind : 'network')
         if (isPermissionDenied(error)) {
           clearWeatherCache()
           setWeatherEnabled(false)
@@ -573,6 +583,7 @@ export function SeasonalAtmosphere({ locale }: { locale: SiteLocale }) {
           </div>
           <div
             className="weather-board-reading"
+            data-error={weatherStatus === 'error' ? 'true' : undefined}
             data-ready={weatherStatus === 'ready' && weather ? 'true' : 'false'}
             aria-live="polite"
           >
@@ -598,10 +609,28 @@ export function SeasonalAtmosphere({ locale }: { locale: SiteLocale }) {
                 </div>
               </>
             ) : (
-              <div className="weather-summary">
-                <strong>{weatherStatusText}</strong>
-                <span>{weatherStatusHint}</span>
-              </div>
+              <>
+                <div className="weather-summary">
+                  <strong>{weatherStatusText}</strong>
+                  <span>{weatherStatusHint}</span>
+                </div>
+                {weatherStatus === 'error' && (
+                  <button
+                    className="weather-retry"
+                    type="button"
+                    aria-label={text.retry}
+                    title={text.retry}
+                    onClick={() => {
+                      setWeatherStatus('locating')
+                      setWeatherRefreshToken((token) => token + 1)
+                    }}
+                  >
+                    <svg viewBox="0 0 20 20" aria-hidden="true">
+                      <path d="M16 7a6 6 0 1 0 .2 5M16 3v4h-4" />
+                    </svg>
+                  </button>
+                )}
+              </>
             )}
           </div>
         </div>

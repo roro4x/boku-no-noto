@@ -96,7 +96,7 @@ describe('weather providers', () => {
   it('rejects when both providers fail', async () => {
     const fetch = vi.fn().mockRejectedValue(new TypeError('Offline'))
     vi.stubGlobal('fetch', fetch)
-    await expect(fetchCurrentWeather(coordinates)).rejects.toThrow('Offline')
+    await expect(fetchCurrentWeather(coordinates)).rejects.toMatchObject({ kind: 'network' })
     expect(fetch).toHaveBeenCalledTimes(2)
   })
 
@@ -122,7 +122,7 @@ describe('weather providers', () => {
     vi.stubGlobal('fetch', vi.fn().mockRejectedValueOnce(new Error('Offline')).mockImplementationOnce((_url, options: RequestInit) => new Promise((_resolve, reject) => {
       options.signal?.addEventListener('abort', () => reject(options.signal?.reason), { once: true })
     })))
-    const assertion = expect(fetchCurrentWeather(coordinates)).rejects.toThrow('timed out')
+    const assertion = expect(fetchCurrentWeather(coordinates)).rejects.toMatchObject({ kind: 'timeout' })
     await vi.advanceTimersByTimeAsync(8000)
     await assertion
     expect(vi.getTimerCount()).toBe(0)
@@ -172,6 +172,75 @@ describe('weather without device location', () => {
 
   it('reports an error if approximate weather is unavailable too', async () => {
     vi.stubGlobal('fetch', vi.fn().mockRejectedValue(new TypeError('Network error')))
-    await expect(fetchCurrentWeather()).rejects.toThrow('Network error')
+    await expect(fetchCurrentWeather()).rejects.toMatchObject({ kind: 'network' })
   })
+})
+
+
+describe('mobile compatibility and independent IP fallback', () => {
+  it('requests weather when AbortSignal.throwIfAborted is unavailable', async () => {
+    const controller = new AbortController()
+    Object.defineProperty(controller.signal, 'throwIfAborted', { value: undefined })
+    const fetch = vi.fn().mockResolvedValue(jsonResponse(primaryPayload()))
+    vi.stubGlobal('fetch', fetch)
+    await expect(fetchCurrentWeather(coordinates, controller.signal)).resolves.toMatchObject({ source: 'open-meteo' })
+    expect(fetch).toHaveBeenCalledTimes(1)
+  })
+
+  it('uses independent IP coordinates and Open-Meteo when IP weather is blocked', async () => {
+    const fetch = vi.fn()
+      .mockRejectedValueOnce(new TypeError('Blocked'))
+      .mockResolvedValueOnce(jsonResponse({ success: true, latitude: 55.7558, longitude: 37.6173 }))
+      .mockResolvedValueOnce(jsonResponse(primaryPayload()))
+    vi.stubGlobal('fetch', fetch)
+    await expect(fetchCurrentWeather()).resolves.toMatchObject({ source: 'open-meteo', approximate: true })
+    expect(String(fetch.mock.calls[1][0])).toBe('https://free.freeipapi.com/api/v1/json/')
+    expect((fetch.mock.calls[2][0] as URL).searchParams.get('latitude')).toBe('55.76')
+  })
+
+  it('retains the coordinate weather fallback after independently resolving IP location', async () => {
+    const fetch = vi.fn()
+      .mockRejectedValueOnce(new TypeError('Blocked'))
+      .mockResolvedValueOnce(jsonResponse({ success: true, latitude: 55.75, longitude: 37.62 }))
+      .mockRejectedValueOnce(new TypeError('Blocked'))
+      .mockResolvedValueOnce(jsonResponse(backupPayload()))
+    vi.stubGlobal('fetch', fetch)
+    await expect(fetchCurrentWeather()).resolves.toMatchObject({ source: 'wttr', approximate: true })
+    expect(fetch).toHaveBeenCalledTimes(4)
+  })
+
+  it.each([
+    { success: false }, { success: true, latitude: 91, longitude: 37 },
+    { success: true, latitude: null, longitude: 37 },
+  ])('does not request weather for invalid network coordinates %j', async (location) => {
+    const fetch = vi.fn().mockRejectedValueOnce(new TypeError('Blocked')).mockResolvedValue(jsonResponse(location))
+    vi.stubGlobal('fetch', fetch)
+    await expect(fetchCurrentWeather()).rejects.toMatchObject({ kind: 'response' })
+    expect(fetch).toHaveBeenCalledTimes(3)
+  })
+
+  it('distinguishes HTTP errors from network failures', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue(new Response('', { status: 503 })))
+    await expect(fetchCurrentWeather(coordinates)).rejects.toMatchObject({ kind: 'response' })
+  })
+})
+
+
+it('tries the second IP service after a quota failure', async () => {
+  const fetch = vi.fn()
+    .mockRejectedValueOnce(new TypeError('Blocked wttr'))
+    .mockResolvedValueOnce(new Response('', { status: 429 }))
+    .mockResolvedValueOnce(jsonResponse({ success: true, latitude: 55.75, longitude: 37.62 }))
+    .mockResolvedValueOnce(jsonResponse(primaryPayload()))
+  vi.stubGlobal('fetch', fetch)
+  await expect(fetchCurrentWeather()).resolves.toMatchObject({ approximate: true, source: 'open-meteo' })
+  expect((fetch.mock.calls[2][0] as URL).hostname).toBe('ipwho.is')
+})
+
+it('classifies quota errors returned inside an HTTP 200 response', async () => {
+  vi.stubGlobal('fetch', vi.fn()
+    .mockRejectedValueOnce(new TypeError('Blocked wttr'))
+    .mockResolvedValueOnce(new Response('', { status: 429 }))
+    .mockResolvedValueOnce(jsonResponse({ success: false, message: 'Rate limit exceeded' })))
+  await expect(fetchCurrentWeather()).rejects.toMatchObject({ kind: 'limited' })
 })

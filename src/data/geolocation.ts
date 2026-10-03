@@ -1,3 +1,5 @@
+import { throwIfAborted } from './abort'
+
 export type Coordinates = { latitude: number; longitude: number }
 
 export const isPermissionDenied = (error: unknown) =>
@@ -6,7 +8,7 @@ export const isPermissionDenied = (error: unknown) =>
 // Undefined means that device location is unavailable; weather may then use
 // approximate network location. An explicit permission denial never falls back.
 export const getVisitorCoordinates = (signal?: AbortSignal): Promise<Coordinates | undefined> => {
-  signal?.throwIfAborted()
+  throwIfAborted(signal)
   if (!navigator.geolocation) return Promise.resolve(undefined)
 
   return new Promise((resolve, reject) => {

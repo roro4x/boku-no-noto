@@ -58,3 +58,11 @@ describe('device location', () => {
     await expect(getVisitorCoordinates()).resolves.toBeUndefined()
   })
 })
+
+
+it('gets coordinates with an older mobile AbortSignal', async () => {
+  const controller = new AbortController()
+  Object.defineProperty(controller.signal, 'throwIfAborted', { value: undefined })
+  mockLocation(vi.fn((success) => success(position)))
+  await expect(getVisitorCoordinates(controller.signal)).resolves.toEqual(position.coords)
+})

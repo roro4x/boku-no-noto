@@ -545,6 +545,40 @@ html[data-season-paused] .weather-raindrop {
   box-shadow: inset 0 -2px 0 var(--moss);
 }
 
+.weather-board-reading[data-error="true"] {
+  grid-template-columns: 2rem minmax(0, 1fr) 1.65rem;
+}
+
+.weather-board-reading[data-error="true"] .weather-summary > strong {
+  white-space: normal;
+}
+
+.weather-retry {
+  display: grid;
+  place-items: center;
+  width: 1.65rem;
+  height: 1.65rem;
+  padding: 0;
+  color: var(--ink-strong);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  cursor: pointer;
+}
+
+.weather-retry svg {
+  width: 0.9rem;
+  height: 0.9rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+}
+
+.weather-retry:hover {
+  background: var(--mint);
+}
+
 .weather-glyph {
   width: 2rem;
   height: 2rem;

@@ -1,5 +1,6 @@
 import type { Season } from './season'
 import type { Coordinates } from './geolocation'
+import { throwIfAborted } from './abort'
 
 export type WeatherEffect = 'dry' | 'rain' | 'snow'
 export type RainIntensity = 'none' | 'drizzle' | 'rain' | 'heavy'
@@ -118,30 +119,86 @@ const readWttr = (payload: unknown): WeatherSnapshot => {
   }
 }
 
+export type WeatherFailure = 'network' | 'timeout' | 'response' | 'limited'
+
+export class WeatherRequestError extends Error {
+  constructor(public readonly kind: WeatherFailure) {
+    super(`Weather request failed: ${kind}`)
+    this.name = 'WeatherRequestError'
+  }
+}
+
 // Bound each complete request (including its body), and preserve caller cancellation.
-const requestWeather = async (url: URL, parse: (payload: unknown) => WeatherSnapshot, signal?: AbortSignal) => {
-  signal?.throwIfAborted()
+const requestWeather = async <T>(url: URL, parse: (payload: unknown) => T, signal?: AbortSignal): Promise<T> => {
+  throwIfAborted(signal)
   const controller = new AbortController()
   const cancel = () => controller.abort(signal?.reason)
   signal?.addEventListener('abort', cancel, { once: true })
-  const timer = setTimeout(() => controller.abort(new DOMException('Weather request timed out', 'TimeoutError')), requestTimeoutMs)
+  let timedOut = false
+  const timer = setTimeout(() => {
+    timedOut = true
+    controller.abort()
+  }, requestTimeoutMs)
   try {
     const response = await fetch(url, { signal: controller.signal })
-    if (!response.ok) throw new Error(`Weather request failed: ${response.status}`)
-    return parse(await response.json())
+    if (!response.ok) throw new WeatherRequestError(response.status === 429 ? 'limited' : 'response')
+    try {
+      return parse(await response.json())
+    } catch (error) {
+      if (error instanceof WeatherRequestError) throw error
+      throw new WeatherRequestError('response')
+    }
+  } catch (error) {
+    throwIfAborted(signal)
+    if (timedOut) throw new WeatherRequestError('timeout')
+    if (error instanceof WeatherRequestError) throw error
+    throw new WeatherRequestError('network')
   } finally {
     clearTimeout(timer)
     signal?.removeEventListener('abort', cancel)
   }
 }
 
+const readNetworkCoordinates = (payload: unknown, requireSuccess = true): Coordinates => {
+  const current = record(payload)
+  if (current.success === false && typeof current.message === 'string' && /rate limit/i.test(current.message)) {
+    throw new WeatherRequestError('limited')
+  }
+  if ((requireSuccess && current.success !== true) || current.success === false) {
+    throw new Error('Network location is unavailable')
+  }
+  const latitude = number(current.latitude)
+  const longitude = number(current.longitude)
+  if (Math.abs(latitude) > 90 || Math.abs(longitude) > 180) throw new Error('Invalid network location')
+  return { latitude, longitude }
+}
+
 export const fetchCurrentWeather = async (coordinates?: Coordinates, signal?: AbortSignal): Promise<WeatherSnapshot> => {
-  // wttr.in can resolve the caller's approximate location by IP when the
-  // browser's location service is unavailable. No device coordinates are sent.
+  // If device location failed, try IP weather first. If that service is
+  // unavailable, independently resolve the network location and use the full
+  // weather provider chain. Keep approximate results marked in either case.
   if (!coordinates) {
     const endpoint = new URL('https://wttr.in/')
     endpoint.searchParams.set('format', 'j1')
-    return { ...await requestWeather(endpoint, readWttr, signal), approximate: true }
+    try {
+      return { ...await requestWeather(endpoint, readWttr, signal), approximate: true }
+    } catch {
+      throwIfAborted(signal)
+      let approximateCoordinates: Coordinates
+      try {
+        approximateCoordinates = await requestWeather(
+          new URL('https://free.freeipapi.com/api/v1/json/'),
+          (payload) => readNetworkCoordinates(payload, false),
+          signal,
+        )
+      } catch {
+        throwIfAborted(signal)
+        const locationEndpoint = new URL('https://ipwho.is/')
+        locationEndpoint.searchParams.set('fields', 'success,latitude,longitude')
+        approximateCoordinates = await requestWeather(locationEndpoint, readNetworkCoordinates, signal)
+      }
+      return { ...await fetchCurrentWeather(approximateCoordinates, signal), approximate: true }
+    }
   }
 
   const latitude = coordinates.latitude.toFixed(2)
@@ -156,7 +213,7 @@ export const fetchCurrentWeather = async (coordinates?: Coordinates, signal?: Ab
   try {
     return await requestWeather(primary, readOpenMeteo, signal)
   } catch {
-    signal?.throwIfAborted()
+    throwIfAborted(signal)
     const backup = new URL(`https://wttr.in/${latitude},${longitude}`)
     backup.searchParams.set('format', 'j1')
     return requestWeather(backup, readWttr, signal)
