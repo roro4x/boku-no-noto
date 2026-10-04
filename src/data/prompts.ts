@@ -56,3 +56,15 @@ export const getPromptFileUrl = (fileName: string) => {
   if (!url) throw new Error(`Не найден файл промпта: ${fileName}`)
   return url
 }
+
+export const getPromptCopyText = (source: string) => {
+  const content = source.replace(/\r\n/g, '\n').trim()
+  // Some documents wrap the actual prompt in a dedicated quoted section.
+  const copyBlock = content.match(/^## Промпт для копирования\s*\n\n((?:>[^\n]*(?:\n|$))+)/m)
+  if (copyBlock) {
+    return copyBlock[1].replace(/^> ?/gm, '').trim()
+  }
+
+  // Remove only the document title; headings within the instructions stay intact.
+  return content.replace(/^# [^\n]*(?:\n|$)/, '').trim()
+}

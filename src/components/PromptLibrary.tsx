@@ -3,6 +3,7 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import {
   filterPrompts,
+  getPromptCopyText,
   getPromptFileUrl,
   prompts,
   type PromptEntry,
@@ -203,7 +204,7 @@ export function PromptLibrary({ promptId, locale }: PromptLibraryProps) {
           <a className="back-link utility-link" href="#/prompts">{copy.back}</a>
           <header className="prompt-document__heading">
             <div className="prompt-document__actions">
-              <PromptCopyButton content={content} locale={locale} title={item.title} />
+              <PromptCopyButton content={getPromptCopyText(content)} locale={locale} title={item.title} />
               <PromptDownloadLink item={item} label={copy.download} />
             </div>
             <div>
