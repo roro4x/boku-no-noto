@@ -1,6 +1,6 @@
 import { siteLinks } from '../data/links'
 import type { SiteLocale } from '../i18n'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { copyText } from '../data/clipboard'
 
 const linksCopy = {
@@ -23,6 +23,11 @@ const linksCopy = {
 export function LinksDirectory({ locale }: { locale: SiteLocale }) {
   const copy = linksCopy[locale]
   const [copyState, setCopyState] = useState<'idle' | 'success' | 'error'>('idle')
+  useEffect(() => {
+    if (copyState !== 'success') return
+    const timer = window.setTimeout(() => setCopyState('idle'), 2500)
+    return () => window.clearTimeout(timer)
+  }, [copyState])
   const bannerPath = `${import.meta.env.BASE_URL}assets/banners/boku-no-noto.png`
   const siteUrl = 'https://roro4x.github.io/boku-no-noto/'
   const bannerCode = `<a href="${siteUrl}"><img src="${siteUrl}assets/banners/boku-no-noto.png" width="88" height="31" alt="僕のノート · Boku no Nōto"></a>`
@@ -44,12 +49,8 @@ export function LinksDirectory({ locale }: { locale: SiteLocale }) {
               aria-label={copy.visit(item.title)}
               title={item.title}
             >
-              <img
-                src={`${import.meta.env.BASE_URL}${item.banner}`}
-                width="88"
-                height="31"
-                alt=""
-              />
+              <span className="link-banner__title">{item.label}</span>
+              <span className="link-banner__caption">{item.caption}</span>
             </a>
           </li>
         ))}
@@ -58,15 +59,21 @@ export function LinksDirectory({ locale }: { locale: SiteLocale }) {
         <h3 id="site-banner-title">{copy.bannerTitle}</h3>
         <p>{copy.bannerHint}</p>
         <div className="site-banner__actions">
-          <img src={bannerPath} width="88" height="31" alt="僕のノート · Boku no Nōto" />
-          <a href={bannerPath} download="boku-no-noto-88x31.png">{copy.download}</a>
-          <button type="button" onClick={async () => {
+          <img src={bannerPath} width="176" height="62" alt="僕のノート · Boku no Nōto" />
+          <a href={bannerPath} download="boku-no-noto.png">{copy.download}</a>
+          <button type="button" className="banner-copy" data-state={copyState} aria-live="polite" onClick={async () => {
             try { await copyText(bannerCode); setCopyState('success') }
             catch { setCopyState('error') }
-          }}>{copyState === 'success' ? copy.copied : copy.copy}</button>
+          }}>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true">
+              <rect x="8" y="8" width="12" height="13" rx="1" />
+              <path d="M15 8V3H3v13h5" />
+            </svg>
+            {copyState === 'success' ? copy.copied : copy.copy}
+          </button>
         </div>
         <details><summary>{copy.code}</summary><pre><code>{bannerCode}</code></pre></details>
-        <p className="site-banner__status" role="status">{copyState === 'error' ? copy.copyError : copyState === 'success' ? copy.copied : ''}</p>
+        {copyState === 'error' && <p className="site-banner__status" role="alert">{copy.copyError}</p>}
       </section>
     </section>
   )

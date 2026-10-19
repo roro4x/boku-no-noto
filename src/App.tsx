@@ -150,9 +150,9 @@ function App() {
             </fieldset>
         </header>
 
-        {route.page === 'home' && <div className="marquee-strip" aria-label={copy.siteStatus}>
+        <div className="marquee-strip" aria-label={copy.siteStatus}>
           <span lang="ja">このホームページは工事中です</span>
-        </div>}
+        </div>
 
         <div className="page-grid">
           <nav className="nav-board" aria-label={copy.mainNavigation}>
@@ -244,8 +244,11 @@ function App() {
         </div>
 
         <footer className="site-footer">
-          <a className="footer-brand" href="#/" lang="ja">僕のノート</a>
-          <p className="footer-note">{copy.footerMade}</p>
+          <div className="footer-signature">
+            <a className="footer-brand" href="#/" lang="ja">僕のノート</a>
+            <p className="footer-note">{copy.footerMade}</p>
+          </div>
+          <p className="footer-copyright">© {new Date().getFullYear()} Boku no Nōto</p>
         </footer>
       </div>
       <Scratchpad locale={locale} />

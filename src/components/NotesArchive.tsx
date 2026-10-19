@@ -17,13 +17,11 @@ const notesCopy = {
     search: 'Поиск по тексту заметок',
     placeholder: 'Название или текст',
     clear: 'Очистить',
-    found: (count: number) => `Найдено: ${count}`,
     noResults: 'По этому запросу заметок нет.',
-    back: '← ко всем заметкам',
+    back: '← Назад',
     notFound: 'Такая заметка не найдена. Возможно, файл был переименован.',
     returnToList: 'Вернуться к заметкам',
     empty: 'Заметок пока нет.',
-    read: 'Читать',
     readLabel: (title: string) => `Читать заметку «${title}»`,
   },
   ja: {
@@ -31,13 +29,11 @@ const notesCopy = {
     search: 'ノートの全文を検索',
     placeholder: 'タイトル・説明・本文',
     clear: 'クリア',
-    found: (count: number) => `${count}件`,
     noResults: '条件に合うノートはありません。',
-    back: '← ノート一覧へ',
+    back: '← 戻る',
     notFound: 'このノートは見つかりません。ファイル名が変更された可能性があります。',
     returnToList: 'ノート一覧に戻る',
     empty: 'ノートはまだありません。',
-    read: '読む',
     readLabel: (title: string) => `「${title}」を読む`,
   },
 } as const
@@ -112,7 +108,6 @@ export function NotesArchive({ slug, locale }: NotesArchiveProps) {
 
       <SearchField label={copy.search} placeholder={copy.placeholder} value={query}
         clearLabel={copy.clear} onChange={updateQuery} />
-      <p className="result-count" role="status">{copy.found(results.length)}</p>
       {notes.length === 0 ? (
         <div className="archive-empty"><p>{copy.empty}</p></div>
       ) : results.length === 0 ? (
@@ -124,17 +119,12 @@ export function NotesArchive({ slug, locale }: NotesArchiveProps) {
         <ol className="post-list note-list">
           {results.map((item) => (
             <li key={item.slug}>
-              <time dateTime={item.date}>{formatPostDate(item.date, locale)}</time>
-              <div>
-                <h3 lang="ru">{item.title}</h3>
-                {item.description && <p lang="ru">{item.description}</p>}
-              </div>
-              <a
-                className="post-read-link"
-                href={routeFor(item.slug, query)}
-                aria-label={copy.readLabel(item.title)}
-              >
-                {copy.read}
+              <a className="post-card" href={routeFor(item.slug, query)} aria-label={copy.readLabel(item.title)}>
+                <time dateTime={item.date}>{formatPostDate(item.date, locale)}</time>
+                <div>
+                  <h3 lang="ru">{item.title}</h3>
+                  {item.description && <p lang="ru">{item.description}</p>}
+                </div>
               </a>
             </li>
           ))}

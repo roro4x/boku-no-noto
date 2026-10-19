@@ -8,7 +8,6 @@ import {
   getPromptCopyText,
   getPromptFileUrl,
   prompts,
-  type PromptEntry,
 } from '../data/prompts'
 import type { SiteLocale } from '../i18n'
 
@@ -22,18 +21,15 @@ const promptCopy = {
     title: 'Библиотека промптов',
     search: 'Поиск по библиотеке', clear: 'Очистить поиск',
     placeholder: 'Название или тег',
-    found: (count: number) => `Найдено: ${count}`,
     empty: 'По этому запросу промптов нет.',
     showAll: 'Показать всю библиотеку',
-    read: 'Читать',
     readLabel: (title: string) => `Читать «${title}»`,
     copy: 'Копировать текст',
     copying: 'Копирую…',
     copied: 'Скопировано',
     copyError: 'Ошибка копирования',
     copyLabel: (title: string) => `Скопировать текст промпта «${title}»`,
-    download: 'Скачать .md',
-    back: '← ко всем промптам',
+    back: '← Назад',
     loading: 'Открываю исходный файл…',
     error: 'Не удалось прочитать исходный файл.',
     retry: 'Попробовать снова',
@@ -44,18 +40,15 @@ const promptCopy = {
     title: 'プロンプト集',
     search: 'プロンプトを検索', clear: '検索をクリア',
     placeholder: 'タイトル・説明・タグ',
-    found: (count: number) => `${count}件`,
     empty: 'この検索に一致するプロンプトはありません。',
     showAll: 'すべて表示',
-    read: '読む',
     readLabel: (title: string) => `「${title}」を読む`,
     copy: 'テキストをコピー',
     copying: 'コピー中…',
     copied: 'コピーしました',
     copyError: 'コピーできませんでした',
     copyLabel: (title: string) => `「${title}」のテキストをコピー`,
-    download: '.mdを保存',
-    back: '← プロンプト一覧へ',
+    back: '← 戻る',
     loading: '元のファイルを開いています…',
     error: '元のファイルを読み込めませんでした。',
     retry: '再試行',
@@ -65,15 +58,6 @@ const promptCopy = {
 } as const
 
 type CopyState = 'idle' | 'copying' | 'success' | 'error'
-
-function PromptDownloadLink({ item, label }: { item: PromptEntry; label: string }) {
-  return (
-    <a className="prompt-download" href={getPromptFileUrl(item.fileName)} download={item.fileName}>
-      <span className="file-icon" aria-hidden="true">MD</span>
-      {label}
-    </a>
-  )
-}
 
 function PromptCopyButton({
   content,
@@ -180,7 +164,6 @@ export function PromptLibrary({ promptId, locale }: PromptLibraryProps) {
           <header className="prompt-document__heading">
             <div className="prompt-document__actions">
               <PromptCopyButton content={getPromptCopyText(content)} locale={locale} title={item.title} />
-              <PromptDownloadLink item={item} label={copy.download} />
             </div>
             <div>
               <h2 id="prompt-title" lang="ru">{item.title}</h2>
@@ -222,7 +205,6 @@ export function PromptLibrary({ promptId, locale }: PromptLibraryProps) {
       <LibraryHeading locale={locale} />
       <SearchField label={copy.search} placeholder={copy.placeholder} value={query}
         clearLabel={copy.clear} onChange={setQuery} />
-      <p className="result-count" aria-live="polite">{copy.found(results.length)}</p>
 
       {results.length === 0 ? (
         <div className="archive-empty">
@@ -233,24 +215,16 @@ export function PromptLibrary({ promptId, locale }: PromptLibraryProps) {
         <ol className="prompt-list">
           {results.map((prompt) => (
             <li key={prompt.id}>
-              <span className="file-icon" aria-hidden="true">MD</span>
-              <div>
-                <h3 lang="ru">{prompt.title}</h3>
-                <p lang="ru">{prompt.description}</p>
-                <p className="prompt-tags" aria-label={copy.tags}>
-                  {prompt.tags.map((tag) => <span key={tag}>#{tag}</span>)}
-                </p>
-              </div>
-              <div className="prompt-list__actions">
-                <a
-                  className="prompt-read-link"
-                  href={`#/prompts/${prompt.id}`}
-                  aria-label={copy.readLabel(prompt.title)}
-                >
-                  {copy.read}
-                </a>
-                <PromptDownloadLink item={prompt} label={copy.download} />
-              </div>
+              <a className="prompt-card" href={`#/prompts/${prompt.id}`} aria-label={copy.readLabel(prompt.title)}>
+                <span className="file-icon" aria-hidden="true">MD</span>
+                <div>
+                  <h3 lang="ru">{prompt.title}</h3>
+                  <p lang="ru">{prompt.description}</p>
+                  <p className="prompt-tags" aria-label={copy.tags}>
+                    {prompt.tags.map((tag) => <span key={tag}>#{tag}</span>)}
+                  </p>
+                </div>
+              </a>
             </li>
           ))}
         </ol>
