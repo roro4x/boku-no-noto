@@ -31,10 +31,12 @@ export function SiteClock({ locale }: { locale: SiteLocale }) {
 
   return (
     <section className="side-box site-clock" aria-labelledby="site-clock-title">
-      <h2 id="site-clock-title">{copy.title}</h2>
-      <time className="site-clock__date" dateTime={now.toISOString()} lang="ja">
-        {formatJapaneseDate(now)}
-      </time>
+      <div className="site-clock__heading">
+        <h2 id="site-clock-title">{copy.title}</h2>
+        <time className="site-clock__date" dateTime={now.toISOString()} lang="ja">
+          {formatJapaneseDate(now)}
+        </time>
+      </div>
       <dl className="site-clock__clocks">
         <div>
           <dt>{copy.moscow}</dt>

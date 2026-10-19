@@ -37,4 +37,16 @@ export const siteLinks: SiteLink[] = [
     url: 'https://www.tofugu.com/',
     banner: 'assets/banners/tofugu.svg',
   },
+  {
+    id: 'nhk-school',
+    title: 'NHK for School',
+    url: 'https://edu.web.nhk/school/',
+    banner: 'assets/banners/nhk-school.svg',
+  },
+  {
+    id: 'anisub',
+    title: 'AniSub',
+    url: 'https://anisub.tv/',
+    banner: 'assets/banners/anisub.svg',
+  },
 ]

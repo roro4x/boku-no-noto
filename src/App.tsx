@@ -1,20 +1,20 @@
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { HomeGlance } from './components/HomeGlance'
 import { LinksDirectory } from './components/LinksDirectory'
-import { NihongoCatalog } from './components/NihongoCatalog'
+import { VocabularyCatalog } from './components/VocabularyCatalog'
 import { NotesArchive } from './components/NotesArchive'
 import { PromptLibrary } from './components/PromptLibrary'
 import { SeasonalAtmosphere } from './components/SeasonalAtmosphere'
 import { SiteClock } from './components/SiteClock'
 import { TextArchive } from './components/TextArchive'
+import { Scratchpad } from './components/Scratchpad'
 import { nextAvailableTrackIndex, nextTrackIndex, playlist } from './data/playlist'
-import { categories, type StudyCategory } from './data/study'
 import { resolveSiteLocale, siteCopy, type SiteLocale } from './i18n'
 
 type Route =
   | { page: 'home' }
-  | { page: 'nihongo'; category: StudyCategory; itemId?: string }
-  | { page: 'texts'; category: 'mine' | 'reading'; slug?: string }
+  | { page: 'words'; itemId?: string }
+  | { page: 'texts'; slug?: string }
   | { page: 'notes'; slug?: string }
   | { page: 'prompts'; promptId?: string }
   | { page: 'links' }
@@ -23,18 +23,13 @@ const parseRoute = (): Route => {
   const path = (window.location.hash || '#/').slice(1).split('?')[0]
   const parts = path.split('/').filter(Boolean)
   if (parts[0] === 'texts') {
-    if (parts[1] === 'reading') return { page: 'texts', category: 'reading', slug: parts[2] }
-    if (parts[1] === 'mine') return { page: 'texts', category: 'mine', slug: parts[2] }
-    return { page: 'texts', category: 'mine', slug: parts[1] }
+    return { page: 'texts', slug: parts[1] === 'mine' ? parts[2] : parts[1] }
   }
   if (parts[0] === 'notes') return { page: 'notes', slug: parts[1] }
   if (parts[0] === 'prompts') return { page: 'prompts', promptId: parts[1] }
   if (parts[0] === 'links') return { page: 'links' }
-  if (parts[0] !== 'nihongo') return { page: 'home' }
-  const category = categories.some((item) => item.id === parts[1])
-    ? (parts[1] as StudyCategory)
-    : 'grammar'
-  return { page: 'nihongo', category, itemId: parts[2] }
+  if (parts[0] === 'words') return { page: 'words', itemId: parts[1] }
+  return { page: 'home' }
 }
 
 const getInitialLocale = (): SiteLocale => {
@@ -57,6 +52,34 @@ function App() {
   const [route, setRoute] = useState(parseRoute)
   const [locale, setLocale] = useState<SiteLocale>(getInitialLocale)
   const copy = siteCopy[locale]
+  const routeKey = route.page + ('itemId' in route ? `/${route.itemId ?? ''}`
+    : 'slug' in route ? `/${route.slug ?? ''}` : 'promptId' in route ? `/${route.promptId ?? ''}` : '')
+  const scrollPositions = useRef(new Map<string, number>())
+
+  useLayoutEffect(() => {
+    let frame = 0
+    let attempts = 0
+    let restoring = true
+    let lastPosition = scrollPositions.current.get(routeKey) ?? 0
+    const restore = () => {
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight
+      if (lastPosition > maxScroll && attempts++ < 120) {
+        frame = window.requestAnimationFrame(restore)
+        return
+      }
+      document.getElementById('main-content')?.focus({ preventScroll: true })
+      window.scrollTo({ top: lastPosition, behavior: 'instant' })
+      restoring = false
+    }
+    frame = window.requestAnimationFrame(restore)
+    const remember = () => { if (!restoring) lastPosition = window.scrollY }
+    window.addEventListener('scroll', remember, { passive: true })
+    return () => {
+      window.cancelAnimationFrame(frame)
+      window.removeEventListener('scroll', remember)
+      scrollPositions.current.set(routeKey, lastPosition)
+    }
+  }, [routeKey])
 
   useEffect(() => {
     const updateRoute = () => setRoute(parseRoute())
@@ -73,10 +96,10 @@ function App() {
         ? `${copy.promptsNav} · 僕のノート`
         : route.page === 'links'
           ? `${copy.linksNav} · 僕のノート`
-      : route.page === 'nihongo'
-        ? '日本語 · N5 · 僕のノート'
+      : route.page === 'words'
+        ? `${copy.wordsNav} · 僕のノート`
         : '僕のノート · Boku no Nōto'
-  }, [copy.linksNav, copy.notesTitle, copy.promptsNav, copy.textsTitle, route.page])
+  }, [copy.wordsNav, copy.linksNav, copy.notesTitle, copy.promptsNav, copy.textsTitle, route.page])
 
   useEffect(() => {
     document.documentElement.lang = copy.htmlLang
@@ -100,17 +123,9 @@ function App() {
         {copy.skip}
       </a>
 
-      <div className="page-shell">
+      <div className="season-watermark" aria-hidden="true" />
+      <div className={`page-shell${route.page !== 'home' ? ' page-shell--inner' : ''}`}>
         <header className="site-header" aria-labelledby="site-title">
-          <div className="header-copy">
-            <h1 id="site-title" lang="ja">
-              僕のノート
-            </h1>
-            <p className="header-roman">
-              <span lang="ja">ぼくの小さなホームページ</span> · Boku no Nōto
-            </p>
-          </div>
-
           <div className="pond-window">
             <img
               className="frog-mascot"
@@ -119,15 +134,25 @@ function App() {
               height="512"
               alt={copy.frogAlt}
             />
-            <span className="pond-caption" lang="ja">僕のノートへようこそ！</span>
           </div>
+          <div className="header-copy">
+            <h1 id="site-title" lang="ja">
+              <a href="#/">僕のノート</a>
+            </h1>
+            <p className="header-roman" lang="en">Boku no Nōto</p>
+            <p className="header-description" lang="ja">ぼくの小さなホームページ</p>
+          </div>
+            <fieldset className="language-switcher" aria-label={copy.languageTitle}>
+              <button type="button" lang="ru" aria-label={copy.russianLanguage}
+                aria-pressed={locale === 'ru'} onClick={() => setLocale('ru')}>RU</button>
+              <button type="button" lang="ja" aria-label={copy.japaneseLanguage}
+                aria-pressed={locale === 'ja'} onClick={() => setLocale('ja')}>日本語</button>
+            </fieldset>
         </header>
 
-        <div className="marquee-strip" aria-label={copy.siteStatus}>
-          <span aria-hidden="true">◆</span>
+        {route.page === 'home' && <div className="marquee-strip" aria-label={copy.siteStatus}>
           <span lang="ja">このホームページは工事中です</span>
-          <span aria-hidden="true">◆</span>
-        </div>
+        </div>}
 
         <div className="page-grid">
           <nav className="nav-board" aria-label={copy.mainNavigation}>
@@ -140,10 +165,10 @@ function App() {
                 </li>
                 <li>
                   <a
-                    href="#/nihongo/grammar"
-                    aria-current={route.page === 'nihongo' ? 'page' : undefined}
+                    href="#/words"
+                    aria-current={route.page === 'words' ? 'page' : undefined}
                   >
-                    <span className="nav-marker" aria-hidden="true" /> 日本語 · N5
+                    <span className="nav-marker" aria-hidden="true" /> {copy.wordsNav}
                   </a>
                 </li>
                 <li>
@@ -188,11 +213,11 @@ function App() {
                 <GuestNote locale={locale} />
               </>
             )}
-            {route.page === 'nihongo' && (
-              <NihongoCatalog category={route.category} itemId={route.itemId} locale={locale} />
+            {route.page === 'words' && (
+              <VocabularyCatalog key={route.itemId ?? "list"} itemId={route.itemId} locale={locale} />
             )}
             {route.page === 'texts' && (
-              <TextArchive category={route.category} slug={route.slug} locale={locale} />
+              <TextArchive slug={route.slug} locale={locale} />
             )}
             {route.page === 'notes' && <NotesArchive slug={route.slug} locale={locale} />}
             {route.page === 'prompts' && (
@@ -209,31 +234,6 @@ function App() {
 
             <MusicPlayer locale={locale} />
 
-            <section className="side-box site-info" aria-labelledby="about-title">
-              <h2 id="about-title">{copy.languageTitle}</h2>
-              <fieldset className="language-switcher" aria-labelledby="about-title">
-                <div>
-                  <button
-                    type="button"
-                    aria-label={copy.russianLanguage}
-                    aria-pressed={locale === 'ru'}
-                    onClick={() => setLocale('ru')}
-                  >
-                    RU
-                  </button>
-                  <button
-                    type="button"
-                    lang="ja"
-                    aria-label={copy.japaneseLanguage}
-                    aria-pressed={locale === 'ja'}
-                    onClick={() => setLocale('ja')}
-                  >
-                    日本語
-                  </button>
-                </div>
-              </fieldset>
-            </section>
-
             <div className="mini-banners" aria-label={copy.decorativeBanners}>
               <span className="mini-banner mini-banner--green">HAND MADE</span>
               <span className="mini-banner mini-banner--blue" lang="ja">
@@ -244,27 +244,11 @@ function App() {
         </div>
 
         <footer className="site-footer">
-          <p>
-            <span lang="ja">僕のノート</span> · {copy.footerMade}
-          </p>
-          <p>
-            <button
-              type="button"
-              className="utility-link"
-              onClick={() => {
-                window.scrollTo({
-                  top: 0,
-                  behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches
-                    ? 'auto'
-                    : 'smooth',
-                })
-              }}
-            >
-              {copy.footerHome}
-            </button>
-          </p>
+          <a className="footer-brand" href="#/" lang="ja">僕のノート</a>
+          <p className="footer-note">{copy.footerMade}</p>
         </footer>
       </div>
+      <Scratchpad locale={locale} />
     </>
   )
 }
@@ -273,10 +257,7 @@ function GuestNote({ locale }: { locale: SiteLocale }) {
   const copy = siteCopy[locale]
   return (
     <section className="guest-note" aria-label={copy.guestNoteLabel}>
-      <div>
-        <span className="guest-note__stamp" aria-hidden="true">文</span>
-        <p>{copy.guestNote}</p>
-      </div>
+      <p>{copy.guestNote}</p>
       <img
         className="pond-divider"
         src={`${import.meta.env.BASE_URL}assets/frog/pond-divider.png`}
@@ -292,7 +273,6 @@ function Home({ locale }: { locale: SiteLocale }) {
   const copy = siteCopy[locale]
   return (
     <section className="welcome-note" aria-labelledby="welcome-title">
-      <div className="paper-pin" aria-hidden="true" />
       <h2 id="welcome-title">{copy.welcomeTitle}</h2>
       <p>
         {locale === 'ru' && <><span lang="ja">いらっしゃいませ！</span>{' '}</>}

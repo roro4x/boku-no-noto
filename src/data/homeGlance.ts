@@ -1,4 +1,4 @@
-import type { VocabularyItem } from './study'
+import type { VocabularyItem } from './vocabulary'
 
 export const MOSCOW_TIME_ZONE = 'Europe/Moscow'
 export const TOKYO_TIME_ZONE = 'Asia/Tokyo'
@@ -30,10 +30,8 @@ const isReadableHomeWord = (item: VocabularyItem) => {
   const summary = summarizeMeaning(meaning)
   return Boolean(
     item.term.trim()
-    && item.term.length <= 6
     && item.reading.trim()
     && summary
-    && summary.length <= 80
     && !/^[:[(]/u.test(summary),
   )
 }

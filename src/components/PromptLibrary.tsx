@@ -1,6 +1,8 @@
+import { SearchField } from './SearchField'
 import { useEffect, useMemo, useState } from 'react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import { copyText } from '../data/clipboard'
 import {
   filterPrompts,
   getPromptCopyText,
@@ -18,8 +20,8 @@ type PromptLibraryProps = {
 const promptCopy = {
   ru: {
     title: 'Библиотека промптов',
-    search: 'Поиск по библиотеке',
-    placeholder: 'Название, описание или тег',
+    search: 'Поиск по библиотеке', clear: 'Очистить поиск',
+    placeholder: 'Название или тег',
     found: (count: number) => `Найдено: ${count}`,
     empty: 'По этому запросу промптов нет.',
     showAll: 'Показать всю библиотеку',
@@ -40,7 +42,7 @@ const promptCopy = {
   },
   ja: {
     title: 'プロンプト集',
-    search: 'プロンプトを検索',
+    search: 'プロンプトを検索', clear: '検索をクリア',
     placeholder: 'タイトル・説明・タグ',
     found: (count: number) => `${count}件`,
     empty: 'この検索に一致するプロンプトはありません。',
@@ -63,33 +65,6 @@ const promptCopy = {
 } as const
 
 type CopyState = 'idle' | 'copying' | 'success' | 'error'
-
-const fallbackCopyText = (text: string) => {
-  const textarea = document.createElement('textarea')
-  textarea.value = text
-  textarea.readOnly = true
-  textarea.style.position = 'fixed'
-  textarea.style.opacity = '0'
-  document.body.append(textarea)
-  textarea.select()
-
-  const copied = document.execCommand('copy')
-  textarea.remove()
-  if (!copied) throw new Error('Copy command was rejected')
-}
-
-const copyText = async (text: string) => {
-  if (navigator.clipboard?.writeText) {
-    try {
-      await navigator.clipboard.writeText(text)
-      return
-    } catch {
-      // Fall back for browsers that expose the API but deny clipboard access.
-    }
-  }
-
-  fallbackCopyText(text)
-}
 
 function PromptDownloadLink({ item, label }: { item: PromptEntry; label: string }) {
   return (
@@ -245,15 +220,8 @@ export function PromptLibrary({ promptId, locale }: PromptLibraryProps) {
   return (
     <section className="prompt-library" aria-labelledby="prompt-library-title">
       <LibraryHeading locale={locale} />
-      <label className="prompt-search">
-        <span>{copy.search}</span>
-        <input
-          type="search"
-          value={query}
-          placeholder={copy.placeholder}
-          onChange={(event) => setQuery(event.target.value)}
-        />
-      </label>
+      <SearchField label={copy.search} placeholder={copy.placeholder} value={query}
+        clearLabel={copy.clear} onChange={setQuery} />
       <p className="result-count" aria-live="polite">{copy.found(results.length)}</p>
 
       {results.length === 0 ? (

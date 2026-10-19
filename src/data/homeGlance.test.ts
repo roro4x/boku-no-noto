@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import type { VocabularyItem } from './study'
+import type { VocabularyItem } from './vocabulary'
 import {
   formatJapaneseDate,
   formatZonedTime,
@@ -15,11 +15,10 @@ const word = (id: string, meaning = 'значение'): VocabularyItem => ({
   term: `語${id}`,
   reading: `ご${id}`,
   meaningsRu: [meaning],
-  partOfSpeech: 'существительное',
-  sourceRefs: ['test'],
   order: 1,
-  minnaLesson: 1,
-  minnaOrder: 1,
+  sentence: '',
+  sentenceMeaningRu: '',
+  notesRu: '',
 })
 
 describe('home glance helpers', () => {

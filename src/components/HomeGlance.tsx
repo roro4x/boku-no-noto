@@ -3,7 +3,7 @@ import {
   pickRandomVocabulary,
   splitMeaningParts,
 } from '../data/homeGlance'
-import type { VocabularyItem } from '../data/study'
+import { loadVocabulary, type VocabularyItem } from '../data/vocabulary'
 import type { SiteLocale } from '../i18n'
 
 type HomeGlanceProps = {
@@ -23,7 +23,7 @@ const glanceCopy = {
     showMeaning: 'Показать перевод',
     hideMeaning: 'Скрыть перевод',
     nextWord: 'Другое слово',
-    wordLink: (term: string) => `Открыть слово «${term}» в словаре N5`,
+    wordLink: (term: string) => `Открыть слово «${term}» в словаре Kaishi`,
   },
   ja: {
     wordTitle: 'ランダムな言葉',
@@ -34,7 +34,7 @@ const glanceCopy = {
     showMeaning: '訳を見る',
     hideMeaning: '訳を隠す',
     nextWord: '次の言葉',
-    wordLink: (term: string) => `「${term}」をN5辞書で開く`,
+    wordLink: (term: string) => `「${term}」をKaishi辞書で開く`,
   },
 } as const
 
@@ -73,11 +73,7 @@ export function HomeGlance({ locale }: HomeGlanceProps) {
 
   useEffect(() => {
     let active = true
-    fetch(`${import.meta.env.BASE_URL}data/n5/vocabulary.json`)
-      .then((response) => {
-        if (!response.ok) throw new Error('vocabulary')
-        return response.json() as Promise<VocabularyItem[]>
-      })
+    loadVocabulary()
       .then((items) => {
         if (!active) return
         vocabulary.current = items
@@ -116,7 +112,7 @@ export function HomeGlance({ locale }: HomeGlanceProps) {
                 <div className="home-glance__word-copy">
                   <a
                     className="home-glance__term"
-                    href={`#/nihongo/vocabulary/${encodeURIComponent(word.id)}`}
+                    href={`#/words/${encodeURIComponent(word.id)}`}
                     lang="ja"
                     aria-label={copy.wordLink(word.term)}
                   >
