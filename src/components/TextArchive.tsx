@@ -92,11 +92,11 @@ export function TextArchive({ slug, locale }: TextArchiveProps) {
           {posts.map((item) => (
             <li key={item.slug}>
               <a className="post-card" href={routeFor(item.slug)} aria-label={copy.readLabel(item.title)}>
-                <time dateTime={item.date}>{formatPostDate(item.date, locale)}</time>
-                <div>
+                <div className="post-card__summary">
                   <h3 lang="ja">{item.title}</h3>
                   {item.description && <p lang="ru">{item.description}</p>}
                 </div>
+                <time dateTime={item.date}>{formatPostDate(item.date, locale)}</time>
               </a>
             </li>
           ))}

@@ -120,11 +120,11 @@ export function NotesArchive({ slug, locale }: NotesArchiveProps) {
           {results.map((item) => (
             <li key={item.slug}>
               <a className="post-card" href={routeFor(item.slug, query)} aria-label={copy.readLabel(item.title)}>
-                <time dateTime={item.date}>{formatPostDate(item.date, locale)}</time>
-                <div>
+                <div className="post-card__summary">
                   <h3 lang="ru">{item.title}</h3>
                   {item.description && <p lang="ru">{item.description}</p>}
                 </div>
+                <time dateTime={item.date}>{formatPostDate(item.date, locale)}</time>
               </a>
             </li>
           ))}
