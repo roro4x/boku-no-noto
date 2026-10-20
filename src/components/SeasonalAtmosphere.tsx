@@ -1,6 +1,7 @@
 import { useEffect, useState, type CSSProperties } from 'react'
 import { createPortal } from 'react-dom'
 import { resolveSeason, type Season } from '../data/season'
+import { SeasonalParticleGlyph } from './SeasonalParticleGlyph'
 import {
   fetchCurrentWeather,
   WeatherRequestError,
@@ -384,16 +385,7 @@ export function SeasonalAtmosphere({ locale }: { locale: SiteLocale }) {
               style={getParticleStyle(style, weather)}
               key={index}
             >
-              {particleSeason === 'autumn' && (
-                <svg
-                  className="seasonal-maple-leaf"
-                  viewBox="0 0 24 24"
-                  focusable="false"
-                >
-                  <path d="M12 1 10.7 5.2 8.2 3.4 8.9 7.2 4.8 5.9 6.5 9.2 2.4 10.6 6.9 12.5 5.4 16.2 10.7 14.4 11.5 18.5h1l.8-4.1 5.3 1.8-1.5-3.7 4.5-1.9-4.1-1.4 1.7-3.3-4.1 1.3.7-3.8-2.5 1.8Z" />
-                  <path className="seasonal-maple-stem" d="M12 16.5v6" />
-                </svg>
-              )}
+              <SeasonalParticleGlyph season={particleSeason} variant={index} />
             </span>
           ))}
           {weatherEffect === 'rain' && (
