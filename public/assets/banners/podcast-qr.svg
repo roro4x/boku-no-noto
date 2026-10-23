@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="88" height="31" viewBox="0 0 88 31" role="img" aria-labelledby="title desc">
+  <title id="title">PodcastQR</title>
+  <desc id="desc">Текстовый ретробаннер PodcastQR</desc>
+  <rect width="88" height="31" fill="#fff9f0"/>
+  <rect x="1" y="1" width="86" height="29" fill="none" stroke="#2e4534" stroke-width="2"/>
+  <rect x="4" y="4" width="80" height="23" fill="#e9dfca" stroke="#8c6f5a"/>
+  <text x="44" y="16" text-anchor="middle" fill="#2e4534" font-family="Verdana, sans-serif" font-size="10" font-weight="700">PodcastQR</text>
+  <text x="44" y="24" text-anchor="middle" fill="#3f6384" font-family="Verdana, sans-serif" font-size="6" font-weight="700">JOQR.CO.JP</text>
+</svg>

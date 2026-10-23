@@ -65,4 +65,20 @@ export const siteLinks: SiteLink[] = [
     url: 'https://anisub.tv/',
     banner: 'assets/banners/anisub.svg',
   },
+  {
+    id: 'radiko',
+    title: 'radiko',
+    label: 'radiko',
+    caption: 'RADIKO.JP',
+    url: 'https://radiko.jp/',
+    banner: 'assets/banners/radiko.svg',
+  },
+  {
+    id: 'podcast-qr',
+    title: 'PodcastQR',
+    label: 'PodcastQR',
+    caption: 'JOQR.CO.JP',
+    url: 'https://podcastqr.joqr.co.jp/',
+    banner: 'assets/banners/podcast-qr.svg',
+  },
 ]
