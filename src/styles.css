@@ -7,13 +7,14 @@
 }
 
 :root {
-  font-family: "IBM Plex Sans", Tahoma, Verdana, "MS PGothic", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-family: var(--font-body);
   color: #3e3a34;
   background: #d6e7d2;
   font-synthesis: none;
   text-rendering: auto;
 
-  --font-heading: "IBM Plex Sans", Tahoma, "MS PGothic", "Hiragino Kaku Gothic ProN", sans-serif;
+  --font-body: "Segoe UI", "IBM Plex Sans", Tahoma, Verdana, Meiryo, "Hiragino Kaku Gothic ProN", "MS PGothic", sans-serif;
+  --font-heading: var(--font-body);
   --page: #f6f1e7;
   --paper: #fff9f0;
   --sage: #e3ead8;

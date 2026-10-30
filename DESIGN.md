@@ -19,28 +19,28 @@ colors:
   line: "#5D7658"
 typography:
   display:
-    fontFamily: "'IBM Plex Sans', Tahoma, 'MS PGothic', 'Hiragino Kaku Gothic ProN', sans-serif"
+    fontFamily: "'Segoe UI', 'IBM Plex Sans', Tahoma, Verdana, Meiryo, 'Hiragino Kaku Gothic ProN', 'MS PGothic', sans-serif"
     fontSize: "2rem"
     fontWeight: 600
     lineHeight: 1.25
     letterSpacing: "0"
   headline:
-    fontFamily: "'IBM Plex Sans', Tahoma, 'MS PGothic', 'Hiragino Kaku Gothic ProN', sans-serif"
+    fontFamily: "'Segoe UI', 'IBM Plex Sans', Tahoma, Verdana, Meiryo, 'Hiragino Kaku Gothic ProN', 'MS PGothic', sans-serif"
     fontSize: "1.375rem"
     fontWeight: 600
     lineHeight: 1.35
   body:
-    fontFamily: "'IBM Plex Sans', Tahoma, Verdana, 'MS PGothic', 'Hiragino Kaku Gothic ProN', sans-serif"
+    fontFamily: "'Segoe UI', 'IBM Plex Sans', Tahoma, Verdana, Meiryo, 'Hiragino Kaku Gothic ProN', 'MS PGothic', sans-serif"
     fontSize: "1rem"
     fontWeight: 400
     lineHeight: 1.6
   reading:
-    fontFamily: "'IBM Plex Sans', Tahoma, Verdana, 'MS PGothic', 'Hiragino Kaku Gothic ProN', sans-serif"
+    fontFamily: "'Segoe UI', 'IBM Plex Sans', Tahoma, Verdana, Meiryo, 'Hiragino Kaku Gothic ProN', 'MS PGothic', sans-serif"
     fontSize: "1rem"
     fontWeight: 400
     lineHeight: 1.9
   label:
-    fontFamily: "'IBM Plex Sans', Tahoma, Verdana, 'MS PGothic', 'Hiragino Kaku Gothic ProN', sans-serif"
+    fontFamily: "'Segoe UI', 'IBM Plex Sans', Tahoma, Verdana, Meiryo, 'Hiragino Kaku Gothic ProN', 'MS PGothic', sans-serif"
     fontSize: "0.875rem"
     fontWeight: 400
     lineHeight: 1.3
@@ -154,8 +154,8 @@ components:
 
 ## Typography
 
-**Display Font:** IBM Plex Sans / Tahoma / MS PGothic / Hiragino Kaku Gothic ProN / sans-serif
-**Body Font:** IBM Plex Sans / Tahoma / Verdana / MS PGothic / Hiragino Kaku Gothic ProN / sans-serif
+**Display Font:** Segoe UI / IBM Plex Sans / Tahoma / Verdana / Meiryo / Hiragino Kaku Gothic ProN / MS PGothic / sans-serif
+**Body Font:** Segoe UI / IBM Plex Sans / Tahoma / Verdana / Meiryo / Hiragino Kaku Gothic ProN / MS PGothic / sans-serif
 **Label/Mono Font:** Courier New для счётчиков, кассетного дисплея и маленьких технических подписей
 
 **Seasonal Accent Font:** Yu Mincho / Hiragino Mincho ProN с serif fallback — только крупный сезонный иероглиф на внешних полях. Засечки связывают его с бумажной вывеской, не меняя гарнитуру чтения.
@@ -173,7 +173,7 @@ components:
 
 Основной текст не становится меньше 1rem. Элементы управления используют 0.9375rem на desktop и 1rem на mobile, если их локальный стиль не задаёт компактную, но читаемую подпись. Японским строкам нужен свободный межстрочный интервал; отрицательный letter-spacing для каны и кандзи запрещён.
 
-IBM Plex Sans выбран по типографике noice.coffee/welcome. Локальный переменный WOFF2 (153368 байт) загружается через `@font-face` с `font-display: swap` и preload с `%BASE_URL%` в `index.html`. Ось ширины закреплена на 100, веса 100–700 сохранены. Источник — Google Fonts / IBM Plex; SIL Open Font License 1.1 и происхождение находятся в `public/assets/fonts/ibm-plex-sans/`. Латиница и кириллица используют локальный шрифт, японский — системные fallback. Основной текст — 1rem / 400; синтез начертаний отключён.
+IBM Plex Sans выбран по типографике noice.coffee/welcome. Локальный переменный WOFF2 (153368 байт) загружается через `@font-face` с `font-display: swap` и preload с `%BASE_URL%` в `index.html`. Ось ширины закреплена на 100, веса 100–700 сохранены. Источник — Google Fonts / IBM Plex; SIL Open Font License 1.1 и происхождение находятся в `public/assets/fonts/ibm-plex-sans/`. На Windows первым используется установленный Segoe UI для текста, навигации и заголовков: это системное экранное начертание вместо Plex на Full HD. Если Segoe UI недоступен, используется локальный IBM Plex Sans. Для японского Meiryo и Hiragino стоят перед MS PGothic. Основной текст — 1rem / 400; синтез начертаний отключён, принудительное сглаживание не задаётся.
 
 **The Pixel Accent Rule.** Декоративный или моноширинный акцент остаётся коротким; чтение никогда не зависит от пиксельной гарнитуры.
 
@@ -264,7 +264,7 @@ RU / 日本語 отделён точечной линией, активный я
 
 ### Paper Panels
 
-Основные панели используют бумагу и двойной внешний контур (3px, `line`) без внешней тени. Заголовки разделов набраны IBM Plex Sans на поверхности `sage` с тонкой рамкой. Заголовки навигации и боковых блоков — компактные чайные полосы со светлым IBM Plex Sans; погодный блок сохраняет прежнюю шапку. Приветственный лист обходится без ленты и уголков; случайное слово отделено только верхней двойной линией. Ссылки чтения спокойные текстовые, детализация слова не создаёт вложенную карточку.
+Основные панели используют бумагу и двойной внешний контур (3px, `line`) без внешней тени. Заголовки разделов набраны Segoe UI / IBM Plex Sans на поверхности `sage` с тонкой рамкой. Заголовки навигации и боковых блоков — компактные чайные полосы со светлым Segoe UI / IBM Plex Sans; погодный блок сохраняет прежнюю шапку. Приветственный лист обходится без ленты и уголков; случайное слово отделено только верхней двойной линией. Ссылки чтения спокойные текстовые, детализация слова не создаёт вложенную карточку.
 
 ### StudyItem and Detail
 
