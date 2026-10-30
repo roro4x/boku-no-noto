@@ -5,6 +5,7 @@ import remarkGfm from 'remark-gfm'
 import { notes, searchNotes } from '../data/notes'
 import { formatPostDate } from '../data/textPosts'
 import type { SiteLocale } from '../i18n'
+import { remarkStudyText } from '../markdown/remarkStudyText'
 
 type NotesArchiveProps = {
   slug?: string
@@ -85,7 +86,7 @@ export function NotesArchive({ slug, locale }: NotesArchiveProps) {
           </header>
           <div className="markdown-body" lang="ru">
             <ReactMarkdown
-              remarkPlugins={[remarkGfm]}
+              remarkPlugins={[remarkGfm, remarkStudyText]}
               components={{
                 h2: ({ children }) => <h3 className="markdown-heading markdown-heading--2">{children}</h3>,
                 h3: ({ children }) => <h4 className="markdown-heading markdown-heading--3">{children}</h4>,

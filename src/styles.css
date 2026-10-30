@@ -1851,6 +1851,37 @@ html[data-season-paused] .weather-raindrop {
   background: var(--sage);
 }
 
+.markdown-body ruby {
+  ruby-position: over;
+}
+
+.markdown-body rt {
+  font-size: 0.55em;
+  font-weight: 400;
+}
+
+.markdown-body .parallel-text {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.markdown-body .parallel-text :is(th, td) {
+  width: 50%;
+  padding: 0.65rem clamp(0.35rem, 1.5vw, 0.65rem);
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+
+.markdown-body .parallel-text td[lang="ja"] {
+  line-height: 2.5;
+}
+
+.markdown-body .parallel-text__break td {
+  padding-block: 0.4rem;
+  border-block: 0;
+}
+
 .markdown-body img {
   max-width: 100%;
   height: auto;

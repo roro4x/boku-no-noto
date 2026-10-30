@@ -21,4 +21,10 @@ describe('notes collection', () => {
     expect(note?.content).toContain('696 побед')
     expect(note?.content).toContain('sumo.or.jp')
   })
+
+  it('searches the original lyrics across furigana annotations', () => {
+    const note = notes.find((item) => item.slug === 'yume-ga-sametara')!
+    expect(searchNotes(notes, '夢から醒めたら')).toContain(note)
+    expect(searchNotes(notes, '通話中のCalling')).toContain(note)
+  })
 })

@@ -1,4 +1,5 @@
 import { parseTextPost, type TextPost } from './textPosts'
+import { stripRubyAnnotations } from '../markdown/remarkStudyText'
 
 export type Note = TextPost
 
@@ -14,7 +15,7 @@ export const notes: Note[] = Object.entries(noteModules)
 
 export const searchNotes = (items: Note[], query: string) => {
   const normalize = (value: string) =>
-    value.normalize('NFKC').toLocaleLowerCase('ru').trim().replace(/\s+/gu, ' ')
+    stripRubyAnnotations(value).normalize('NFKC').toLocaleLowerCase('ru').trim().replace(/\s+/gu, ' ')
   const search = normalize(query)
   return items.filter((note) => normalize(
     [note.title, note.description, note.content].join(' '),
